@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+      <header class="relative z-50">
+
+        <!-- Top Bar -->
+
+        <div class="bg-[#B4771E] h-[24px] flex items-center justify-center">
+
+            <p class="text-white text-[11px]">
+                Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
+            </p>
+
+        </div>
+
+        <!-- Navbar -->
+
+        <div class="bg-[#050b0d]">
+
+            <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+
+                <div class="h-[64px] flex items-center justify-between">
+
+                    <!-- Logo -->
+
+                    <a href="#">
+                        <img src="assets/images/logo.png" class="h-[50px]">
+                    </a>
+
+                    <!-- Desktop Menu -->
+
+                    <nav class="hidden lg:flex items-center gap-10">
+
+                        <a href="#" class="text-[#B4771E] text-[14px]">
+                            Home
+                        </a>
+
+                        <!-- Mega Menu -->
+
+                        <div class="group relative">
+
+                            <button class="flex items-center gap-2 text-white text-[14px]">
+
+                                Shop By Category
+
+                                <i class="fa-solid fa-angle-down text-[11px]"></i>
+
+                            </button>
+
+                            <!-- Dropdown -->
+
+                            <div
+                                class="absolute top-full left-0 mt-4 bg-white w-[760px] p-6 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+
+                                <div class="grid grid-cols-2 gap-4">
+
+                                    <!-- Left -->
+
+                                    <div class="border border-[#ddd]">
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Necklace</span>
+                                            <span>−</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Bangal & Kadali</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Braslate</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Watch</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Hathful</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Ring</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Chain & Mala</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Pendal & Buti</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3 border-b">
+                                            <span>Juda & Kandora</span>
+                                            <span>+</span>
+                                        </div>
+
+                                        <div class="flex justify-between px-4 py-3">
+                                            <span>Other</span>
+                                            <span>+</span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Right -->
+
+                                    <div class="border border-[#ddd]">
+
+                                        <div class="px-4 py-3 border-b">
+                                            Short Necklace
+                                        </div>
+
+                                        <div class="px-4 py-3 border-b">
+                                            Long Necklace
+                                        </div>
+
+                                        <div class="px-4 py-3">
+                                            Leriyat Necklace
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="text-white text-[14px]">
+                            About Us
+                        </a>
+
+                        <a href="#" class="text-white text-[14px]">
+                            Contact Us
+                        </a>
+
+                    </nav>
+
+                    <!-- Right Side -->
+
+                    <div class="hidden lg:flex items-center gap-4">
+
+                        <div class="relative">
+
+                            <input type="text" placeholder="Search"
+                                class="w-[250px] h-[38px] border border-[#222] bg-transparent px-4 text-white text-[13px]">
+
+                            <i
+                                class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-white text-[12px]"></i>
+
+                        </div>
+
+                        <a href="#" class="text-white">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <a href="#" class="text-white">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Button -->
+
+                    <button id="menuBtn" class="lg:hidden text-white text-[24px]">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <div id="mobileMenu"
+        class="fixed top-0 left-0 w-full h-full bg-white z-[999] translate-x-full transition duration-300 overflow-y-auto">
+
+        <!-- Top -->
+
+        <div class="bg-[#050b0d]">
+
+            <div class="bg-[#B4771E] text-center text-white text-[10px] py-2">
+                Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
+            </div>
+
+            <div class="h-[60px] px-5 flex items-center justify-between">
+
+                <img src="assets/images/logo.png" class="h-[40px]">
+
+                <button id="closeMenu" class="text-white text-2xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="p-5">
+
+            <a class="block py-4 border-b">Home</a>
+
+            <div class="py-4 border-b">
+
+                <div class="flex justify-between">
+                    <span>Shop By Category</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <div class="mt-4 pl-4">
+
+                    <div class="flex justify-between py-3">
+                        <span>Necklace</span>
+                        <span>−</span>
+                    </div>
+
+                    <ul class="pl-4 text-[#777] text-sm space-y-3">
+                        <li>Short Necklace</li>
+                        <li>Long Necklace</li>
+                        <li>Leriyat Necklace</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <a class="block py-4 border-b">Bangal & Kadali</a>
+            <a class="block py-4 border-b">Braslate</a>
+            <a class="block py-4 border-b">Watch</a>
+            <a class="block py-4 border-b">Hathful</a>
+            <a class="block py-4 border-b">Ring</a>
+            <a class="block py-4 border-b">Chain & Mala</a>
+            <a class="block py-4 border-b">Pendal & Buti</a>
+            <a class="block py-4 border-b">Juda & Kandora</a>
+            <a class="block py-4 border-b">Other</a>
+
+            <a class="block py-4 border-b">About Us</a>
+            <a class="block py-4 border-b">Contact Us</a>
+
+        </div>
+
+    </div>
+    <section class="py-16 lg:py-20">
+
+    <div class="max-w-[1200px] mx-auto px-5">
+
+        <!-- Heading -->
+
+        <div class="text-center mb-10">
+
+            <h1 class="font-moglan text-[42px] lg:text-[56px] text-[#131615] leading-none">
+                Refund & Cancellation Policy
+            </h1>
+
+            <p class="mt-4 text-[15px] text-[#666]">
+                Learn about our cancellation, return, exchange, and refund policies to ensure a smooth shopping experience.
+            </p>
+
+        </div>
+
+        <!-- Content -->
+
+        <div class="border border-[#D5D5D5] p-6 lg:p-8">
+
+            <p class="text-[15px] text-[#555] leading-[30px] mb-8">
+                At <strong>Chetan Imitation</strong>, we strive to provide high-quality imitation jewellery and a smooth shopping experience. Please read our Refund & Returns Policy carefully before placing an order.
+            </p>
+
+            <!-- Returns Policy -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Returns Policy
+                </h3>
+
+                <p class="text-[15px] text-[#555] leading-[30px]">
+                    Due to the nature of imitation jewellery and hygiene considerations:
+                </p>
+
+                <p class="text-[15px] text-[#555] leading-[30px]">
+                    We do not accept returns once the product has been delivered.
+                </p>
+
+                <p class="text-[15px] text-[#555] leading-[30px] mt-2">
+                    All products are carefully checked, packed, and dispatched. Customers are requested to review product images, descriptions, and specifications thoroughly before making a purchase.
+                </p>
+
+            </div>
+
+            <!-- Refund Policy -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Refund Policy
+                </h3>
+
+                <p class="text-[15px] text-[#555] mb-3">
+                    Refunds are not applicable for:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>Change of mind</li>
+
+                    <li>Incorrect product selection by the customer</li>
+
+                    <li>Minor color or design variations (as products are photographed under studio lighting)</li>
+
+                    <li>Damage caused after delivery</li>
+
+                    <li>Delays caused by courier partners</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Applicable Cases -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Refunds Are Applicable ONLY In The Following Cases
+                </h3>
+
+                <p class="text-[15px] text-[#555] mb-3">
+                    A refund or replacement may be considered only if:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>You received a wrong product.</li>
+
+                    <li>You received a damaged or defective product.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Conditions -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Conditions
+                </h3>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>You received a wrong product, or</li>
+
+                    <li>An unboxing video is mandatory (from sealed package to product).</li>
+
+                    <li>The product must be unused and in original packaging.</li>
+
+                </ul>
+
+                <p class="text-[15px] text-[#555] mt-3">
+                    Without an unboxing video, no refund or replacement will be processed.
+                </p>
+
+            </div>
+
+            <!-- Replacement -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Replacement Policy
+                </h3>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>Replacement will be initiated after verification.</li>
+
+                    <li>If the same product is unavailable, store credit or refund may be offered.</li>
+
+                    <li>Replacement shipping timeline: 7–10 business days.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Refund Processing -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Refund Processing
+                </h3>
+
+                <p class="text-[15px] text-[#555] mb-3">
+                    If approved:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>Refunds will be processed to the original payment method.</li>
+
+                    <li>Payments are refunded via Razorpay.</li>
+
+                    <li>Refunds are completed within 5–7 business days after approval.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Shipping -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Shipping Charges
+                </h3>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>Shipping charges are non-refundable.</li>
+
+                    <li>If a replacement is approved due to our error, shipping will be covered by us.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Cancellation -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Order Cancellation
+                </h3>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>Orders cannot be cancelled once they are shipped.</li>
+
+                    <li>Cancellation requests before dispatch may be considered on a case-by-case basis.</li>
+
+                    <li>No cancellations are allowed for discounted or sale items.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Notes -->
+
+            <div class="mb-8">
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Important Notes
+                </h3>
+
+                <ul class="list-disc pl-6 space-y-2 text-[15px] text-[#555]">
+
+                    <li>We only support online prepaid payments via Razorpay.</li>
+
+                    <li>Cash on Delivery (COD) is not available.</li>
+
+                    <li>Colors and designs may vary slightly due to screen settings.</li>
+
+                    <li>Chetan Imitation reserves the right to refuse refunds if policy conditions are not met.</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="text-[18px] font-semibold text-[#131615] mb-4">
+                    Contact Us
+                </h3>
+
+                <p class="text-[15px] text-[#555] leading-[30px]">
+                    For any refund or return related queries, please contact us through the Contact Us page on our website.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ------footer start -->
+<section class="relative">
+
+    <!-- Background Image -->
+    <div class="relative py-[80px] overflow-hidden">
+
+        <img
+             src="assets/images/Newsletter.png"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-[#131615]/70"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 h-full flex items-center justify-center px-5">
+
+            <div class="text-center w-full">
+
+                <div class="w-12 h-[2px] bg-[#B4771E] mx-auto mb-5"></div>
+
+                <h2 class="font-moglan text-white text-[32px] md:text-[48px] lg:text-[54px] leading-none">
+                    Stay Updated with New Jewelry Collections
+                </h2>
+
+                <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px]">
+                    Subscribe to receive exclusive offers, styling tips, and first access to new arrivals
+                </p>
+
+                <!-- Subscribe Form -->
+                 <div class="max-w-[520px] mx-auto mt-8 flex flex-col gap-3 sm:gap-0 sm:flex-row" >
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white rounded-l-[4px] sm:rounded-l-0 rounded-r-[4px] sm:rounded-r-0 placeholder:text-lg">
+
+                    <button
+                        class="h-[58px] px-8 bg-[#B4771E] text-white text-lg hover:bg-[#b57a1f] transition 
+                        rounded-[4px] sm:rounded-r-[4px] ">
+
+                        Subscribe
+
+                    </button>
+
+                </div>
+
+                    <p class="mt-3 text-[#D5D5D5] text-lg">
+                    We respect your privacy. Unsubscribe at any time.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-[#131615]">
+
+    <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+
+    <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-10 py-14">
+
+            <!-- Logo -->
+
+            <div>
+
+                <img
+                    src="assets/images/footer_logo.png"
+                    alt="Logo"
+                    class="h-16 mb-[25px]">
+
+                <p class="text-[#cfcfcf] text-base leading-6">
+
+                    Premium imitation jewelry crafted for weddings,
+                    festivals, and everyday elegance. Discover timeless
+                    designs that blend tradition, beauty, and affordability.
+
+                </p>
+
+            </div>
+
+            <!-- Category -->
+
+            <div>
+
+                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                    Shop By Category
+                </h3>
+
+                <ul class="space-y-3 text-[#d9d9d9] text-base">
+
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bangal & Kadali</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Hathful</a></li>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Mangalsutra</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Company -->
+
+            <div>
+
+                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                    Company
+                </h3>
+
+                <ul class="space-y-3 text-[#d9d9d9] text-base">
+
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Customer Service -->
+
+            <div>
+
+                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                    Customer Service
+                </h3>
+
+                <ul class="space-y-3 text-[#d9d9d9] text-base">
+
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Deliveries & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund & Cancellation Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                    Contact Us
+                </h3>
+
+                <ul class="space-y-4 text-[#d9d9d9] text-[15px]">
+
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-phone text-[#B4771E] mt-1"></i>
+                        <span>+91 98765 43210</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                        <i class="fa-regular fa-envelope text-[#B4771E] mt-1"></i>
+                        <span>info@chetanimitation.com</span>
+                    </li>
+
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-location-dot text-[#B4771E] mt-1"></i>
+
+                        <span>
+                            G-14 Abc market, Abc circle,
+                            Sudama chowk, Mota Varachha,
+                            Surat, Gujarat 394101, India
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+
+    <div class="border-t border-white/10">
+
+        <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-5">
+
+                <p class="text-[#cfcfcf] text-[14px] text-center md:text-left">
+
+                    © 2026 Chetan Imitation. All Rights Reserved |
+                    Developed by Rising Star Infotech.
+
+                </p>
+
+                <!-- Social -->
+
+                <div class="flex items-center gap-3">
+
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#"
+                        class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- ------footer end -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+</body>
+</html>
