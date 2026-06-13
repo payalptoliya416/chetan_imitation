@@ -193,77 +193,196 @@ function render() {
   if (!pageItems.length) { grid.innerHTML=''; noRes.classList.remove('hidden'); }
   else {
     noRes.classList.add('hidden');
-    grid.innerHTML = pageItems.map(p=>`
-      <div class="product-card bg-white border border-gray-100 rounded-lg overflow-hidden relative group"
-           data-id="${p.id}" data-price="${p.price}" data-instock="${p.inStock}">
-        ${p.sale ? '<div class="sale-badge">SALE</div>' : ''}
-        <!-- Wish -->
+grid.innerHTML = pageItems.map(p => `
+<div class="border border-[#D5D5D5] bg-white group relative"
+     data-id="${p.id}"
+     data-price="${p.price}"
+     data-instock="${p.inStock}">
+
+    <!-- Image Section -->
+    <div class="relative overflow-hidden">
+
+        ${p.sale ? `
+        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+            <span class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
+                SALE
+            </span>
+        </div>
+        ` : ''}
+
+        <!-- Wishlist -->
         <button onclick="toggleWish(${p.id})"
-          class="wish-btn absolute top-2 right-2 z-10 w-7 h-7 rounded-full bg-white shadow flex items-center justify-center text-base ${state.wishlist.has(p.id)?'active':'text-gray-400'}">
-          ${state.wishlist.has(p.id)?'♥':'♡'}
+            class="absolute top-2 right-2 z-10 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center shadow">
+
+            <span class="text-[20px] transition
+            ${state.wishlist.has(p.id)
+                ? 'text-[#B4771E]'
+                : 'text-[#666] hover:text-[#B4771E]'}">
+
+                ${state.wishlist.has(p.id) ? '♥' : '♡'}
+
+            </span>
+
         </button>
-        <!-- Image -->
-        <div class="overflow-hidden h-[200px] bg-gray-50">
-          <img src="${p.img}" alt="${p.name}"
-            class="w-full h-full group-hover:scale-105 transition-transform duration-300"
-            loading="lazy" onerror="this.src='asstes/images/Royal_Bridal.png'" />
+
+        <!-- Product Image -->
+        <img
+            src="${p.img}"
+            alt="${p.name}"
+            loading="lazy"
+            onerror="this.src='assets/images/Royal_Bridal.png'"
+            class="w-full h-[340px] object-cover transition duration-300 group-hover:scale-105">
+
+    </div>
+
+    <!-- Content -->
+    <div class="p-[25px]">
+
+        <h3 class="text-lg text-[#131615] line-clamp-2 min-h-[56px]">
+            ${p.name}
+        </h3>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-1 mt-[9px]">
+
+            <div class="text-[#B4771E] text-base">
+                ${stars(p.rating)}
+            </div>
+
+            <span class="text-base text-[#757575]">
+                (${p.reviews})
+            </span>
+
         </div>
-        <!-- Info -->
-        <div class="p-3">
-          <p class="text-[13px] font-medium text-gray-800 leading-snug mb-1 line-clamp-2 h-9">${p.name}</p>
-          <div class="flex items-center gap-1 mb-1">
-            <span class="text-xs stars">${stars(p.rating)}</span>
-            <span class="text-xs text-gray-400">(${p.reviews})</span>
-          </div>
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-base font-bold text-gray-900">₹${fmt(p.price)}</span>
-            ${p.mrp>p.price ? `<span class="text-xs text-gray-400 line-through">₹${fmt(p.mrp)}</span>` : ''}
-            ${p.mrp>p.price ? `<span class="text-xs text-green-600 font-medium">${Math.round((1-p.price/p.mrp)*100)}% off</span>` : ''}
-          </div>
-          ${!p.inStock
-            ? '<p class="text-xs text-red-500 font-medium mb-2">Out of Stock</p>'
-            : ''}
-          <button onclick="addToCart(${p.id},this)"
-            class="atc-btn w-full py-2 text-xs font-semibold rounded transition-colors ${!p.inStock?'opacity-50 cursor-not-allowed':''}"
-            ${!p.inStock?'disabled':''}>
-            Add to Cart
-          </button>
+
+        <!-- Price -->
+        <div class="mt-2 flex items-center gap-2 flex-wrap">
+
+            <span class="text-xl font-medium text-[#131615]">
+                ₹${fmt(p.price)}
+            </span>
+
+            ${p.mrp > p.price ? `
+            <span class="text-base text-[#757575] line-through">
+                ₹${fmt(p.mrp)}
+            </span>
+            ` : ''}
+
         </div>
-      </div>
-    `).join('');
+
+        ${!p.inStock ? `
+        <p class="text-red-500 text-sm mt-2">
+            Out of Stock
+        </p>
+        ` : ''}
+
+        <!-- Button -->
+        <button
+            onclick="addToCart(${p.id},this)"
+            ${!p.inStock ? 'disabled' : ''}
+            class="w-full h-[45px] border border-[#131615] text-lg mt-4
+            hover:border-[#B4771E]
+            hover:bg-[#B4771E]
+            hover:text-white
+            transition
+            ${!p.inStock ? 'opacity-50 cursor-not-allowed' : ''}">
+
+            Shop Now
+
+        </button>
+
+    </div>
+
+</div>
+`).join('');
   }
  
   // Pagination
   renderPagination(totalPages);
 }
- 
 function renderPagination(totalPages) {
-  const pg = document.getElementById('pagination');
-  if (totalPages <= 1) { pg.innerHTML=''; return; }
- 
-  let html = '';
-  // Prev
-  html += `<button class="page-btn ${state.page===1?'opacity-40 cursor-not-allowed':''}" onclick="${state.page>1?'goPage('+(state.page-1)+')':''}">‹ Prev</button>`;
- 
-  // Pages (smart window)
-  let pages=[];
-  if(totalPages<=7) { for(let i=1;i<=totalPages;i++) pages.push(i); }
-  else {
-    pages=[1];
-    if(state.page>3) pages.push('…');
-    for(let i=Math.max(2,state.page-1);i<=Math.min(totalPages-1,state.page+1);i++) pages.push(i);
-    if(state.page<totalPages-2) pages.push('…');
-    pages.push(totalPages);
-  }
-  pages.forEach(p=>{
-    if(p==='…') html+=`<span class="page-btn border-0 text-gray-400">…</span>`;
-    else html+=`<button class="page-btn ${p===state.page?'active':''}" onclick="goPage(${p})">${p}</button>`;
-  });
- 
-  // Next
-  html += `<button class="page-btn ${state.page===totalPages?'opacity-40 cursor-not-allowed':''}" onclick="${state.page<totalPages?'goPage('+(state.page+1)+')':''}">Next ›</button>`;
- 
-  pg.innerHTML = html;
+
+    const pg = document.getElementById('pagination');
+
+    if (totalPages <= 1) {
+        pg.innerHTML = '';
+        return;
+    }
+
+    let html = '';
+
+    // Previous Button
+    html += `
+    <button
+        class="
+        w-[130px] h-[54px]
+        md:w-[170px] md:h-[60px]
+        border border-[#D5D5D5]
+        bg-white
+        text-[#777]
+        text-[16px] md:text-[18px]
+        font-medium
+        flex items-center justify-center gap-2
+        hover:bg-gray-50
+        transition-all
+        ${state.page === 1 ? 'opacity-50 cursor-not-allowed' : ''}
+        "
+        ${state.page > 1 ? `onclick="goPage(${state.page - 1})"` : ''}
+    >
+        <span class="text-[26px] leading-none">‹</span>
+        Previous
+    </button>
+    `;
+
+    // Page Numbers
+    for (let i = 1; i <= totalPages; i++) {
+
+        html += `
+        <button
+            onclick="goPage(${i})"
+            class="
+            w-[54px] h-[54px]
+            md:w-[60px] md:h-[60px]
+            border
+            text-[16px] md:text-[18px]
+            font-medium
+            transition-all
+            ${
+                i === state.page
+                ? 'bg-[#B67A1E] border-[#B67A1E] text-white'
+                : 'bg-white border-[#D5D5D5] text-[#777] hover:bg-gray-50'
+            }
+            "
+        >
+            ${i}
+        </button>
+        `;
+    }
+
+    // Next Button
+    html += `
+    <button
+        class="
+        w-[130px] h-[54px]
+        md:w-[170px] md:h-[60px]
+        border border-[#D5D5D5]
+        bg-white
+        text-[#777]
+        text-[16px] md:text-[18px]
+        font-medium
+        flex items-center justify-center gap-2
+        hover:bg-gray-50
+        transition-all
+        ${state.page === totalPages ? 'opacity-50 cursor-not-allowed' : ''}
+        "
+        ${state.page < totalPages ? `onclick="goPage(${state.page + 1})"` : ''}
+    >
+        Next
+        <span class="text-[26px] leading-none">›</span>
+    </button>
+    `;
+
+    pg.innerHTML = html;
 }
  
 function goPage(n) {
