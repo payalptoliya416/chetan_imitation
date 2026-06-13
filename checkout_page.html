@@ -303,7 +303,7 @@
 
                         <!-- Header -->
 
-                        <div class="flex items-center justify-between px-5 py-[19px] border-b border-[#D5D5D5]">
+                        <div class="flex items-center justify-between px-5 py-[19px] border-b border-[#D5D5D5] flex-col sm:flex-row gap-4">
 
                             <div class="flex items-center gap-[15px]">
 
@@ -319,13 +319,327 @@
                             </div>
 
                             <button
-                                class="bg-[#B4771E] hover:bg-[#b67d1f] text-white text-lg font-medium px-5 h-[40px] transition flex gap-[9px] items-center">
+                                class="bg-[#B4771E] hover:bg-[#b67d1f] text-white text-base md:text-lg font-medium px-4 md:px-5 h-[40px] transition flex gap-4 md:gap-[9px] items-center"  onclick="openModal()">
 
                                 <i class="fa-solid fa-plus"></i> Add New
 
                             </button>
 
                         </div>
+<!-- Overlay -->
+
+
+<div id="addressModal"
+    class="fixed inset-0 z-50 bg-black/50 overflow-y-auto p-4">
+    <!-- class="fixed inset-0 z-50 hidden bg-black/50 overflow-y-auto p-4"> -->
+
+    <div class="min-h-full flex items-center justify-center py-5">
+
+        <!-- Modal Box -->
+
+        <div
+            class="relative w-full max-w-[750px] bg-white rounded-[8px]
+            p-4 sm:p-6 md:p-[30px]
+            max-h-[90vh] border border-[#D5D5D5]
+            overflow-y-auto">
+
+            <!-- Close -->
+
+            <button
+                onclick="closeModal()"
+                class="absolute top-4 right-4 md:top-6 md:right-6 text-[35px] leading-none text-[#131615]">
+
+                &times;
+
+            </button>
+
+
+            <!-- Heading -->
+
+            <h2 class="text-[24px] md:text-[30px] leading-[24px] md:leading-[30px] font-medium text-[#131615] mb-[31px]">
+
+                Deliver To
+
+            </h2>
+
+
+
+            <!-- Full Name -->
+
+            <div class="mb-5">
+
+                <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                    Full Name
+
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Enter Your Full Name"
+                    class="w-full h-[48px] md:h-[56px] text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-none">
+
+            </div>
+
+
+
+
+            <!-- Mobile -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+
+                <div>
+
+                    <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                        Mobile Number
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Your Mobile Number"
+                        class="w-full h-[48px] md:h-[56px] text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-none">
+
+                </div>
+
+
+                <div>
+
+                     <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                        Alternate Phone Number (Optional)
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Your Mobile Number"
+                        class="w-full h-[48px] md:h-[56px] text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-none">
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Email -->
+
+            <div class="mb-5">
+
+                 <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                    Email address
+
+                </label>
+
+                <input
+                    type="email"
+                    value="priyasharma@gmail.com"
+                    class="w-full h-[48px] md:h-[56px] text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-none">
+
+            </div>
+
+
+
+
+            <!-- Address -->
+
+            <div class="mb-5">
+
+                <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                    Flat/House/Building Name
+
+                </label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Enter Flat/House/Building Name"
+                     class="w-full text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-n py-3"></textarea>
+
+            </div>
+
+
+
+
+            <!-- City State -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
+
+                <div>
+
+                    <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                        Town / City
+
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Town / City"
+                        class="w-full h-[48px] md:h-[56px] text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-none">
+
+                </div>
+
+
+
+                <div>
+
+                    <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+                        State / County
+
+                    </label>
+
+                    <select
+                         class="w-full h-[48px] md:h-[56px] text-[#757575] text-base sm:text-lg placeholder:text-base placeholder:sm:text-lg border border-[#D5D5D5] px-4 outline-none">
+
+                        <option>
+
+                            Select an Option...
+
+                        </option>
+
+                        <option>
+
+                            Gujarat
+
+                        </option>
+
+                        <option>
+
+                            Maharashtra
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Address Type -->
+
+      <div class="mb-7">
+
+    <label class="block text-base md:text-xl text-[#131615] mb-3 font-semibold">
+
+        Type Of Address
+
+    </label>
+
+    <div class="flex flex-wrap gap-4">
+
+        <!-- Home -->
+
+        <input
+            type="radio"
+            name="addressType"
+            id="home"
+            class="hidden peer/home"
+            checked>
+
+        <label
+            for="home"
+            class="cursor-pointer py-[10px] px-5 border border-[#D5D5D5]
+            rounded flex items-center gap-[8px]
+            text-base sm:text-xl
+            text-[#131615]
+            peer-checked/home:bg-[#B4771E1A]
+            peer-checked/home:border-[#B4771E1A]
+            peer-checked/home:text-[#B4771E]
+            transition-all">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6">
+
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+
+            </svg>
+
+            Home
+
+        </label>
+
+
+
+        <!-- Work -->
+
+        <input
+            type="radio"
+            name="addressType"
+            id="work"
+            class="hidden peer/work">
+
+        <label
+            for="work"
+            class="cursor-pointer py-[10px] px-5 border border-[#D5D5D5]
+            rounded flex items-center gap-[8px]
+            text-base sm:text-xl
+            text-[#131615]
+            peer-checked/work:bg-[#B4771E1A]
+            peer-checked/work:border-[#B4771E1A]
+            peer-checked/work:text-[#B4771E]
+            transition-all">
+
+            <svg xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6">
+
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+
+            </svg>
+
+            Work
+
+        </label>
+
+    </div>
+
+</div>
+
+
+
+
+            <!-- Save -->
+
+            <button
+                class="w-full h-[52px] md:h-[58px]
+                bg-[#B4771E]
+                hover:bg-[#a86f17]
+                text-white
+                text-lg md:text-[24px]
+                font-medium
+                rounded">
+
+                Save Address
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</div>
 
                         <!-- Address 1 -->
 
@@ -451,7 +765,7 @@
 
                     <div class="border border-[#D5D5D5]">
 
-                          <div class="flex items-center justify-between px-5 py-[19px] border-b border-[#D5D5D5]">
+                          <div class="flex items-center justify-between px-5 py-[19px] border-b border-[#D5D5D5] ">
 
                             <div class="flex items-center gap-[15px]">
 
@@ -495,7 +809,7 @@
 
                          <div class="flex-1 min-w-0">
 
-                             <h3 class="max-w-[280px] md:max-w-[500px] truncate text-base md:text-[22px] lg:text-[26px] leading-[26px] lg:leading-[36px] font-semibold text-[#131615]">
+                             <h3 class="max-w-[240px] md:max-w-[500px] truncate text-base md:text-[22px] lg:text-[26px] leading-[26px] lg:leading-[36px] font-semibold text-[#131615]">
                                 Royal Rajwadi Kundan Bridal Necklace Set with Pearl Detailing
                             </h3>
 
@@ -587,7 +901,7 @@
 
                          <div class="flex-1 min-w-0">
 
-                             <h3 class="max-w-[280px] md:max-w-[500px] truncate text-base md:text-[22px] lg:text-[26px] leading-[26px] lg:leading-[36px] font-semibold text-[#131615]">
+                             <h3 class="max-w-[240px] md:max-w-[500px] truncate text-base md:text-[22px] lg:text-[26px] leading-[26px] lg:leading-[36px] font-semibold text-[#131615]">
                                Traditional Meenakari Jhumka Earrings for Women
                             </h3>
 
@@ -689,13 +1003,13 @@ PAYMENT METHOD
                                 <!-- Active -->
 
                                 <label
-                                    class="py-[15px] px-5 flex items-center gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
+                                    class="py-[10px] md:py-[15px] px-3 md:px-5 flex items-center gap-3 md:gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
 
                                     <input type="radio" checked name="payment" class="accent-[#B4771E] w-5 h-5">
 
                                     <img src="assets/images/payment1.png" alt="">
 
-                                    <span class="text-base md:text-lg text-[#3D403F]">
+                                    <span class="text-sm md:text-lg text-[#3D403F]">
                                         Credit / Debit Card
                                     </span>
 
@@ -704,13 +1018,13 @@ PAYMENT METHOD
                                 <!-- UPI -->
 
                                 <label
-                                    class="py-[15px] px-5 flex items-center gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
+                                    class="py-[14px] md:py-[15px] px-3 md:px-5 flex items-center gap-3 md:gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
 
                                     <input type="radio" name="payment" class="w-5 h-5">
 
                                     <img src="assets/images/upi.png">
 
-                                    <span class="text-base md:text-lg text-[#3D403F]">
+                                   <span class="text-sm md:text-lg text-[#3D403F]">
                                         UPI Payment
                                     </span>
 
@@ -718,14 +1032,14 @@ PAYMENT METHOD
 
                                 <!-- Net Banking -->
 
-                               <label
-                                    class="py-[15px] px-5 flex items-center gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
+                                <label
+                                    class="py-[10px] md:py-[15px] px-3 md:px-5 flex items-center gap-3 md:gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
 
                                     <input type="radio" name="payment" class="w-5 h-5">
 
                                      <img src="assets/images/payment3.png" alt="">
 
-                                    <span class="text-base md:text-lg text-[#3D403F]">
+                                    <span class="text-sm md:text-lg text-[#3D403F]">
                                         Net Banking
                                     </span>
 
@@ -733,14 +1047,14 @@ PAYMENT METHOD
 
                                 <!-- Wallet -->
 
-                                <label
-                                    class="py-[15px] px-5 flex items-center gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
+                                 <label
+                                    class="py-[10px] md:py-[15px] px-3 md:px-5 flex items-center gap-3 md:gap-5 border-b-0 border-[#D5D5D5] border cursor-pointer">
 
                                     <input type="radio" name="payment" class="w-5 h-5">
 
                                        <img src="assets/images/payment4.png" alt="">
 
-                                    <span class="text-base md:text-lg text-[#3D403F]">
+                                    <span class="text-sm md:text-lg text-[#3D403F]">
                                         Wallet Payment
                                     </span>
 
@@ -749,13 +1063,13 @@ PAYMENT METHOD
                                 <!-- COD -->
 
                                 <label
-                                    class="py-[15px] px-5 flex items-center gap-5 border-b border-[#D5D5D5] border cursor-pointer">
+                                    class="py-[10px] md:py-[15px] px-3 md:px-5 flex items-center gap-3 md:gap-5 border-[#D5D5D5] border cursor-pointer">
 
                                     <input type="radio" name="payment" class="w-5 h-5">
 
                                        <img src="assets/images/payment5.png" alt="">
 
-                                   <span class="text-base md:text-lg text-[#3D403F]">
+                                   <span class="text-sm md:text-lg text-[#3D403F]">
                                         Cash on Delivery
                                     </span>
 
@@ -855,7 +1169,7 @@ PAYMENT METHOD
                             Have a Coupon?
                         </h3>
 
-                        <div class="flex gap-2">
+                        <div class="flex gap-2 flex-wrap md:flex-nowrap">
 
                             <input type="text" placeholder="Enter Coupon Code"
                                 class="h-[56px] border border-[#D5D5D5] px-4 bg-white text-base md:text-lg leading-[18px] placeholder:text-lg">
@@ -933,23 +1247,23 @@ PAYMENT METHOD
 
                          <div class="space-y-4 text-[#131615]">
 
-                            <div class="flex gap-3">
-                                <i class="fa-solid fa-check text-[#B4771E]"></i>
+                             <div class="flex gap-3 text-base md:text-xl font-normal">
+                                 <i class="fa-solid fa-check text-[#B4771E] mt-1"></i>
                                 <span>100% Secure Checkout</span>
                             </div>
 
-                            <div class="flex gap-3">
-                                <i class="fa-solid fa-check text-[#B4771E]"></i>
+                             <div class="flex gap-3 text-base md:text-xl font-normal">
+                                 <i class="fa-solid fa-check text-[#B4771E] mt-1"></i>
                                 <span>Premium Quality jewelry</span>
                             </div>
 
-                            <div class="flex gap-3">
-                                <i class="fa-solid fa-check text-[#B4771E]"></i>
+                             <div class="flex gap-3 text-base md:text-xl font-normal">
+                                 <i class="fa-solid fa-check text-[#B4771E] mt-1"></i>
                                 <span>Easy Return and Exchange</span>
                             </div>
 
-                            <div class="flex gap-3">
-                                <i class="fa-solid fa-check text-[#B4771E]"></i>
+                             <div class="flex gap-3 text-base md:text-xl font-normal">
+                                 <i class="fa-solid fa-check text-[#B4771E] mt-1"></i>
                                 <span>Secure Packaging</span>
                             </div>
 
@@ -969,310 +1283,263 @@ PAYMENT METHOD
 YOU MAY ALSO LIKE
 ========================= -->
 
-    <section class="py-12 lg:py-[120px]">
 
-        <div class="container-1440">
+<section class="pb-10 lg:pb-[120px]">
 
-            <!-- Heading -->
+    <div class="container-1440">
 
-            <div class="text-center mb-10 lg:mb-14">
+        <!-- Heading -->
 
-                <h2 class="font-moglan text-[#131615] text-[40px] md:text-[56px] lg:text-[72px] leading-none">
-                    You May Also Like
-                </h2>
+        <div class="text-center mb-10 lg:mb-10">
 
-            </div>
-
-            <!-- Products -->
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-
-                <!-- Product Card -->
-
-                <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                    <!-- Image -->
-
-                    <div class="relative overflow-hidden">
-
-                        <!-- Sale Label -->
-
-                        <div
-                            class="absolute top-0 left-0 z-10 bg-[#ff1d1d] text-white text-[11px] font-medium px-4 py-1 rotate-[-32deg] origin-top-left -translate-x-3 translate-y-3">
-
-                            SALE
-
-                        </div>
-
-                        <!-- Wishlist -->
-
-                        <button
-                            class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                            <i class="fa-regular fa-heart text-[#131615] text-sm"></i>
-
-                        </button>
-
-                        <img src="assets/images/detailpage.png" alt=""
-                            class="w-full object-cover transition duration-300 hover:scale-105">
-
-                    </div>
-
-                    <!-- Content -->
-
-                    <div class="p-5">
-
-                        <h3 class="text-[#131615] text-[17px] truncate">
-                            Traditional Kundan Meenakari...
-                        </h3>
-
-                        <!-- Rating -->
-
-                        <div class="flex items-center gap-2 mt-2">
-
-                            <div class="flex text-[#B4771E] text-[13px]">
-
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star text-[#d9d9d9]"></i>
-
-                            </div>
-
-                            <span class="text-[#999] text-[12px]">
-                                (156)
-                            </span>
-
-                        </div>
-
-                        <!-- Price -->
-
-                        <div class="flex items-center gap-2 mt-3">
-
-                            <span class="text-[#131615] text-[20px] font-medium">
-                                ₹3,799
-                            </span>
-
-                            <span class="line-through text-[#999] text-[16px]">
-                                ₹6,499
-                            </span>
-
-                        </div>
-
-                        <!-- Button -->
-
-                        <button
-                            class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                            Add to Cart
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- Product Card -->
-
-                <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                    <div class="relative overflow-hidden">
-
-                        <button
-                            class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                            <i class="fa-solid fa-heart text-red-500 text-sm"></i>
-
-                        </button>
-
-                        <img src="assets/images/detailpage.png" alt=""
-                            class="w-full object-cover transition duration-300 hover:scale-105">
-
-                    </div>
-
-                    <div class="p-5">
-
-                        <h3 class="text-[#131615] text-[17px] truncate">
-                            Antique Finish Lakshmi Templ...
-                        </h3>
-
-                        <div class="flex items-center gap-2 mt-2">
-
-                            <div class="flex text-[#B4771E] text-[13px]">
-
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star text-[#d9d9d9]"></i>
-
-                            </div>
-
-                            <span class="text-[#999] text-[12px]">
-                                (156)
-                            </span>
-
-                        </div>
-
-                        <div class="flex items-center gap-2 mt-3">
-
-                            <span class="text-[#131615] text-[20px] font-medium">
-                                ₹4,299
-                            </span>
-
-                            <span class="line-through text-[#999] text-[16px]">
-                                ₹6,999
-                            </span>
-
-                        </div>
-
-                        <button
-                            class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                            Add to Cart
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- Product Card -->
-
-                <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                    <div class="relative overflow-hidden">
-
-                        <button
-                            class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                            <i class="fa-regular fa-heart text-[#131615] text-sm"></i>
-
-                        </button>
-
-                        <img src="assets/images/detailpage.png" alt=""
-                            class="w-full object-cover transition duration-300 hover:scale-105">
-
-                    </div>
-
-                    <div class="p-5">
-
-                        <h3 class="text-[#131615] text-[17px] truncate">
-                            Elegant Pearl and Kundan Fest...
-                        </h3>
-
-                        <div class="flex items-center gap-2 mt-2">
-
-                            <div class="flex text-[#B4771E] text-[13px]">
-
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star text-[#d9d9d9]"></i>
-
-                            </div>
-
-                            <span class="text-[#999] text-[12px]">
-                                (156)
-                            </span>
-
-                        </div>
-
-                        <div class="flex items-center gap-2 mt-3">
-
-                            <span class="text-[#131615] text-[20px] font-medium">
-                                ₹2,799
-                            </span>
-
-                            <span class="line-through text-[#999] text-[16px]">
-                                ₹4,599
-                            </span>
-
-                        </div>
-
-                        <button
-                            class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                            Add to Cart
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- Product Card -->
-
-                <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                    <div class="relative overflow-hidden">
-
-                        <button
-                            class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                            <i class="fa-regular fa-heart text-[#131615] text-sm"></i>
-
-                        </button>
-
-                        <img src="assets/images/detailpage.png" alt=""
-                            class="w-full object-cover transition duration-300 hover:scale-105">
-
-                    </div>
-
-                    <div class="p-5">
-
-                        <h3 class="text-[#131615] text-[17px] truncate">
-                            Handcrafted Rajwadi Polki Bri...
-                        </h3>
-
-                        <div class="flex items-center gap-2 mt-2">
-
-                            <div class="flex text-[#B4771E] text-[13px]">
-
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star text-[#d9d9d9]"></i>
-
-                            </div>
-
-                            <span class="text-[#999] text-[12px]">
-                                (156)
-                            </span>
-
-                        </div>
-
-                        <div class="flex items-center gap-2 mt-3">
-
-                            <span class="text-[#131615] text-[20px] font-medium">
-                                ₹4,699
-                            </span>
-
-                            <span class="line-through text-[#999] text-[16px]">
-                                ₹7,499
-                            </span>
-
-                        </div>
-
-                        <button
-                            class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                            Add to Cart
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <h2 class="font-moglan text-[#131615] text-[30px] md:text-[40px] lg:text-[64px] leading-[46px] md:leading-[60px] lg:leading-[64px]">
+                You May Also Like
+            </h2>
 
         </div>
 
-    </section>
+        <!-- Products -->
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+
+           
+                <div class="border border-[#D5D5D5]">
+
+                    <div class="relative overflow-hidden">
+
+                        <!-- Sale Ribbon -->
+
+                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+                            <span
+                                class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
+                                SALE
+                            </span>
+                        </div>
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/SVG.png" alt="">
+
+                        </button>
+
+                    </div>
+
+                    <div class="p-[25px]">
+
+                        <h3 class="text-lg text-[#131615] truncate">
+                           Traditional Kundan Meenakari Bridal Choker Necklace Set
+                        </h3>
+
+                        <div class="flex items-center gap-1 mt-[9px]">
+
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
+
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
+
+                        </div>
+
+                        <div class="mt-1 flex items-center gap-1">
+
+                            <span class="text-xl font-medium text-[#131615]">
+                               ₹3,799
+                            </span>
+
+                            <span class="text-base text-[#757575] line-through">
+                              ₹6,499
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="border border-[#D5D5D5]">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/red-verctor-heart.png" alt="">
+
+                        </button>
+
+                    </div>
+
+                    <div class="p-[25px]">
+
+                        <h3 class="text-lg text-[#131615] truncate">
+                           Antique Finish Lakshmi Temple Jewelry Necklace Set for Weddings
+                        </h3>
+
+                        <div class="flex items-center gap-1 mt-[9px]">
+
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
+
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
+
+                        </div>
+
+                        <div class="mt-1 flex items-center gap-1">
+
+                            <span class="text-xl font-medium text-[#131615]">
+                                ₹4,299
+                            </span>
+
+                            <span class="text-base text-[#757575] line-through">
+                              ₹6,999
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                   <div class="border border-[#D5D5D5]">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/SVG.png" alt="">
+
+                        </button>
+
+                    </div>
+
+                    <div class="p-[25px]">
+
+                        <h3 class="text-lg text-[#131615] truncate">
+                           Elegant Pearl and Kundan Festive Necklace Set with Drop Earrings
+                        </h3>
+
+                        <div class="flex items-center gap-1 mt-[9px]">
+
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
+
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
+
+                        </div>
+
+                        <div class="mt-1 flex items-center gap-1">
+
+                            <span class="text-xl font-medium text-[#131615]">
+                                ₹2,799
+                            </span>
+
+                            <span class="text-base text-[#757575] line-through">
+                               ₹4,599
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+                   <div class="border border-[#D5D5D5]">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/SVG.png" alt="">
+
+                        </button>
+
+                    </div>
+
+                    <div class="p-[25px]">
+
+                        <h3 class="text-lg text-[#131615] truncate">
+                            Handcrafted Rajwadi Polki Bridal Jewelry Necklace Set for Women
+                        </h3>
+
+                        <div class="flex items-center gap-1 mt-[9px]">
+
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
+
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
+
+                        </div>
+
+                        <div class="mt-1 flex items-center gap-1">
+
+                            <span class="text-xl font-medium text-[#131615]">
+                                ₹4,699
+                            </span>
+
+                            <span class="text-base text-[#757575] line-through">
+                               ₹7,499
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- ------footer start -->
     <section class="relative">
@@ -1292,7 +1559,7 @@ YOU MAY ALSO LIKE
 
                     <div class="w-12 h-[2px] bg-[#B4771E] mx-auto mb-5"></div>
 
-                    <h2 class="font-moglan text-white text-[32px] md:text-[48px] lg:text-[54px] leading-none">
+                    <h2 class="font-moglan text-white text-[32px] md:text-[48px] lg:text-[56px] leading-none">
                         Stay Updated with New Jewelry Collections
                     </h2>
 
@@ -1498,7 +1765,55 @@ YOU MAY ALSO LIKE
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/main.js"></script>
+<script>
 
+const modal = document.getElementById("addressModal");
+
+
+function openModal(){
+
+    modal.classList.remove("hidden");
+
+    document.body.classList.add("overflow-hidden");
+
+}
+
+
+function closeModal(){
+
+    modal.classList.add("hidden");
+
+    document.body.classList.remove("overflow-hidden");
+
+}
+
+
+// overlay click
+
+modal.addEventListener("click",(e)=>{
+
+    if(e.target === modal){
+
+        closeModal();
+
+    }
+
+});
+
+
+// esc press
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key === "Escape"){
+
+        closeModal();
+
+    }
+
+});
+
+</script>
 </body>
 
 </html>
