@@ -9,10 +9,10 @@
     <!-- Owl CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <header class="relative z-50">
@@ -31,7 +31,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
     <div class="bg-[#050b0d]">
 
-        <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+        <div class="container-1440">
 
             <div class="h-[64px] flex items-center justify-between">
 
@@ -72,7 +72,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
                                 <!-- Left -->
 
-                                <div class="border border-[#ddd]">
+                                <div class="border border-[#D5D5D5]">
 
                                     <div class="flex justify-between px-4 py-3 border-b">
                                         <span>Necklace</span>
@@ -128,7 +128,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
                                 <!-- Right -->
 
-                                <div class="border border-[#ddd]">
+                                <div class="border border-[#D5D5D5]">
 
                                     <div class="px-4 py-3 border-b">
                                         Short Necklace
@@ -278,64 +278,129 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 PRODUCT DETAILS SECTION
 ========================= -->
 
-<section class="bg-[#f5f5f5] py-10 lg:py-16">
+<section class=" py-12 lg:py-[120px]">
 
-    <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+    <div class="container-1440">
 
-        <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[30px] items-start">
 
             <!-- LEFT SIDE -->
+<div class="w-full">
 
-            <div>
+    <!-- Main Slider -->
+    <div class="swiper mainSwiper relative overflow-hidden">
 
-                <!-- Main Image -->
+        <div class="swiper-wrapper">
 
-                <div class="relative overflow-hidden bg-white border border-[#e5e5e5]">
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
 
-                    <img
-                        id="mainImage"
-                        src="assets/images/detailpage.png"
-                        alt=""
-                        class="w-full object-cover">
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
 
-                    <!-- Wishlist -->
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
 
-                    <button
-                        class="absolute top-3 right-3 w-8 h-8 bg-white rounded-sm shadow flex items-center justify-center">
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
 
-                        <i class="fa-solid fa-heart text-red-500 text-sm"></i>
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/images/detailpage.png"
+                    class="w-full h-auto object-cover">
+            </div>
 
-                    </button>
+        </div>
 
-                </div>
+        <!-- Wishlist -->
 
-                <!-- Thumbnails -->
+        <button
+            class="absolute top-3 right-3 z-20 w-[42px] h-[42px] bg-white rounded-lg shadow flex items-center justify-center">
 
-                <div class="grid grid-cols-5 gap-2 mt-3">
+            <img src="assets/images/header-red.png" alt="">
 
-                    <img
-                        src="assets/images/detailpage.png"
-                        class="thumb border-2 border-[#B4771E] cursor-pointer">
+        </button>
 
-                    <img
-                        src="assets/images/detailpage.png"
-                        class="thumb border border-[#ddd] cursor-pointer">
+    </div>
 
-                    <img
-                        src="assets/images/detailpage.png"
-                        class="thumb border border-[#ddd] cursor-pointer">
 
-                    <img
-                        src="assets/images/detailpage.png"
-                        class="thumb border border-[#ddd] cursor-pointer">
+    <!-- Thumbnail Slider -->
 
-                    <img
-                        src="assets/images/detailpage.png"
-                        class="thumb border border-[#ddd] cursor-pointer">
+    <div class="swiper thumbSwiper mt-4">
 
-                </div>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
 
             </div>
+
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
+
+            </div>
+
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
+
+            </div>
+
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
+
+            </div>
+
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
+
+            </div>
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
+
+            </div>
+            <div class="swiper-slide border border-[#D5D5D5] cursor-pointer">
+
+                <img src="assets/images/detailpage.png"
+                    class="w-full">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
             <!-- RIGHT SIDE -->
 
@@ -343,7 +408,7 @@ PRODUCT DETAILS SECTION
 
                 <!-- Title -->
 
-                <h1 class="text-[#131615] font-semibold text-[28px] lg:text-[34px] leading-tight">
+                <h1 class="text-[#131615] font-bold text-[22px] sm:text-[28px] lg:text-[30px] xl:text-[44px] leading-[28px] sm:leading-tight">
 
                     Royal Rajwadi Kundan Bridal
                     Necklace Set with Pearl Detailing
@@ -352,19 +417,19 @@ PRODUCT DETAILS SECTION
 
                 <!-- Rating -->
 
-                <div class="flex items-center gap-2 mt-4">
+                <div class="flex items-center gap-2 mt-5">
 
                     <div class="flex text-[#B4771E] text-[14px]">
 
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star text-[#d5d5d5]"></i>
+                       <img src="assets/images/svg-yello.png" alt="">
+                       <img src="assets/images/svg-yello.png" alt="">
+                       <img src="assets/images/svg-yello.png" alt="">
+                       <img src="assets/images/svg-yello.png" alt="">
+                       <img src="assets/images/SVG-gray.png" alt="">
 
                     </div>
 
-                    <span class="text-[#999] text-sm">
+                    <span class="text-[#757575] text-base md:text-xl">
                         (156)
                     </span>
 
@@ -372,54 +437,48 @@ PRODUCT DETAILS SECTION
 
                 <!-- Price -->
 
-                <div class="flex items-center gap-3 mt-4">
+                <div class="flex items-center gap-[10px] mt-4 md:mt-[29px]">
 
-                    <span class="text-[#B4771E] text-[42px] font-bold">
+                    <span class="text-[#B4771E] text-[22px] leading-[24px] sm:text-[30px] xl:text-[44px] xl:leading-[44px] font-bold">
                         ₹4,999
                     </span>
 
-                    <span class="line-through text-[#999] text-[24px]">
+                    <span class="line-through text-[#757575] text-[22px] leading-[24px] xl:text-[26px] xl:leading-[26px]">
                         ₹7,999
                     </span>
 
                 </div>
 
-                <p class="text-[#666] mt-1">
+                <p class="text-[#3D403F] mt-4 md:mt-5 text-base sm:text-xl xl:text-[22px]">
                     Inclusive of all taxes
                 </p>
 
                 <!-- Quantity -->
 
-                <div class="flex items-center gap-4 mt-8">
+                <div class="flex items-center gap-4 mt-5 lg:mt-[30px]">
 
-                    <span class="text-[#131615] text-[15px]">
+                    <span class="text-[#131615] text-base md:text-xl sm:text-[22px] xl:text-[24px] leading-[24px]">
                         Quantity:
                     </span>
 
-                    <div class="flex items-center border border-[#ddd]">
+                    <div class="flex items-center border border-[#D5D5D5] py-[10px] md:py-[14px] px-[10px] md:px-[15px] gap-[15px]">
 
                         <button
                             id="minusBtn"
-                            class="w-10 h-10 text-[#666]">
-
-                            −
-
+                            class="text-[#757575] text-base md:text-lg font-bold">
+                          <i class="fa-solid fa-minus"></i>
                         </button>
 
                         <span
                             id="qty"
-                            class="w-10 text-center text-[#131615]">
-
+                            class="text-base md:text-xl text-center text-[#131615] w-5">
                             1
-
                         </span>
 
                         <button
                             id="plusBtn"
-                            class="w-10 h-10 text-[#666]">
-
-                            +
-
+                            class="text-[#757575] text-base md:text-lg ">
+                           <i class="fa-solid fa-plus"></i>
                         </button>
 
                     </div>
@@ -428,17 +487,17 @@ PRODUCT DETAILS SECTION
 
                 <!-- Buttons -->
 
-                <div class="grid sm:grid-cols-2 gap-3 mt-6">
+                <div class="grid xl:grid-cols-2 gap-3 mt-6">
 
                     <button
-                        class="h-[52px] bg-[#B4771E] text-white font-medium hover:bg-[#b67c20] transition">
+                        class="h-[50px] md:h-[66px] bg-[#B4771E] text-white font-medium hover:bg-[#b67c20] transition text-lg md:text-[22px]">
 
                         Add To Cart
 
                     </button>
 
                     <button
-                        class="h-[52px] border border-[#444] font-medium">
+                        class="h-[50px] md:h-[66px] border border-[#444] font-medium  text-lg md:text-[22px]">
 
                         Buy Now
 
@@ -448,43 +507,43 @@ PRODUCT DETAILS SECTION
 
                 <!-- Size -->
 
-                <div class="mt-6">
+                <div class="mt-[30px]">
 
-                    <h4 class="text-[15px] font-medium mb-3">
+                    <h4 class="text-xl md:text-[24px] font-medium mb-[15px] text-[#131615]">
                         Size:
                     </h4>
 
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-4 md:gap-[20px]">
 
-                        <button class="w-12 h-10 bg-[#B4771E] text-white text-sm">
+                        <button class="w-[69px] h-10 bg-[#B4771E] text-white text-base lg:text-xl">
                             4.0
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             4.5
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             5.0
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             6.0
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             6.5
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             7.0
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             7.5
                         </button>
 
-                        <button class="w-12 h-10 border border-[#ddd] text-sm">
+                        <button class="w-[69px] h-10 border border-[#D5D5D5] text-base lg:text-xl">
                             8.0
                         </button>
 
@@ -494,64 +553,106 @@ PRODUCT DETAILS SECTION
 
                 <!-- Accordion -->
 
-                <div class="mt-8 border-t border-[#ddd]">
+             <div class="">
 
-                    <details open class="border-b border-[#ddd]">
+    <!-- Product Description -->
+    <details class="group" open>
 
-                        <summary class="py-4 cursor-pointer font-medium">
+        <summary  class="list-none flex items-center justify-between pt-[32px] pb-[15px] cursor-pointer border-b border-[#D9D9D9]">
 
-                            Product Description
+            <h3 class="text-xl md:text-[24px] font-medium text-[#1A1A1A]">
+                Product Description
+            </h3>
 
-                        </summary>
+            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+                fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
 
-                        <div class="pb-5 text-[#666] leading-8 text-[15px]">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7" />
 
-                            Elevate your wedding and festive look with our
-                            Royal Rajwadi Kundan Bridal Necklace Set crafted
-                            with elegant pearl detailing and premium imitation stones.
+            </svg>
 
-                            Inspired by timeless Indian jewelry traditions,
-                            this handcrafted necklace set offers a luxurious
-                            appearance perfect for bridal functions, receptions,
-                            festive celebrations, and special occasions.
+        </summary>
 
-                        </div>
+        <div class="text-base md:text-xl leading-[30px] text-[#3D403F] pt-5">
 
-                    </details>
+            Elevate your wedding and festive look with our
+            Royal Rajwadi Kundan Bridal Necklace Set crafted
+            with elegant pearl detailing and premium imitation stones.
 
-                    <details class="border-b border-[#ddd]">
+            Inspired by timeless Indian jewelry traditions,
+            this handcrafted necklace set offers a luxurious
+            appearance perfect for bridal functions, receptions,
+            festive celebrations, and special occasions.
 
-                        <summary class="py-4 cursor-pointer font-medium">
+        </div>
 
-                            Product Information
+    </details>
 
-                        </summary>
 
-                        <div class="pb-5 text-[#666]">
+    <!-- Product Information -->
+  
+    <details class="group">
 
-                            Premium Quality Imitation Jewelry
+             <summary  class="list-none flex items-center justify-between pt-[25px] pb-[15px] cursor-pointer border-b border-[#D9D9D9]">
 
-                        </div>
+            <h3 class="text-xl md:text-[24px] font-medium text-[#1A1A1A]">
+                Product Information
+            </h3>
 
-                    </details>
+            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+                fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
 
-                    <details class="border-b border-[#ddd]">
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7" />
 
-                        <summary class="py-4 cursor-pointer font-medium">
+            </svg>
 
-                            Product Highlights
+          </summary>
 
-                        </summary>
+             <div class="text-base md:text-xl leading-[30px] text-[#3D403F] pt-5">
 
-                        <div class="pb-5 text-[#666]">
+            Premium Quality Imitation Jewelry
 
-                            Bridal Collection • Wedding Wear • Premium Finish
+        </div>
 
-                        </div>
+    </details>
 
-                    </details>
 
-                </div>
+    <!-- Product Highlights -->
+    <details class="group">
+
+            <summary  class="list-none flex items-center justify-between pt-[25px] pb-[15px] cursor-pointer border-b border-[#D9D9D9]">
+
+             <h3 class="text-xl md:text-[24px] font-medium text-[#1A1A1A]">
+                Product Highlights
+            </h3>
+
+            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180"
+                fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24">
+
+                <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7" />
+
+            </svg>
+
+        </summary>
+
+        <div class="text-base md:text-xl leading-[30px] text-[#3D403F] pt-5">
+
+            Bridal Collection • Wedding Wear • Premium Finish
+
+        </div>
+
+    </details>
+
+</div>
 
             </div>
 
@@ -565,19 +666,19 @@ PRODUCT DETAILS SECTION
 CUSTOMER REVIEWS SECTION
 ========================= -->
 
-<section class="bg-[#f5f5f5] py-12 lg:py-20">
+<section>
 
-    <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+    <div class="container-1440">
 
         <!-- Heading -->
 
         <div class="text-center mb-10 lg:mb-14">
 
-            <h2 class="font-moglan text-[#131615] text-[40px] md:text-[56px] lg:text-[68px] leading-none">
+            <h2 class="font-moglan text-[#131615] text-[30px] md:text-[40px] lg:text-[64px] leading-[46px] md:leading-[60px] lg:leading-[64px]">
                 Customer Reviews & Ratings
             </h2>
 
-            <p class="mt-4 text-[#666] text-[16px]">
+            <p class="mt-5 text-[#3D403F] text-[20px] md:text-[22px] xl:text-[24px] leading-[26px]">
                 See what our customers are saying about this product.
             </p>
 
@@ -585,25 +686,25 @@ CUSTOMER REVIEWS SECTION
 
         <!-- Reviews Wrapper -->
 
-        <div class="max-w-[1120px] mx-auto space-y-6">
+        <div class="space-y-6">
 
             <!-- Review 1 -->
 
-            <div class="border border-[#D5D5D5] bg-[#f7f7f7] p-5 lg:p-6">
+            <div class="border border-[#D5D5D5] p-5 lg:p-[30px]">
 
                 <!-- Date -->
 
-                <h4 class="text-[#131615] text-[18px] font-medium">
+                <h4 class="text-[#131615] text-lg md:text-[22px] md:leading-[22px] font-medium">
                     Friday, May 15, 2026
                 </h4>
 
                 <!-- Review Text -->
 
-                <p class="mt-4 text-[#555] text-[17px] leading-8">
+                <p class="mt-[14px] md:mt-[17px] text-[#3D403F] text-base md:text-xl">
                     The necklace looked stunning and elegant for my wedding day.
                 </p>
 
-                <div class="border-t border-[#e3e3e3] mt-6 pt-5">
+                <div class="border-t border-[#e3e3e3] mt-4 md:mt-6 pt-5">
 
                     <div class="flex items-center gap-4">
 
@@ -612,21 +713,21 @@ CUSTOMER REVIEWS SECTION
                         <img
                             src="assets/images/star1.jpg"
                             alt=""
-                            class="w-[42px] h-[42px] rounded-full object-cover">
+                            class="w-[60px] h-[60px] rounded-full">
 
                         <div>
 
-                            <h5 class="text-[#131615] text-[18px]">
+                            <h5 class="text-[#131615] text-lg md:text-xl">
                                 Meera Patel
                             </h5>
 
-                            <div class="flex gap-1 mt-1 text-[#B4771E] text-[18px]">
+                            <div class="flex mt-1 text-[#B4771E] text-[18px]">
 
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star text-[#d3d3d3]"></i>
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/SVG-gray.png" alt="">
 
                             </div>
 
@@ -640,26 +741,21 @@ CUSTOMER REVIEWS SECTION
 
             <!-- Review 2 -->
 
-            <div class="border border-[#D5D5D5] bg-[#f7f7f7] p-5 lg:p-6">
+               <div class="border border-[#D5D5D5] p-5 lg:p-[30px]">
 
                 <!-- Date -->
 
-                <h4 class="text-[#131615] text-[18px] font-medium">
-                    Thursday, May 28, 2026
+               <h4 class="text-[#131615] text-lg md:text-[22px] md:leading-[22px] font-medium">
+                   Thrusday, May 28, 2026
                 </h4>
 
                 <!-- Review Text -->
 
-                <p class="mt-4 text-[#555] text-[17px] leading-8">
-
-                    The necklace exceeded my expectations with its elegant design,
-                    premium finishing, and beautiful detailing. It perfectly
-                    complemented my wedding outfit, felt comfortable to wear,
-                    and received countless compliments throughout the celebration.
-
+                <p class="mt-[14px] md:mt-[17px] text-[#3D403F] text-base md:text-xl">
+                   The necklace exceeded my expectations with its elegant design, premium finishing, and beautiful detailing. It perfectly complemented my wedding outfit, felt comfortable to wear, and received countless compliments throughout the celebration.
                 </p>
 
-                <div class="border-t border-[#e3e3e3] mt-6 pt-5">
+                <div class="border-t border-[#e3e3e3] mt-4 md:mt-6 pt-5">
 
                     <div class="flex items-center gap-4">
 
@@ -668,21 +764,21 @@ CUSTOMER REVIEWS SECTION
                         <img
                             src="assets/images/star2.jpg"
                             alt=""
-                            class="w-[42px] h-[42px] rounded-full object-cover">
+                            class="w-[60px] h-[60px] rounded-full object-cover">
 
                         <div>
 
-                            <h5 class="text-[#131615] text-[18px]">
-                                Anjali Verma
+                             <h5 class="text-[#131615] text-lg md:text-xl">
+                              Anjali Verma
                             </h5>
 
-                            <div class="flex gap-1 mt-1 text-[#B4771E] text-[18px]">
+                            <div class="flex mt-1 text-[#B4771E] text-[18px]">
 
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star text-[#d3d3d3]"></i>
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/svg-yello.png" alt="">
+                               <img src="assets/images/SVG-gray.png" alt="">
 
                             </div>
 
@@ -704,15 +800,15 @@ CUSTOMER REVIEWS SECTION
 YOU MAY ALSO LIKE
 ========================= -->
 
-<section class="bg-[#f5f5f5] py-12 lg:py-20">
+<section class="py-10 lg:py-[120px]">
 
-    <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+    <div class="container-1440">
 
         <!-- Heading -->
 
-        <div class="text-center mb-10 lg:mb-14">
+        <div class="text-center mb-10 lg:mb-10">
 
-            <h2 class="font-moglan text-[#131615] text-[40px] md:text-[56px] lg:text-[72px] leading-none">
+            <h2 class="font-moglan text-[#131615] text-[30px] md:text-[40px] lg:text-[64px] leading-[46px] md:leading-[60px] lg:leading-[64px]">
                 You May Also Like
             </h2>
 
@@ -722,295 +818,239 @@ YOU MAY ALSO LIKE
 
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
 
-            <!-- Product Card -->
+           
+                <div class="border border-[#D5D5D5]">
 
-            <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
+                    <div class="relative overflow-hidden">
 
-                <!-- Image -->
+                        <!-- Sale Ribbon -->
 
-                <div class="relative overflow-hidden">
+                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+                            <span
+                                class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
+                                SALE
+                            </span>
+                        </div>
 
-                    <!-- Sale Label -->
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
 
-                    <div
-                        class="absolute top-0 left-0 z-10 bg-[#ff1d1d] text-white text-[11px] font-medium px-4 py-1 rotate-[-32deg] origin-top-left -translate-x-3 translate-y-3">
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                        SALE
+                            <img src="assets/images/SVG.png" alt="">
+
+                        </button>
 
                     </div>
 
-                    <!-- Wishlist -->
+                    <div class="p-[25px]">
 
-                    <button
-                        class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
+                        <h3 class="text-lg text-[#131615] truncate">
+                           Traditional Kundan Meenakari Bridal Choker Necklace Set
+                        </h3>
 
-                        <i class="fa-regular fa-heart text-[#131615] text-sm"></i>
+                        <div class="flex items-center gap-1 mt-[9px]">
 
-                    </button>
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
 
-                    <img
-                        src="assets/images/detailpage.png"
-                        alt=""
-                        class="w-full object-cover transition duration-300 hover:scale-105">
-
-                </div>
-
-                <!-- Content -->
-
-                <div class="p-5">
-
-                    <h3 class="text-[#131615] text-[17px] truncate">
-                        Traditional Kundan Meenakari...
-                    </h3>
-
-                    <!-- Rating -->
-
-                    <div class="flex items-center gap-2 mt-2">
-
-                        <div class="flex text-[#B4771E] text-[13px]">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star text-[#d9d9d9]"></i>
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
 
                         </div>
 
-                        <span class="text-[#999] text-[12px]">
-                            (156)
-                        </span>
+                        <div class="mt-1 flex items-center gap-1">
 
-                    </div>
+                            <span class="text-xl font-medium text-[#131615]">
+                               ₹3,799
+                            </span>
 
-                    <!-- Price -->
-
-                    <div class="flex items-center gap-2 mt-3">
-
-                        <span class="text-[#131615] text-[20px] font-medium">
-                            ₹3,799
-                        </span>
-
-                        <span class="line-through text-[#999] text-[16px]">
-                            ₹6,499
-                        </span>
-
-                    </div>
-
-                    <!-- Button -->
-
-                    <button
-                        class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
-            </div>
-
-            <!-- Product Card -->
-
-            <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                <div class="relative overflow-hidden">
-
-                    <button
-                        class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                        <i class="fa-solid fa-heart text-red-500 text-sm"></i>
-
-                    </button>
-
-                    <img
-                        src="assets/images/detailpage.png"
-                        alt=""
-                        class="w-full object-cover transition duration-300 hover:scale-105">
-
-                </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-[#131615] text-[17px] truncate">
-                        Antique Finish Lakshmi Templ...
-                    </h3>
-
-                    <div class="flex items-center gap-2 mt-2">
-
-                        <div class="flex text-[#B4771E] text-[13px]">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star text-[#d9d9d9]"></i>
+                            <span class="text-base text-[#757575] line-through">
+                              ₹6,499
+                            </span>
 
                         </div>
 
-                        <span class="text-[#999] text-[12px]">
-                            (156)
-                        </span>
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
 
                     </div>
 
-                    <div class="flex items-center gap-2 mt-3">
+                </div>
 
-                        <span class="text-[#131615] text-[20px] font-medium">
-                            ₹4,299
-                        </span>
+                
+                <div class="border border-[#D5D5D5]">
 
-                        <span class="line-through text-[#999] text-[16px]">
-                            ₹6,999
-                        </span>
+                    <div class="relative overflow-hidden">
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/red-verctor-heart.png" alt="">
+
+                        </button>
 
                     </div>
 
-                    <button
-                        class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
+                    <div class="p-[25px]">
 
-                        Add to Cart
+                        <h3 class="text-lg text-[#131615] truncate">
+                           Antique Finish Lakshmi Temple Jewelry Necklace Set for Weddings
+                        </h3>
 
-                    </button>
+                        <div class="flex items-center gap-1 mt-[9px]">
 
-                </div>
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
 
-            </div>
-
-            <!-- Product Card -->
-
-            <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                <div class="relative overflow-hidden">
-
-                    <button
-                        class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                        <i class="fa-regular fa-heart text-[#131615] text-sm"></i>
-
-                    </button>
-
-                    <img
-                        src="assets/images/detailpage.png"
-                        alt=""
-                        class="w-full object-cover transition duration-300 hover:scale-105">
-
-                </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-[#131615] text-[17px] truncate">
-                        Elegant Pearl and Kundan Fest...
-                    </h3>
-
-                    <div class="flex items-center gap-2 mt-2">
-
-                        <div class="flex text-[#B4771E] text-[13px]">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star text-[#d9d9d9]"></i>
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
 
                         </div>
 
-                        <span class="text-[#999] text-[12px]">
-                            (156)
-                        </span>
+                        <div class="mt-1 flex items-center gap-1">
 
-                    </div>
+                            <span class="text-xl font-medium text-[#131615]">
+                                ₹4,299
+                            </span>
 
-                    <div class="flex items-center gap-2 mt-3">
-
-                        <span class="text-[#131615] text-[20px] font-medium">
-                            ₹2,799
-                        </span>
-
-                        <span class="line-through text-[#999] text-[16px]">
-                            ₹4,599
-                        </span>
-
-                    </div>
-
-                    <button
-                        class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
-            </div>
-
-            <!-- Product Card -->
-
-            <div class="border border-[#D5D5D5] bg-[#f7f7f7]">
-
-                <div class="relative overflow-hidden">
-
-                    <button
-                        class="absolute top-3 right-3 z-10 w-8 h-8 bg-white rounded-md flex items-center justify-center">
-
-                        <i class="fa-regular fa-heart text-[#131615] text-sm"></i>
-
-                    </button>
-
-                    <img
-                        src="assets/images/detailpage.png"
-                        alt=""
-                        class="w-full object-cover transition duration-300 hover:scale-105">
-
-                </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-[#131615] text-[17px] truncate">
-                        Handcrafted Rajwadi Polki Bri...
-                    </h3>
-
-                    <div class="flex items-center gap-2 mt-2">
-
-                        <div class="flex text-[#B4771E] text-[13px]">
-
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star text-[#d9d9d9]"></i>
+                            <span class="text-base text-[#757575] line-through">
+                              ₹6,999
+                            </span>
 
                         </div>
 
-                        <span class="text-[#999] text-[12px]">
-                            (156)
-                        </span>
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
 
                     </div>
-
-                    <div class="flex items-center gap-2 mt-3">
-
-                        <span class="text-[#131615] text-[20px] font-medium">
-                            ₹4,699
-                        </span>
-
-                        <span class="line-through text-[#999] text-[16px]">
-                            ₹7,499
-                        </span>
-
-                    </div>
-
-                    <button
-                        class="w-full h-[46px] border border-[#666] mt-5 hover:bg-[#B4771E] hover:text-white hover:border-[#B4771E] transition">
-
-                        Add to Cart
-
-                    </button>
 
                 </div>
 
-            </div>
+                   <div class="border border-[#D5D5D5]">
 
+                    <div class="relative overflow-hidden">
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/SVG.png" alt="">
+
+                        </button>
+
+                    </div>
+
+                    <div class="p-[25px]">
+
+                        <h3 class="text-lg text-[#131615] truncate">
+                           Elegant Pearl and Kundan Festive Necklace Set with Drop Earrings
+                        </h3>
+
+                        <div class="flex items-center gap-1 mt-[9px]">
+
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
+
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
+
+                        </div>
+
+                        <div class="mt-1 flex items-center gap-1">
+
+                            <span class="text-xl font-medium text-[#131615]">
+                                ₹2,799
+                            </span>
+
+                            <span class="text-base text-[#757575] line-through">
+                               ₹4,599
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+                   <div class="border border-[#D5D5D5]">
+
+                    <div class="relative overflow-hidden">
+
+                        <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+
+                        <button
+                            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
+
+                            <img src="assets/images/SVG.png" alt="">
+
+                        </button>
+
+                    </div>
+
+                    <div class="p-[25px]">
+
+                        <h3 class="text-lg text-[#131615] truncate">
+                            Handcrafted Rajwadi Polki Bridal Jewelry Necklace Set for Women
+                        </h3>
+
+                        <div class="flex items-center gap-1 mt-[9px]">
+
+                            <div class="text-[#B4771E] text-[base]">
+                                ★★★★★
+                            </div>
+
+                            <span class="text-base text-[#757575]">
+                                (156)
+                            </span>
+
+                        </div>
+
+                        <div class="mt-1 flex items-center gap-1">
+
+                            <span class="text-xl font-medium text-[#131615]">
+                                ₹4,699
+                            </span>
+
+                            <span class="text-base text-[#757575] line-through">
+                               ₹7,499
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+
+                            Shop Now
+
+                        </button>
+
+                    </div>
+
+                </div>
         </div>
 
     </div>
@@ -1078,7 +1118,7 @@ YOU MAY ALSO LIKE
 
 <footer class="bg-[#131615]">
 
-    <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+    <div class="container-1440">
 
     <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-10 py-14">
 
@@ -1200,7 +1240,7 @@ YOU MAY ALSO LIKE
 
     <div class="border-t border-white/10">
 
-        <div class="max-w-[1440px] mx-auto px-5 lg:px-2">
+        <div class="container-1440">
 
             <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-5">
 
@@ -1280,14 +1320,14 @@ thumbs.forEach((thumb) => {
 
             item.classList.add(
                 "border",
-                "border-[#ddd]"
+                "border-[#D5D5D5]"
             );
 
         });
 
         this.classList.remove(
             "border",
-            "border-[#ddd]"
+            "border-[#D5D5D5]"
         );
 
         this.classList.add(
@@ -1325,6 +1365,52 @@ minusBtn.addEventListener("click", () => {
         qty.innerText = count;
 
     }
+
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+const thumbSwiper = new Swiper(".thumbSwiper", {
+
+    spaceBetween: 15,
+
+    slidesPerView: 5,
+
+    watchSlidesProgress: true,
+
+    breakpoints: {
+
+        0: {
+
+            slidesPerView: 4,
+
+        },
+
+        768: {
+
+            slidesPerView: 5,
+
+        }
+
+    }
+
+});
+
+
+const mainSwiper = new Swiper(".mainSwiper", {
+
+    spaceBetween: 10,
+
+    loop: true,
+
+    thumbs: {
+
+        swiper: thumbSwiper,
+
+    },
 
 });
 

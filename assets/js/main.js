@@ -54,7 +54,7 @@ let state = {
  
 // ── Helpers ───────────────────────────────────────────────────
 function stars(n) {
-  return Array.from({length:5},(_,i)=>`<span style="color:${i<n?'#e2a000':'#ddd'}">★</span>`).join('');
+  return Array.from({length:5},(_,i)=>`<span style="color:${i<n?'#e2a000':'#D5D5D5'}">★</span>`).join('');
 }
 function fmt(n){ return n.toLocaleString('en-IN'); }
  
@@ -171,6 +171,9 @@ function getFiltered() {
  
 // ── Render ────────────────────────────────────────────────────
 function render() {
+  const grid = document.getElementById('productGrid');
+  if (!grid) return;
+
   const filtered = getFiltered();
   const total = filtered.length;
   const totalPages = Math.ceil(total/state.perPage);
@@ -179,11 +182,13 @@ function render() {
   const pageItems = filtered.slice(start, start+state.perPage);
  
   // Count
-  document.getElementById('resultCount').textContent =
-    total ? `Showing ${start+1}–${Math.min(start+state.perPage,total)} of ${total} results` : 'No results found';
+  const resultCountEl = document.getElementById('resultCount');
+  if (resultCountEl) {
+    resultCountEl.textContent =
+      total ? `Showing ${start+1}–${Math.min(start+state.perPage,total)} of ${total} results` : 'No results found';
+  }
  
   // Grid
-  const grid = document.getElementById('productGrid');
   const noRes = document.getElementById('noResults');
   if (!pageItems.length) { grid.innerHTML=''; noRes.classList.remove('hidden'); }
   else {
