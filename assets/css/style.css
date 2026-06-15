@@ -276,6 +276,9 @@
   .top-\[10px\] {
     top: 10px;
   }
+  .top-\[16px\] {
+    top: 16px;
+  }
   .top-\[29px\] {
     top: 29px;
   }
@@ -318,6 +321,12 @@
   .right-\[4\%\] {
     right: 4%;
   }
+  .right-\[8px\] {
+    right: 8px;
+  }
+  .right-\[20px\] {
+    right: 20px;
+  }
   .bottom-0 {
     bottom: 0;
   }
@@ -338,6 +347,12 @@
   }
   .left-\[3\%\] {
     left: 3%;
+  }
+  .left-\[8px\] {
+    left: 8px;
+  }
+  .left-\[20px\] {
+    left: 20px;
   }
   .left-\[38\%\] {
     left: 38%;
@@ -368,6 +383,15 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
   .mt-0 {
     margin-top: 0;
@@ -797,6 +821,9 @@
   }
   .max-w-\[40px\] {
     max-width: 40px;
+  }
+  .max-w-\[150px\] {
+    max-width: 150px;
   }
   .max-w-\[240px\] {
     max-width: 240px;
@@ -1243,6 +1270,9 @@
   .bg-\[\#16A135\] {
     background-color: #16A135;
   }
+  .bg-\[\#17A934\] {
+    background-color: #17A934;
+  }
   .bg-\[\#050b0d\] {
     background-color: #050b0d;
   }
@@ -1576,6 +1606,9 @@
   .pt-1 {
     padding-top: var(--spacing);
   }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
@@ -1818,6 +1851,10 @@
   .leading-\[30px\] {
     --tw-leading: 30px;
     line-height: 30px;
+  }
+  .leading-\[32px\] {
+    --tw-leading: 32px;
+    line-height: 32px;
   }
   .leading-none {
     --tw-leading: 1;
@@ -2962,6 +2999,11 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .md\:text-\[15px\] {
+    @media (width >= 48rem) {
+      font-size: 15px;
+    }
+  }
   .md\:text-\[16px\] {
     @media (width >= 48rem) {
       font-size: 16px;
@@ -3154,6 +3196,16 @@
       height: 56px;
     }
   }
+  .lg\:h-\[62px\] {
+    @media (width >= 64rem) {
+      height: 62px;
+    }
+  }
+  .lg\:h-\[66px\] {
+    @media (width >= 64rem) {
+      height: 66px;
+    }
+  }
   .lg\:h-\[70px\] {
     @media (width >= 64rem) {
       height: 70px;
@@ -3242,6 +3294,16 @@
   .lg\:grid-cols-\[1fr_320px\] {
     @media (width >= 64rem) {
       grid-template-columns: 1fr 320px;
+    }
+  }
+  .lg\:grid-cols-\[1fr_400px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 1fr 400px;
+    }
+  }
+  .lg\:grid-cols-\[1fr_450px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 1fr 450px;
     }
   }
   .lg\:grid-cols-\[300px_1fr\] {
