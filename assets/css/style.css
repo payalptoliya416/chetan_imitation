@@ -277,6 +277,15 @@
   .top-\[70px\] {
     top: 70px;
   }
+  .top-\[90\%\] {
+    top: 90%;
+  }
+  .top-\[calc\(100\%-1px\)\] {
+    top: calc(100% - 1px);
+  }
+  .top-\[calc\(100\%-120px\)\] {
+    top: calc(100% - 120px);
+  }
   .top-full {
     top: 100%;
   }
@@ -1493,6 +1502,12 @@
   }
   .pb-0 {
     padding-bottom: 0;
+  }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
