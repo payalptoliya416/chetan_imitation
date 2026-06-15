@@ -478,3 +478,4 @@ sidebar.style.transform="translateX(-100%)";
 overlay.classList.add("hidden");
 
 }
+

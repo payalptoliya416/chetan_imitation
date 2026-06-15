@@ -340,3 +340,26 @@ summary {
         transform: translateX(-100%);
     }
 }
+
+.payment-option{
+    @apply flex items-center gap-5 px-5 py-4 border border-[#D5D5D5] cursor-pointer;
+}
+
+.payment-option.active{
+    @apply border-[#B4771E];
+}
+
+.payment-option input[type="radio"]{
+    @apply appearance-none w-7 h-7 rounded-full border border-[#D0D0D0];
+}
+
+.payment-option input[type="radio"]:checked{
+    border: 8px solid #B4771E;
+}
+.payment-option{
+    border:1px solid #D5D5D5;
+}
+
+.payment-option.active{
+    border:1px solid #B4771E;
+}
