@@ -415,3 +415,30 @@ function toggleMenu(menuId, iconId){
     }
 
 }
+
+// ------desktop menu 
+function showSubmenu(id,btn){
+
+    document.querySelectorAll('.submenu').forEach(menu=>{
+        menu.classList.add('hidden');
+    });
+
+    document.getElementById(id).classList.remove('hidden');
+
+
+    document.querySelectorAll('.menu-btn i').forEach(icon=>{
+
+        icon.classList.remove('fa-minus');
+
+        icon.classList.add('fa-plus');
+
+    });
+
+
+    const icon=btn.querySelector('i');
+
+    icon.classList.remove('fa-plus');
+
+    icon.classList.add('fa-minus');
+
+}
