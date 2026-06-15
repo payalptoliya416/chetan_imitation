@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Tailwind CSS CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-        <!-- Custom Fonts -->
-           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="assets/css/font.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -80,239 +79,377 @@
                             </button>
 
                             <!-- Dropdown -->
-                        <div class="absolute top-full left-0 bg-white w-[760px] p-6 shadow-xl
-                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                            <div
+                                class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
 
-                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-start gap-4">
 
-                                <!-- Left -->
-                                <div class="border border-[#D5D5D5] p-5">
+                                    <!-- Left -->
+                                    <div class="w-[270px] border border-[#D5D5D5] p-4 bg-white">
 
-                                    <button onclick="showSubmenu('necklace',this)"
-                                        class="menu-btn w-full flex justify-between items-center pb-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                        <div class="relative">
 
-                                        <span>Necklace</span>
+                                            <button 
+                                            onmouseenter="showSubmenu('necklace',this)"
+                                                class="menu-btn w-full flex justify-between items-center pb-[15px] border-b text-base text-[#131615]">
 
-                                        <i class="fa-solid fa-minus"></i>
+                                                <span>Necklace</span>
 
-                                    </button>
+                                                <i class="fa-solid fa-plus"></i>
 
-                                    <button onclick="showSubmenu('bangal',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                            </button>
 
-                                        <span>Bangal & Kadali</span>
+                                            <div id="necklace"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
 
-                                        <i class="fa-solid fa-plus"></i>
+                                                <a href="#" class="block pb-3 border-b hover:text-[#B4771E]">
+                                                    Short Necklace
+                                                </a>
 
-                                    </button>
+                                                <a href="#" class="block py-3 border-b hover:text-[#B4771E]">
+                                                    Long Necklace
+                                                </a>
 
-                                    <button onclick="showSubmenu('bracelet',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                                <a href="#" class="block pt-3 hover:text-[#B4771E]">
+                                                    Leriyat Necklace
+                                                </a>
 
-                                        <span>Braslate</span>
+                                            </div>
 
-                                        <i class="fa-solid fa-plus"></i>
+                                        </div>
 
-                                    </button>
+                                        <div class="relative">
 
-                                    <button onclick="showSubmenu('watch',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                            <button 
+                                            
+                                                class="menu-btn w-full flex justify-between items-center py-[15px] border-b">
 
-                                        <span>Watch</span>
+                                                <span>Bangal & Kadali</span>
 
-                                        <i class="fa-solid fa-plus"></i>
+                                                
 
-                                    </button>
-
-                                    <button onclick="showSubmenu('hathful',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Hathful</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('ring',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Ring</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('chain',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Chain & Mala</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('pendal',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Pendal & Buti</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('juda',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Juda & Kandora</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('other',this)"
-                                        class="menu-btn w-full flex justify-between items-center pt-[15px] text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Other</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                </div>
+                                            </button>
 
 
-                                <!-- Right -->
-                                <div class="border border-[#D5D5D5]">
+                                        </div>
 
-                                    <!-- Necklace -->
-                                    <div id="necklace" class="submenu p-5">
+                                        <div class="relative">
 
-                                         <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Short Necklace
-    </a>
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 border-b hover:text-[#B4771E]">
-        Long Necklace
-    </a>
+                                                <span>Bracelet</span>
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Leriyat Necklace
-    </a>
+                                                
+
+                                            </button>
+
+                                            <div id="bracelet"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block pb-4 border-b hover:text-[#B4771E]">
+                                                    Chain Bracelet
+                                                </a>
+
+                                                <a href="#" class="block pt-4 hover:text-[#B4771E]">
+                                                    Stone Bracelet
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Watch</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="watch"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block pb-4 border-b hover:text-[#B4771E]">
+                                                    Classic Watch
+                                                </a>
+
+                                                <a href="#" class="block pt-4 hover:text-[#B4771E]">
+                                                    Ladies Watch
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Hathful</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="hathful"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Hathful Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Ring</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="ring"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Ring Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Chain & Mala</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="chain"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Chain & Mala Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Pendal & Buti</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="pendal"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Pendal & Buti Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Juda & Kandora</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="juda"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Juda & Kandora Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <button
+                                            class="menu-btn w-full flex justify-between items-center pt-[15px] text-base text-[#131615]">
+
+                                            <span>Other</span>
+
+                                        </button>
 
                                     </div>
 
 
-                                    <!-- Bangal -->
-                                    <div id="bangal" class="submenu hidden p-5">
+                                    <!-- Right -->
+                                    <div id="submenuBox" class="hidden bg-white border border-[#D5D5D5] min-w-[250px]">
 
-                                       <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Gold Bangal
-    </a>
+                                        <!-- Necklace -->
+                                        <div id="necklace" class="submenu p-5">
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 border-b hover:text-[#B4771E]">
-        Silver Bangal
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Short Necklace
+                                            </a>
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Kadali
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 border-b hover:text-[#B4771E]">
+                                                Long Necklace
+                                            </a>
 
-                                    </div>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Leriyat Necklace
+                                            </a>
 
-
-                                    <!-- Bracelet -->
-                                    <div id="bracelet" class="submenu hidden p-5">
-
-                                       <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Chain Bracelet
-    </a>
-
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Stone Bracelet
-    </a>
-
-                                    </div>
+                                        </div>
 
 
-                                    <!-- Watch -->
-                                    <div id="watch" class="submenu hidden p-5">
+                                        <!-- Bangal -->
+                                        <div id="bangal" class="submenu hidden p-5">
 
-                                       a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Classic Watch
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Gold Bangal
+                                            </a>
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Ladies Watch
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 border-b hover:text-[#B4771E]">
+                                                Silver Bangal
+                                            </a>
 
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Kadali
+                                            </a>
 
-                                    </div>
-
-
-                                    <!-- Hathful -->
-                                    <div id="hathful" class="submenu hidden p-5">
-
-                                        <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Hathful Collection
-    </a>
+                                        </div>
 
 
-                                    </div>
+                                        <!-- Bracelet -->
+                                        <div id="bracelet" class="submenu hidden p-5">
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Chain Bracelet
+                                            </a>
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Stone Bracelet
+                                            </a>
+
+                                        </div>
 
 
-                                    <!-- Ring -->
-                                    <div id="ring" class="submenu hidden p-5">
+                                        <!-- Watch -->
+                                        <div id="watch" class="submenu hidden p-5">
 
-                                          <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Ring Collection
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Classic Watch
+                                            </a>
 
-                                    </div>
-
-
-                                    <!-- Chain -->
-                                    <div id="chain" class="submenu hidden p-5">
-
-                                        <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Pendal & Buti Collection
-    </a>
-
-                                    </div>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Ladies Watch
+                                            </a>
 
 
-                                    <!-- Pendal -->
-                                    <div id="pendal" class="submenu hidden p-5">
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Chain & Mala Collection
-    </a>
-
-                                    </div>
+                                        </div>
 
 
-                                    <!-- Juda -->
-                                    <div id="juda" class="submenu hidden p-5">
-<a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Juda & Kandora Collection
-    </a>
+                                        <!-- Hathful -->
+                                        <div id="hathful" class="submenu hidden p-5">
 
-                                    </div>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Hathful Collection
+                                            </a>
 
 
-                                    <!-- Other -->
-                                    <div id="other" class="submenu hidden p-5">
+                                        </div>
 
-                                      
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Other Collection
-    </a>
+
+                                        <!-- Ring -->
+                                        <div id="ring" class="submenu hidden p-5">
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Ring Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Chain -->
+                                        <div id="chain" class="submenu hidden p-5">
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Pendal & Buti Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Pendal -->
+                                        <div id="pendal" class="submenu hidden p-5">
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Chain & Mala Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Juda -->
+                                        <div id="juda" class="submenu hidden p-5">
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Juda & Kandora Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Other -->
+                                        <div id="other" class="submenu hidden p-5">
+
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Other Collection
+                                            </a>
+
+                                        </div>
 
                                     </div>
 
                                 </div>
 
                             </div>
-
-                        </div>
                         </div>
 
                         <a href="about.html" class="text-white  text-lg  pb-1">
@@ -334,11 +471,12 @@
                             <input type="text" placeholder="Search"
                                 class="w-[200px] xl:w-[370px] rounded-sm h-[40px] border border-[#D5D5D533] px-4 text-white text-base placeholder:text-base bg-[#FFFFFF08]">
 
-                         <img src="assets/images/search.png" alt="" class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
+                            <img src="assets/images/search.png" alt=""
+                                class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
 
                         </div>
 
-                         <a href="#" class="relative">
+                        <a href="#" class="relative">
                             <img src="assets/images/heart.png" alt="heart">
 
                             <span
@@ -347,8 +485,8 @@
                             </span>
                         </a>
 
-                            <a href="#" class="relative">
-                            <img src="assets/images/cart.png" alt="cart" >
+                        <a href="#" class="relative">
+                            <img src="assets/images/cart.png" alt="cart">
 
                             <span
                                 class="absolute -top-1 -right-1 w-[14px] h-[14px] rounded-full bg-[#B78326] text-white text-[9px] font-medium flex items-center justify-center pt-1">
@@ -383,18 +521,18 @@
 
         <div class="bg-[#050b0d]">
 
-        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
+            <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
 
-           <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
-                Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
-            </p>
+                <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
+                    Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
+                </p>
 
-        </div>
+            </div>
 
             <div class="px-5 flex items-center justify-between">
 
                 <a href="#">
-                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] 2xl:w-auto">
+                    <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] 2xl:w-auto">
                 </a>
 
                 <button id="closeMenu" class="text-white text-2xl">
@@ -405,7 +543,7 @@
 
         </div>
 
-            <div class="px-[15px] py-[30px]">
+        <div class="px-[15px] py-[30px]">
 
             <a href="index.html" class="block pb-5 border-b text-[#131615] text-lg leading-[18px]">Home</a>
 
@@ -431,16 +569,15 @@
 
                             <span class="text-[#3D403F]">Necklace</span>
 
-                            <span id="necklaceIcon">    <i class="fa-solid fa-minus"></i></span>
+                            <span id="necklaceIcon"> <i class="fa-solid fa-minus"></i></span>
 
                         </button>
 
-                        <ul id="necklaceMenu"
-                            class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+                        <ul id="necklaceMenu" class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
 
-                              <li><a href="#">Short Necklace</a></li>
-    <li><a href="#">Long Necklace</a></li>
-    <li><a href="#">Leriyat Necklace</a></li>
+                            <li><a href="#">Short Necklace</a></li>
+                            <li><a href="#">Long Necklace</a></li>
+                            <li><a href="#">Leriyat Necklace</a></li>
 
 
                         </ul>
@@ -450,24 +587,14 @@
                     <!-- Bangal -->
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('bangalMenu','bangalIcon')"
+                        <button 
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Bangal & Kadali</span>
 
-                            <span id="bangalIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
 
-                        <ul id="bangalMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-
-                              <li><a href="#">Gold Bangal</a></li>
-    <li><a href="#">Silver Bangal</a></li>
-    <li><a href="#">Kadali</a></li>
-
-
-                        </ul>
 
                     </div>
 
@@ -475,23 +602,14 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('braslateMenu','braslateIcon')"
+                        <button 
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Braslate</span>
 
-                            <span id="braslateIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
 
-                        <ul id="braslateMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-
-                           <li><a href="#">Chain Bracelet</a></li>
-    <li><a href="#">Stone Bracelet</a></li>
-
-
-                        </ul>
 
                     </div>
 
@@ -499,19 +617,17 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('watchMenu','watchIcon')"
+                        <button 
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Watch</span>
 
-                            <span id="watchIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
 
-                        <ul id="watchMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-    <li><a href="#">Classic Watch</a></li>
-    <li><a href="#">Ladies Watch</a></li>
+                        <ul id="watchMenu" class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+                            <li><a href="#">Classic Watch</a></li>
+                            <li><a href="#">Ladies Watch</a></li>
 
                         </ul>
 
@@ -521,19 +637,16 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('hathfulMenu','hathfulIcon')"
+                        <button
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Hathful</span>
 
-                            <span id="hathfulIcon"> <i class="fa-solid fa-plus"></i></span>
-
                         </button>
 
-                        <ul id="hathfulMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+                        <ul id="hathfulMenu" class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
 
-                             <li><a href="#">Hathful Collection</a></li>
+                            <li><a href="#">Hathful Collection</a></li>
 
                         </ul>
 
@@ -543,21 +656,13 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('ringMenu','ringIcon')"
+                        <button
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Ring</span>
 
-                            <span id="ringIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
-
-                        <ul id="ringMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-
-                             <li><a href="#">Ring Collection</a></li>
-
-                        </ul>
 
                     </div>
 
@@ -576,53 +681,54 @@
 
 
     <!-- ----------hero section start-->
-        <section class="bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF] to-[#F7F4EF] sm:bg-[url('assets/images/hero_Banner.png')] sm:bg-no-repeat sm:bg-center sm:bg-[length:100%_100%]">
+    <section
+        class="bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF] to-[#F7F4EF] sm:bg-[url('assets/images/hero_Banner.png')] sm:bg-no-repeat sm:bg-center sm:bg-[length:100%_100%]">
 
         <div class="container-1440 !px-0 md:px-auto">
-                <!-- Left Content -->
-                <div class="grid grid-cols-12 pt-[50px] pb-[0] md:py-[90px] xl:py-[160px] text-center md:text-left">
+            <!-- Left Content -->
+            <div class="grid grid-cols-12 pt-[50px] pb-[0] md:py-[90px] xl:py-[160px] text-center md:text-left">
 
-                    <div class="col-span-12 md:col-span-8 lg:col-span-6 2xl:col-span-5 px-5 lg:px-0">
+                <div class="col-span-12 md:col-span-8 lg:col-span-6 2xl:col-span-5 px-5 lg:px-0">
 
-                        <h1 class="hero-heading font-moglan w-full max-w-[549px]">
+                    <h1 class="hero-heading font-moglan w-full max-w-[549px]">
 
-                            Jewelry That
-                            Completes Your
-                            Celebration
+                        Jewelry That
+                        Completes Your
+                        Celebration
 
-                        </h1>
+                    </h1>
 
-                        <p class="text-[#3D403F] text-base md:text-lg lg:text-xl leading-8">
+                    <p class="text-[#3D403F] text-base md:text-lg lg:text-xl leading-8">
 
-                            Discover handcrafted luxury imitation jewelry for weddings,
-                            festivals, and every precious moment in between.
+                        Discover handcrafted luxury imitation jewelry for weddings,
+                        festivals, and every precious moment in between.
 
-                        </p>
+                    </p>
 
-                        <div class="flex flex-wrap gap-4 mt-5 md:mt-10 justify-center md:justify-start">
+                    <div class="flex flex-wrap gap-4 mt-5 md:mt-10 justify-center md:justify-start">
 
-                            <a href="#"
-                                class="bg-[#B4771E] text-white px-4 md:px-5 xl:px-[35px] h-[50px] md:h-[56px] xl:h-[66px] inline-flex items-center justify-center text-sm sm:text-base md:text-lg lg:text-[22px]">
+                        <a href="#"
+                            class="bg-[#B4771E] text-white px-4 md:px-5 xl:px-[35px] h-[50px] md:h-[56px] xl:h-[66px] inline-flex items-center justify-center text-sm sm:text-base md:text-lg lg:text-[22px]">
 
-                                Explore Category
+                            Explore Category
 
-                            </a>
+                        </a>
 
-                            <a href="#"
-                                class="border-2 border-[#131615] px-4 md:px-5 xl:px-[35px] h-[50px] md:h-[56px] xl:h-[66px] inline-flex items-center justify-center text-sm sm:text-base md:text-lg lg:text-[22px] text-[#131615] font-semibold">
+                        <a href="#"
+                            class="border-2 border-[#131615] px-4 md:px-5 xl:px-[35px] h-[50px] md:h-[56px] xl:h-[66px] inline-flex items-center justify-center text-sm sm:text-base md:text-lg lg:text-[22px] text-[#131615] font-semibold">
 
-                                View Bridal Jewelry
+                            View Bridal Jewelry
 
-                            </a>
+                        </a>
 
-                        </div>
-
-                    </div>
-                    <div class="col-span-12 sm:hidden mt-10">
-                          <img src="assets/images/hero-bg.png" alt="" class="w-full">
                     </div>
 
                 </div>
+                <div class="col-span-12 sm:hidden mt-10">
+                    <img src="assets/images/hero-bg.png" alt="" class="w-full">
+                </div>
+
+            </div>
 
         </div>
 
@@ -738,7 +844,7 @@
 
                 <div>
 
-                  <h2 class="hero-title">
+                    <h2 class="hero-title">
 
                         The Art and Passion Behind
                         <br>
@@ -761,7 +867,8 @@
 
                         <div class="pr-[10px] sm:pr-[22px] border-r border-[#d39d46]">
 
-                            <h3 class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
+                            <h3
+                                class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
                                 250+
                             </h3>
 
@@ -773,7 +880,8 @@
 
                         <div class="px-[10px] sm:px-[22px] border-r border-[#d39d46]">
 
-                            <h3 class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
+                            <h3
+                                class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
                                 10,000+
                             </h3>
 
@@ -785,7 +893,8 @@
 
                         <div class="pl-[10px] sm:pl-[22px]">
 
-                            <h3 class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
+                            <h3
+                                class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
                                 98%
                             </h3>
 
@@ -837,8 +946,7 @@
 
             <div class="text-center mb-12">
 
-                <h2
-                    class=" hero-title">
+                <h2 class=" hero-title">
                     Our Most Loved Jewelry
                 </h2>
 
@@ -859,21 +967,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -898,11 +1001,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -923,21 +1026,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -962,11 +1060,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -987,21 +1085,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1026,11 +1119,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1051,21 +1144,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1090,11 +1178,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1115,21 +1203,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1154,11 +1237,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1179,21 +1262,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1218,11 +1296,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1243,21 +1321,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1282,11 +1355,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1307,21 +1380,16 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1346,11 +1414,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1373,8 +1441,7 @@
 
             <div class="text-center mt-8 sm:mt-10">
 
-                <a href="#"
-                    class="common-btn">
+                <a href="#" class="common-btn">
 
                     Explore More Jewelry
 
@@ -1418,31 +1485,26 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-                 <div class="border border-[#D5D5D5]">
-    
+                <div class="border border-[#D5D5D5]">
+
                     <div class="relative overflow-hidden">
-                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
+                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1467,11 +1529,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1487,31 +1549,26 @@
                     </div>
 
                 </div>
-                 <div class="border border-[#D5D5D5]">
-    
+                <div class="border border-[#D5D5D5]">
+
                     <div class="relative overflow-hidden">
-                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
+                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1536,11 +1593,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1556,31 +1613,26 @@
                     </div>
 
                 </div>
-                 <div class="border border-[#D5D5D5]">
-    
+                <div class="border border-[#D5D5D5]">
+
                     <div class="relative overflow-hidden">
-                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
+                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1605,11 +1657,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1625,31 +1677,26 @@
                     </div>
 
                 </div>
-                 <div class="border border-[#D5D5D5]">
-    
+                <div class="border border-[#D5D5D5]">
+
                     <div class="relative overflow-hidden">
-                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
+                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
- 
+
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                           <svg xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            stroke-width="1.6" 
-                            stroke="currentColor"
-                            class="w-5 h-5 text-[#131615]">
-                            
-                            <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.6"
+                                stroke="currentColor" class="w-5 h-5 text-[#131615]">
+
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
 
                         </button>
 
@@ -1674,11 +1721,11 @@
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-                             <span class="text-lg xl:text-[24px] text-[#131615]">
+                            <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                              <span class="text-sm xl:text-lg text-[#757575] line-through">
+                            <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
@@ -1715,8 +1762,7 @@
 
             <div class="text-center px-5">
 
-                <h2
-                    class=" hero-title">
+                <h2 class=" hero-title">
                     Follow Our Jewelry Journey
                 </h2>
 
@@ -1768,8 +1814,7 @@
 
             <div class="text-center mt-8 lg:mt-10">
 
-                <a href="#"
-                    class="common-btn">
+                <a href="#" class="common-btn">
 
                     Follow Us on Instagram
 
@@ -1811,8 +1856,7 @@
                     <!-- Subscribe Form -->
                     <div class="max-w-[520px] mx-auto mt-8 flex flex-col gap-3 sm:gap-0 sm:flex-row">
 
-                        <input type="email" placeholder="Enter your email"
-                            class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white  rounded-t-[4px] sm:rounded-l-[4px] sm:rounded-r-none
+                        <input type="email" placeholder="Enter your email" class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white  rounded-t-[4px] sm:rounded-l-[4px] sm:rounded-r-none
                           rounded-b-none sm:rounded-b-[4px] placeholder:text-lg">
 
                         <button class="h-[58px] px-8 bg-[#B4771E] text-white text-lg hover:bg-[#b57a1f] transition 
@@ -1884,7 +1928,7 @@
 
                 <div>
 
-                   <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                    <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Company
                     </h3>
 
@@ -1901,7 +1945,7 @@
 
                 <div>
 
-                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                    <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Customer Service
                     </h3>
 
@@ -1920,7 +1964,7 @@
 
                 <div>
 
-                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                    <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Contact Us
                     </h3>
 
@@ -1973,8 +2017,7 @@
 
                     <div class="flex items-center gap-[15px]">
 
-                      <a href="#"
-   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+                        <a href="#" class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
    flex items-center justify-center
    text-white bg-[#FFFFFF0D]
    hover:bg-[#B4771E] hover:border-[#B4771E]
@@ -1984,8 +2027,7 @@
 
                         </a>
 
-                         <a href="#"
-   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+                        <a href="#" class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
    flex items-center justify-center
    text-white bg-[#FFFFFF0D]
    hover:bg-[#B4771E] hover:border-[#B4771E]
@@ -1996,8 +2038,7 @@
 
                         </a>
 
-                          <a href="#"
-   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+                        <a href="#" class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
    flex items-center justify-center
    text-white bg-[#FFFFFF0D]
    hover:bg-[#B4771E] hover:border-[#B4771E]
@@ -2023,32 +2064,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-$(document).ready(function(){
+    <script>
+        $(document).ready(function () {
 
-    $('.collection-slider').owlCarousel({
-        loop:true,
-        margin:30,
-        nav:false,
-        dots:true,
-        autoplay:true,
-        autoplayTimeout:3000,
+            $('.collection-slider').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
 
-        responsive:{
-            0:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            1200:{
-                items:6
-            }
-        }
-    });
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 6
+                    }
+                }
+            });
 
-});
-</script>
+        });
+    </script>
 </body>
 
 </html>

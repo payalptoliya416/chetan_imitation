@@ -351,14 +351,38 @@
   .left-\[8px\] {
     left: 8px;
   }
+  .left-\[10\%\] {
+    left: 10%;
+  }
+  .left-\[12\%\] {
+    left: 12%;
+  }
+  .left-\[13\%\] {
+    left: 13%;
+  }
+  .left-\[14\%\] {
+    left: 14%;
+  }
   .left-\[20px\] {
     left: 20px;
+  }
+  .left-\[30\%\] {
+    left: 30%;
   }
   .left-\[38\%\] {
     left: 38%;
   }
+  .left-\[50px\] {
+    left: 50px;
+  }
   .left-\[52\%\] {
     left: 52%;
+  }
+  .left-\[px\] {
+    left: px;
+  }
+  .left-full {
+    left: 100%;
   }
   .z-10 {
     z-index: 10;
@@ -524,6 +548,9 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
   }
   .block {
     display: block;
@@ -738,6 +765,9 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-\[00px\] {
+    width: 00px;
+  }
   .w-\[8px\] {
     width: 8px;
   }
@@ -807,8 +837,38 @@
   .w-\[230px\] {
     width: 230px;
   }
+  .w-\[270px\] {
+    width: 270px;
+  }
+  .w-\[300px\] {
+    width: 300px;
+  }
+  .w-\[320px\] {
+    width: 320px;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
+  .w-\[470px\] {
+    width: 470px;
+  }
+  .w-\[500px\] {
+    width: 500px;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-\[700px\] {
+    width: 700px;
+  }
+  .w-\[720px\] {
+    width: 720px;
+  }
   .w-\[760px\] {
     width: 760px;
+  }
+  .w-\[800px\] {
+    width: 800px;
   }
   .w-full {
     width: 100%;
@@ -888,6 +948,9 @@
   .min-w-\[130px\] {
     min-width: 130px;
   }
+  .min-w-\[250px\] {
+    min-width: 250px;
+  }
   .flex-1 {
     flex: 1;
   }
@@ -957,6 +1020,12 @@
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
+  .grid-cols-\[270px_250px\] {
+    grid-template-columns: 270px 250px;
+  }
+  .grid-cols-\[320px_300px\] {
+    grid-template-columns: 320px 300px;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -986,6 +1055,9 @@
   }
   .justify-end {
     justify-content: flex-end;
+  }
+  .gap-0 {
+    gap: 0;
   }
   .gap-1 {
     gap: var(--spacing);
@@ -1663,6 +1735,9 @@
   .pb-1 {
     padding-bottom: var(--spacing);
   }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1674,6 +1749,9 @@
   }
   .pb-\[0\] {
     padding-bottom: 0;
+  }
+  .pb-\[10px\] {
+    padding-bottom: 10px;
   }
   .pb-\[15px\] {
     padding-bottom: 15px;
