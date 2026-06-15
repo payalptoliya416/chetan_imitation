@@ -299,7 +299,7 @@ summary {
 
 /* ---common---- */
 .hero-title{
-    @apply text-[#131615] text-[30px] sm:text-[40px] md:text-[48px] lg:text-[64px] leading-none font-normal;
+    @apply text-[#131615] text-[30px] sm:text-[40px] md:text-[48px] lg:text-[60px] leading-none font-normal;
     
     font-family: "MoglanDemo";
 }
@@ -318,7 +318,7 @@ summary {
 }
 
 .hero-heading{
-    @apply text-[#131615] text-[48px] md:text-[65px] md:leading-[80px] xl:text-[80px] xl:leading-[98px] mb-[15px];
+    @apply text-[#131615] text-[48px] md:text-[60px] md:leading-[80px] xl:text-[80px] xl:leading-[84px] mb-[15px];
 }
 
 .common-btn{
