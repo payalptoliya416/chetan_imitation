@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <!-- Owl CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>Chetan Imitation</title>
+    <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="assets/css/font.css">
+
+        <!-- Custom CSS (હંમેશા છેલ્લે રાખો) -->
+        <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+ 
+    <!-- Header -->
     <header class="relative z-50">
 
         <!-- Top Bar -->
 
-        <div class="bg-[#B4771E] h-[24px] flex items-center justify-center">
+        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
 
-            <p class="text-white text-[11px]">
+            <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
                 Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
             </p>
 
@@ -35,19 +45,19 @@
 
             <div class="container-1440">
 
-                <div class="h-[64px] flex items-center justify-between">
+                <div class="flex items-center justify-between">
 
                     <!-- Logo -->
 
                     <a href="#">
-                        <img src="assets/images/logo.png" class="h-[50px]">
+                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] xl::w-auto">
                     </a>
 
                     <!-- Desktop Menu -->
 
-                    <nav class="hidden lg:flex items-center gap-10">
+                    <nav class="hidden lg:flex items-center gap-7 xl:gap-10">
 
-                        <a href="#" class="text-[#B4771E] text-[14px]">
+                        <a href="#" class="text-[#B4771E] text-lg xl:text-xl">
                             Home
                         </a>
 
@@ -55,11 +65,11 @@
 
                         <div class="group relative">
 
-                            <button class="flex items-center gap-2 text-white text-[14px]">
+                            <button class="flex items-center gap-2 text-white  text-lg xl:text-xl">
 
                                 Shop By Category
 
-                                <i class="fa-solid fa-angle-down text-[11px]"></i>
+                                <i class="fa-solid fa-angle-down text-xl"></i>
 
                             </button>
 
@@ -150,11 +160,11 @@
 
                         </div>
 
-                        <a href="#" class="text-white text-[14px]">
+                        <a href="#" class="text-white  text-lg xl:text-xl">
                             About Us
                         </a>
 
-                        <a href="#" class="text-white text-[14px]">
+                        <a href="#" class="text-white  text-lg xl:text-xl">
                             Contact Us
                         </a>
 
@@ -162,28 +172,37 @@
 
                     <!-- Right Side -->
 
-                    <div class="hidden lg:flex items-center gap-4">
+                    <div class="hidden lg:flex items-center gap-5">
 
-                        <div class="relative">
+                        <div class="relative ">
 
                             <input type="text" placeholder="Search"
-                                class="w-[250px] h-[38px] border border-[#222] bg-transparent px-4 text-white text-[13px]">
+                                class="w-[200px] xl:w-[370px] rounded-sm h-[40px] border border-[#D5D5D533] px-4 text-white text-base placeholder:text-base bg-[#FFFFFF08]">
 
-                            <i
-                                class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-white text-[12px]"></i>
+                         <img src="assets/images/search.png" alt="" class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
 
                         </div>
 
-                        <a href="#" class="text-white">
-                            <i class="fa-regular fa-heart"></i>
+                         <a href="#" class="relative">
+                            <img src="assets/images/heart.png" alt="heart">
+
+                            <span
+                                class="absolute -top-1 -right-1 w-[14px] h-[14px] rounded-full bg-[#B78326] text-white text-[9px] font-medium flex items-center justify-center">
+                                3
+                            </span>
+                        </a>
+
+                            <a href="#" class="relative">
+                            <img src="assets/images/cart.png" alt="cart" >
+
+                            <span
+                                class="absolute -top-1 -right-1 w-[14px] h-[14px] rounded-full bg-[#B78326] text-white text-[9px] font-medium flex items-center justify-center">
+                                3
+                            </span>
                         </a>
 
                         <a href="#" class="text-white">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </a>
-
-                        <a href="#" class="text-white">
-                            <i class="fa-regular fa-user"></i>
+                            <img src="assets/images/user.png" alt="">
                         </a>
 
                     </div>
@@ -209,13 +228,19 @@
 
         <div class="bg-[#050b0d]">
 
-            <div class="bg-[#B4771E] text-center text-white text-[10px] py-2">
+        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
+
+           <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
                 Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
-            </div>
+            </p>
 
-            <div class="h-[60px] px-5 flex items-center justify-between">
+        </div>
 
-                <img src="assets/images/logo.png" class="h-[40px]">
+            <div class="px-5 flex items-center justify-between">
+
+                <a href="#">
+                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] xl::w-auto">
+                </a>
 
                 <button id="closeMenu" class="text-white text-2xl">
                     <i class="fa-solid fa-xmark"></i>
@@ -225,50 +250,173 @@
 
         </div>
 
-        <div class="p-5">
+            <div class="px-[15px] py-[30px]">
 
-            <a class="block py-4 border-b">Home</a>
+            <a class="block pb-5 border-b text-[#131615] text-lg leading-[18px]">Home</a>
 
-            <div class="py-4 border-b">
+            <!-- Shop By Category -->
+            <div class="border-b">
 
-                <div class="flex justify-between">
+                <button onclick="toggleMenu('shopMenu','shopArrow')"
+                    class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
                     <span>Shop By Category</span>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
 
-                <div class="mt-4 pl-4">
+                    <i id="shopArrow" class="fa-solid fa-angle-down transition duration-300"></i>
 
-                    <div class="flex justify-between py-3">
-                        <span>Necklace</span>
-                        <span>−</span>
+                </button>
+
+                <div id="shopMenu">
+
+                    <!-- Necklace -->
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('necklaceMenu','necklaceIcon')"
+                            class="w-full pt-[5px] pb-5 flex justify-between items-center text-[#131615] text-lg leading-[18px] pl-4">
+
+                            <span class="text-[#3D403F]">Necklace</span>
+
+                            <span id="necklaceIcon">    <i class="fa-solid fa-minus"></i></span>
+
+                        </button>
+
+                        <ul id="necklaceMenu"
+                            class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+
+                            <li>Short Necklace</li>
+                            <li>Long Necklace</li>
+                            <li>Leriyat Necklace</li>
+
+                        </ul>
+
                     </div>
 
-                    <ul class="pl-4 text-[#777] text-sm space-y-3">
-                        <li>Short Necklace</li>
-                        <li>Long Necklace</li>
-                        <li>Leriyat Necklace</li>
-                    </ul>
+                    <!-- Bangal -->
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('bangalMenu','bangalIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Bangal & Kadali</span>
+
+                            <span id="bangalIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="bangalMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Braslate -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('braslateMenu','braslateIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Braslate</span>
+
+                            <span id="braslateIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="braslateMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Watch -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('watchMenu','watchIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Watch</span>
+
+                            <span id="watchIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="watchMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Hathful -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('hathfulMenu','hathfulIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Hathful</span>
+
+                            <span id="hathfulIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="hathfulMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Ring -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('ringMenu','ringIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Ring</span>
+
+                            <span id="ringIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="ringMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
 
                 </div>
 
             </div>
 
-            <a class="block py-4 border-b">Bangal & Kadali</a>
-            <a class="block py-4 border-b">Braslate</a>
-            <a class="block py-4 border-b">Watch</a>
-            <a class="block py-4 border-b">Hathful</a>
-            <a class="block py-4 border-b">Ring</a>
-            <a class="block py-4 border-b">Chain & Mala</a>
-            <a class="block py-4 border-b">Pendal & Buti</a>
-            <a class="block py-4 border-b">Juda & Kandora</a>
-            <a class="block py-4 border-b">Other</a>
-
             <a class="block py-4 border-b">About Us</a>
-            <a class="block py-4 border-b">Contact Us</a>
+
+            <a class="block py-4">Contact Us</a>
 
         </div>
 
     </div>
+    <!-- Header -->
 
 <section
     class="relative bg-center bg-no-repeat overflow-hidden"
@@ -344,7 +492,7 @@
 
                 <div class="w-[62px] h-[2px] bg-[#B4771E] mt-2 mb-5"></div>
 
-                <p class="text-xl text-[#555] leading-7 mb-[30px]">
+                <p class="text-xl text-[#3D403F] leading-7 mb-[30px]">
                     Reach out to us through any of the following channels.
                 </p>
 
@@ -420,7 +568,7 @@
                             Visit Us
                         </h4>
 
-                        <p class="text-xl text-[#555] leading-7 mb-3">
+                        <p class="text-xl text-[#3D403F] leading-7 mb-3">
 
                             <span class="font-semibold text-[#3D403F]">
                                 Branch - 1:
@@ -490,7 +638,7 @@
 
                 <div class="w-[55px] h-[2px] bg-[#B4771E] mt-2 mb-5"></div>
 
-                <p class="text-xl text-[#555] leading-7 mb-[30px]">
+                <p class="text-xl text-[#3D403F] leading-7 mb-[30px]">
                     Fill out the form below and our team will get back to you as soon as possible.
                 </p>
 
@@ -634,224 +782,171 @@ VISIT OUR STORE
 
 </section>
 
-<!-- ------footer start -->
-<section class="relative">
+    <!-- ------footer start -->
+    <section class="relative">
 
-    <!-- Background Image -->
-    <div class="relative py-[80px] overflow-hidden">
+        <!-- Background Image -->
+        <div class="relative py-[80px] overflow-hidden">
 
-        <img
-             src="assets/images/Newsletter.png"
-            alt=""
-            class="absolute inset-0 w-full h-full object-cover">
+            <img src="assets/images/Newsletter.png" alt="" class="absolute inset-0 w-full h-full object-cover">
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-[#131615]/70"></div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-[#131615]/70"></div>
 
-        <!-- Content -->
-        <div class="relative z-10 h-full flex items-center justify-center px-5">
+            <!-- Content -->
+            <div class="relative z-10 h-full flex items-center justify-center px-5">
 
-            <div class="text-center w-full">
+                <div class="text-center w-full">
 
-                <div class="w-12 h-[2px] bg-[#B4771E] mx-auto mb-5"></div>
+                    <div class="w-12 h-[2px] bg-[#B4771E] mx-auto mb-5"></div>
 
-                <h2 class="font-moglan text-white text-[32px] md:text-[48px] lg:text-[54px] leading-none">
-                    Stay Updated with New Jewelry Collections
-                </h2>
+                    <h2 class="font-moglan text-white text-[32px] md:text-[48px] lg:text-[54px] leading-none">
+                        Stay Updated with New Jewelry Collections
+                    </h2>
 
-                <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px]">
-                    Subscribe to receive exclusive offers, styling tips, and first access to new arrivals
-                </p>
+                    <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px] font-normal">
+                        Subscribe to receive exclusive offers, styling tips, and first access to new arrivals
+                    </p>
 
-                <!-- Subscribe Form -->
-                <div class="max-w-[520px] mx-auto mt-8 flex flex-col gap-3 sm:gap-0 sm:flex-row" >
+                    <!-- Subscribe Form -->
+                    <div class="max-w-[520px] mx-auto mt-8 flex flex-col gap-3 sm:gap-0 sm:flex-row">
 
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white rounded-l-[4px] sm:rounded-l-0 rounded-r-[4px] sm:rounded-r-0 placeholder:text-lg">
+                        <input type="email" placeholder="Enter your email"
+                            class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white  rounded-t-[4px] sm:rounded-l-[4px] sm:rounded-r-none
+                          rounded-b-none sm:rounded-b-[4px] placeholder:text-lg">
 
-                    <button
-                        class="h-[58px] px-8 bg-[#B4771E] text-white text-lg hover:bg-[#b57a1f] transition 
-                        rounded-[4px] sm:rounded-r-[4px] ">
+                        <button class="h-[58px] px-8 bg-[#B4771E] text-white text-lg hover:bg-[#b57a1f] transition 
+                         rounded-b-[4px] sm:rounded-r-[4px] sm:rounded-l-none
+                        rounded-t-none sm:rounded-t-[4px]">
 
-                        Subscribe
+                            Subscribe
 
-                    </button>
+                        </button>
+
+                    </div>
+
+                    <p class="mt-3 text-[#D5D5D5] text-lg lg:text-xl">
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
 
                 </div>
 
-                    <p class="mt-3 text-[#D5D5D5] text-lg">
-                    We respect your privacy. Unsubscribe at any time.
-                </p>
-
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-
-<footer class="bg-[#131615]">
-
-    <div class="container-1440">
-
-    <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-10 py-14">
-
-            <!-- Logo -->
-
-            <div>
-
-                <img
-                    src="assets/images/footer_logo.png"
-                    alt="Logo"
-                    class="h-16 mb-[25px]">
-
-                <p class="text-[#cfcfcf] text-base leading-6">
-
-                    Premium imitation jewelry crafted for weddings,
-                    festivals, and everyday elegance. Discover timeless
-                    designs that blend tradition, beauty, and affordability.
-
-                </p>
-
-            </div>
-
-            <!-- Category -->
-
-            <div>
-
-                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
-                    Shop By Category
-                </h3>
-
-                <ul class="space-y-3 text-[#d9d9d9] text-base">
-
-                    <li><a href="#">Necklaces</a></li>
-                    <li><a href="#">Bangal & Kadali</a></li>
-                    <li><a href="#">Bracelets</a></li>
-                    <li><a href="#">Hathful</a></li>
-                    <li><a href="#">Rings</a></li>
-                    <li><a href="#">Mangalsutra</a></li>
-
-                </ul>
-
-            </div>
-
-            <!-- Company -->
-
-            <div>
-
-                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
-                    Company
-                </h3>
-
-                <ul class="space-y-3 text-[#d9d9d9] text-base">
-
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-
-                </ul>
-
-            </div>
-
-            <!-- Customer Service -->
-
-            <div>
-
-                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
-                    Customer Service
-                </h3>
-
-                <ul class="space-y-3 text-[#d9d9d9] text-base">
-
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Deliveries & Returns</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Refund & Cancellation Policy</a></li>
-
-                </ul>
-
-            </div>
-
-            <!-- Contact -->
-
-            <div>
-
-                <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
-                    Contact Us
-                </h3>
-
-                <ul class="space-y-4 text-[#d9d9d9] text-[15px]">
-
-                    <li class="flex gap-3">
-                        <i class="fa-solid fa-phone text-[#B4771E] mt-1"></i>
-                        <span>+91 98765 43210</span>
-                    </li>
-
-                    <li class="flex gap-3">
-                        <i class="fa-regular fa-envelope text-[#B4771E] mt-1"></i>
-                        <span>info@chetanimitation.com</span>
-                    </li>
-
-                    <li class="flex gap-3">
-                        <i class="fa-solid fa-location-dot text-[#B4771E] mt-1"></i>
-
-                        <span>
-                            G-14 Abc market, Abc circle,
-                            Sudama chowk, Mota Varachha,
-                            Surat, Gujarat 394101, India
-                        </span>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Bottom Footer -->
-
-    <div class="border-t border-white/10">
+    <footer class="bg-[#131615]">
 
         <div class="container-1440">
 
-            <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-5">
+            <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-9 py-14">
 
-                <p class="text-[#cfcfcf] text-[14px] text-center md:text-left">
+                <!-- Logo -->
 
-                    © 2026 Chetan Imitation. All Rights Reserved |
-                    Developed by Rising Star Infotech.
+                <div>
 
-                </p>
+                    <img src="assets/images/footer_logo.png" alt="Logo" class="mb-[25px]">
 
-                <!-- Social -->
+                    <p class="text-[#D5D5D5] text-base lg:text-lg leading-6 font-normal">
 
-                <div class="flex items-center gap-3">
+                        Premium imitation jewelry crafted for weddings,
+                        festivals, and everyday elegance. Discover timeless
+                        designs that blend tradition, beauty, and affordability.
 
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                    </p>
 
-                        <i class="fa-brands fa-facebook-f"></i>
+                </div>
 
-                    </a>
+                <!-- Category -->
 
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                <div>
 
-                        <i class="fa-brands fa-instagram"></i>
+                    <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                        Shop By Category
+                    </h3>
 
-                    </a>
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[16px]">
 
-                    <a href="#"
-                        class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                        <li><a href="#">Necklaces</a></li>
+                        <li><a href="#">Bangal & Kadali</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Hathful</a></li>
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Mangalsutra</a></li>
 
-                        <i class="fa-brands fa-whatsapp"></i>
+                    </ul>
 
-                    </a>
+                </div>
+
+                <!-- Company -->
+
+                <div>
+
+                   <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                        Company
+                    </h3>
+
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[16px]">
+
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Customer Service -->
+
+                <div>
+
+                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                        Customer Service
+                    </h3>
+
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[28px]">
+
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Deliveries & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund & Cancellation Policy</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div>
+
+                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
+                        Contact Us
+                    </h3>
+
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[28px]">
+
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-phone text-[#B4771E] mt-1"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <i class="fa-regular fa-envelope text-[#B4771E] mt-1"></i>
+                            <span>info@chetanimitation.com</span>
+                        </li>
+
+                        <li class="flex gap-3">
+                            <i class="fa-solid fa-location-dot text-[#B4771E] mt-1"></i>
+
+                            <span>
+                                G-14 Abc market, Abc circle,
+                                Sudama chowk, Mota Varachha,
+                                Surat, Gujarat 394101, India
+                            </span>
+                        </li>
+
+                    </ul>
 
                 </div>
 
@@ -859,10 +954,69 @@ VISIT OUR STORE
 
         </div>
 
-    </div>
+        <!-- Bottom Footer -->
 
-</footer>
-<!-- ------footer end -->
+        <div class="border-t border-white/10">
+
+            <div class="container-1440">
+
+                <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-[30px]">
+
+                    <p class="text-[#D5D5D5] text-base lg:text-lg lg:leading-[18px] text-center md:text-left">
+
+                        © 2026 Chetan Imitation. All Rights Reserved |
+                        Developed by Rising Star Infotech.
+
+                    </p>
+
+                    <!-- Social -->
+
+                    <div class="flex items-center gap-[15px]">
+
+                      <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                         <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
+
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                          <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
+
+                            <i class="fa-brands fa-whatsapp group:hover:text-white"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- ------footer end -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>

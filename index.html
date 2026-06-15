@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <!-- Owl CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="assets/css/font.css">
+
+        <!-- Custom CSS (હંમેશા છેલ્લે રાખો) -->
+        <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -31,9 +34,9 @@
 
         <!-- Top Bar -->
 
-        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center">
+        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
 
-            <p class="text-white text-base">
+            <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
                 Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
             </p>
 
@@ -50,14 +53,14 @@
                     <!-- Logo -->
 
                     <a href="#">
-                        <img src="assets/images/logo.png" class="]">
+                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] xl::w-auto">
                     </a>
 
                     <!-- Desktop Menu -->
 
-                    <nav class="hidden lg:flex items-center gap-10">
+                    <nav class="hidden lg:flex items-center gap-7 xl:gap-10">
 
-                        <a href="#" class="text-[#B4771E] text-xl">
+                        <a href="#" class="text-[#B4771E] text-lg xl:text-xl">
                             Home
                         </a>
 
@@ -65,7 +68,7 @@
 
                         <div class="group relative">
 
-                            <button class="flex items-center gap-2 text-white text-xl">
+                            <button class="flex items-center gap-2 text-white  text-lg xl:text-xl">
 
                                 Shop By Category
 
@@ -160,11 +163,11 @@
 
                         </div>
 
-                        <a href="#" class="text-white text-xl">
+                        <a href="#" class="text-white  text-lg xl:text-xl">
                             About Us
                         </a>
 
-                        <a href="#" class="text-white text-xl">
+                        <a href="#" class="text-white  text-lg xl:text-xl">
                             Contact Us
                         </a>
 
@@ -172,14 +175,14 @@
 
                     <!-- Right Side -->
 
-                    <div class="hidden lg:flex items-center gap-4">
+                    <div class="hidden lg:flex items-center gap-5">
 
-                        <div class="relative">
+                        <div class="relative ">
 
                             <input type="text" placeholder="Search"
-                                class="w-[320px] rounded-sm h-[40px] border border-[#D5D5D533] bg-transparent px-4 text-white text-base placeholder:text-base">
+                                class="w-[200px] xl:w-[370px] rounded-sm h-[40px] border border-[#D5D5D533] px-4 text-white text-base placeholder:text-base bg-[#FFFFFF08]">
 
-                         <img src="assets/images/search.png" alt="" class="absolute right-3 top-1/2 -translate-y-1/2 text-white text-[12px]">
+                         <img src="assets/images/search.png" alt="" class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
 
                         </div>
 
@@ -228,13 +231,19 @@
 
         <div class="bg-[#050b0d]">
 
-            <div class="bg-[#B4771E] text-center text-white text-[10px] py-2">
+        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
+
+           <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
                 Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
-            </div>
+            </p>
 
-            <div class="h-[60px] px-5 flex items-center justify-between">
+        </div>
 
-                <img src="assets/images/logo.png" class="h-[40px]">
+            <div class="px-5 flex items-center justify-between">
+
+                <a href="#">
+                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] xl::w-auto">
+                </a>
 
                 <button id="closeMenu" class="text-white text-2xl">
                     <i class="fa-solid fa-xmark"></i>
@@ -244,46 +253,168 @@
 
         </div>
 
-        <div class="p-5">
+            <div class="px-[15px] py-[30px]">
 
-            <a class="block py-4 border-b">Home</a>
+            <a class="block pb-5 border-b text-[#131615] text-lg leading-[18px]">Home</a>
 
-            <div class="py-4 border-b">
+            <!-- Shop By Category -->
+            <div class="border-b">
 
-                <div class="flex justify-between">
+                <button onclick="toggleMenu('shopMenu','shopArrow')"
+                    class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
                     <span>Shop By Category</span>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
 
-                <div class="mt-4 pl-4">
+                    <i id="shopArrow" class="fa-solid fa-angle-down transition duration-300"></i>
 
-                    <div class="flex justify-between py-3">
-                        <span>Necklace</span>
-                        <span>−</span>
+                </button>
+
+                <div id="shopMenu">
+
+                    <!-- Necklace -->
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('necklaceMenu','necklaceIcon')"
+                            class="w-full pt-[5px] pb-5 flex justify-between items-center text-[#131615] text-lg leading-[18px] pl-4">
+
+                            <span class="text-[#3D403F]">Necklace</span>
+
+                            <span id="necklaceIcon">    <i class="fa-solid fa-minus"></i></span>
+
+                        </button>
+
+                        <ul id="necklaceMenu"
+                            class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+
+                            <li>Short Necklace</li>
+                            <li>Long Necklace</li>
+                            <li>Leriyat Necklace</li>
+
+                        </ul>
+
                     </div>
 
-                    <ul class="pl-4 text-[#777] text-sm space-y-3">
-                        <li>Short Necklace</li>
-                        <li>Long Necklace</li>
-                        <li>Leriyat Necklace</li>
-                    </ul>
+                    <!-- Bangal -->
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('bangalMenu','bangalIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Bangal & Kadali</span>
+
+                            <span id="bangalIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="bangalMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Braslate -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('braslateMenu','braslateIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Braslate</span>
+
+                            <span id="braslateIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="braslateMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Watch -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('watchMenu','watchIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Watch</span>
+
+                            <span id="watchIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="watchMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Hathful -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('hathfulMenu','hathfulIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Hathful</span>
+
+                            <span id="hathfulIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="hathfulMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Ring -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('ringMenu','ringIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Ring</span>
+
+                            <span id="ringIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="ringMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
 
                 </div>
 
             </div>
 
-            <a class="block py-4 border-b">Bangal & Kadali</a>
-            <a class="block py-4 border-b">Braslate</a>
-            <a class="block py-4 border-b">Watch</a>
-            <a class="block py-4 border-b">Hathful</a>
-            <a class="block py-4 border-b">Ring</a>
-            <a class="block py-4 border-b">Chain & Mala</a>
-            <a class="block py-4 border-b">Pendal & Buti</a>
-            <a class="block py-4 border-b">Juda & Kandora</a>
-            <a class="block py-4 border-b">Other</a>
-
             <a class="block py-4 border-b">About Us</a>
-            <a class="block py-4 border-b">Contact Us</a>
+
+            <a class="block py-4">Contact Us</a>
 
         </div>
 
@@ -292,46 +423,40 @@
 
 
     <!-- ----------hero section start-->
-    <section class="bg-cover bg-center bg-no-repeat"
-        style="background-image:url('assets/images/hero_Banner.png'); background-size: 100% 100%;">
+        <section class="bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF] to-[#F7F4EF] sm:bg-[url('assets/images/hero_Banner.png')] sm:bg-no-repeat sm:bg-center sm:bg-[length:100%_100%]">
 
-        <div class="container-1440">
-
-            <div class="min-h-[650px] lg:min-h-[700px] flex items-center">
-
+        <div class="container-1440 !px-0 md:px-auto">
                 <!-- Left Content -->
-                <div class="w-full lg:w-1/2">
+                <div class="grid grid-cols-12 pt-[50px] pb-[0] md:py-[90px] xl:py-[160px] text-center md:text-left">
 
-                    <div class="max-w-[520px]">
+                    <div class="col-span-12 md:col-span-8 lg:col-span-6 2xl:col-span-5 px-5 lg:px-0">
 
-                        <h1 class="text-[#1f1f1f] font-moglan text-[48px] md:text-[65px] lg:text-[70px] leading-[74px]">
+                        <h1 class="text-[#131615] font-moglan text-[48px] md:text-[65px] md:leading-[80px] xl:text-[80px] xl:leading-[98px] w-full max-w-[549px] mb-[15px]">
 
                             Jewelry That
-                            <br>
                             Completes Your
-                            <br>
                             Celebration
 
                         </h1>
 
-                        <p class="mt-[15px] text-[#555] text-lg leading-8">
+                        <p class="text-[#3D403F] text-base md:text-lg lg:text-[22px] leading-8">
 
                             Discover handcrafted luxury imitation jewelry for weddings,
                             festivals, and every precious moment in between.
 
                         </p>
 
-                        <div class="flex flex-wrap gap-4 mt-8">
+                        <div class="flex flex-wrap gap-4 mt-5 md:mt-10 justify-center md:justify-start">
 
                             <a href="#"
-                                class="bg-[#B4771E] text-white px-8 h-[52px] inline-flex items-center justify-center">
+                                class="bg-[#B4771E] text-white px-4 md:px-5 xl:px-[35px] h-[50px] md:h-[56px] xl:h-[66px] inline-flex items-center justify-center text-sm sm:text-base md:text-lg lg:text-[22px]">
 
                                 Explore Category
 
                             </a>
 
                             <a href="#"
-                                class="border border-[#333] px-8 h-[52px] inline-flex items-center justify-center">
+                                class="border-2 border-[#131615] px-4 md:px-5 xl:px-[35px] h-[50px] md:h-[56px] xl:h-[66px] inline-flex items-center justify-center text-sm sm:text-base md:text-lg lg:text-[22px] text-[#131615]">
 
                                 View Bridal Jewelry
 
@@ -340,10 +465,11 @@
                         </div>
 
                     </div>
+                    <div class="col-span-12 sm:hidden mt-10">
+                          <img src="assets/images/hero-bg.png" alt="" class="w-full">
+                    </div>
 
                 </div>
-
-            </div>
 
         </div>
 
@@ -351,16 +477,16 @@
     <!-- ----------hero sectionend -->
 
     <!-- ------cllecction  -->
-    <section class="py-[120px]">
+    <section class="section-space">
         <div class="container-1440">
 
             <div class="text-center">
 
-                <h2 class="text-[#131615] text-[58px] leading-none font-normal font-moglan">
+                <h2 class="hero-title">
                     Shop By Collection
                 </h2>
 
-                <p class="mt-[15px] text-lg text-[#3D403F]">
+                <p class="hero-para">
                     Discover curated jewelry for every occasion
                 </p>
 
@@ -371,42 +497,76 @@
                     <div class="mx-auto rounded-[999px] overflow-hidden">
                         <img src="assets/images/collection_6.png" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="mt-4 text-[15px]">Necklaces</h3>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Necklaces</h3>
                 </div>
 
                 <div class="text-center">
                     <div class="mx-auto rounded-[999px] overflow-hidden">
                         <img src="assets/images/collection_1.png" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="mt-4 text-[15px]">Bangal & Kadali</h3>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Bangal & Kadali</h3>
                 </div>
 
                 <div class="text-center">
                     <div class="mx-auto rounded-[999px] overflow-hidden">
                         <img src="assets/images/collection_2.png" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="mt-4 text-[15px]">Bracelets</h3>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Bracelets</h3>
                 </div>
 
                 <div class="text-center">
                     <div class="mx-auto rounded-[999px] overflow-hidden">
                         <img src="assets/images/collection_3.png" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="mt-4 text-[15px]">Hathful</h3>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Hathful</h3>
                 </div>
 
                 <div class="text-center">
                     <div class="mx-auto rounded-[999px] overflow-hidden">
                         <img src="assets/images/collection_4.png" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="mt-4 text-[15px]">Ring</h3>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Ring</h3>
                 </div>
 
                 <div class="text-center">
                     <div class="mx-auto rounded-[999px] overflow-hidden">
                         <img src="assets/images/collection_5.png" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="mt-4 text-[15px]">Mangalsutra</h3>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Mangalsutra</h3>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto rounded-[999px] overflow-hidden">
+                        <img src="assets/images/collection_6.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Necklaces</h3>
+                </div>
+
+                <div class="text-center">
+                    <div class="mx-auto rounded-[999px] overflow-hidden">
+                        <img src="assets/images/collection_1.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Bangal & Kadali</h3>
+                </div>
+
+                <div class="text-center">
+                    <div class="mx-auto rounded-[999px] overflow-hidden">
+                        <img src="assets/images/collection_2.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Bracelets</h3>
+                </div>
+
+                <div class="text-center">
+                    <div class="mx-auto rounded-[999px] overflow-hidden">
+                        <img src="assets/images/collection_3.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Hathful</h3>
+                </div>
+
+                <div class="text-center">
+                    <div class="mx-auto rounded-[999px] overflow-hidden">
+                        <img src="assets/images/collection_4.png" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-[30px] text-base md:text-lg lg:text-[24px] text-[#131615]">Ring</h3>
                 </div>
             </div>
 
@@ -419,14 +579,13 @@
 
         <div class="container-1440">
 
-            <div class="grid lg:grid-cols-[1.2fr_0.8fr] items-center gap-[55px]">
+            <div class="grid lg:grid-cols-[1.1fr_0.9fr] items-center lg:gap-[30px] xl:gap-[55px]">
 
                 <!-- Left Content -->
 
                 <div>
 
-                    <h2
-                        class=" text-[#131615] text-[42px] md:text-[54px] lg:text-[54px] leading-[1] font-normal max-w-[620px] font-moglan">
+                  <h2 class="hero-title">
 
                         The Art and Passion Behind
                         <br>
@@ -434,7 +593,7 @@
 
                     </h2>
 
-                    <p class="mt-5 text-[#444] text-lg leading-8 max-w-[620px]">
+                    <p class="mt-5 text-[#131615] text-lg lg:text-[22px] leading-8 max-w-[800px]">
 
                         At Chetan Imitation, we create elegant imitation jewelry
                         that blends timeless tradition with modern style. Every
@@ -445,15 +604,15 @@
 
                     <!-- Stats -->
 
-                    <div class="mt-10 bg-[#B4771E] text-white grid grid-cols-3 p-[35px]">
+                    <div class="mt-10 bg-[#B4771E] text-white grid grid-cols-3 p-5 xl:p-[35px]">
 
                         <div class="pr-[22px] border-r border-[#d39d46]">
 
-                            <h3 class="text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
+                            <h3 class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
                                 250+
                             </h3>
 
-                            <p class="text-lg mt-3">
+                            <p class="text-base md:text-lg mt-2 md:mt-3">
                                 Jewelry Categories
                             </p>
 
@@ -461,11 +620,11 @@
 
                         <div class="px-[22px] border-r border-[#d39d46]">
 
-                            <h3 class="text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
+                            <h3 class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
                                 10,000+
                             </h3>
 
-                            <p class="text-lg mt-3">
+                            <p class="text-base md:text-lg mt-2 md:mt-3">
                                 Products Available
                             </p>
 
@@ -473,11 +632,11 @@
 
                         <div class="pl-[22px]">
 
-                            <h3 class="text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
+                            <h3 class="text-xl md:text-[26px] lg:text-[36px] leading-[26px] lg:leading-[36px] font-semibold">
                                 98%
                             </h3>
 
-                            <p class="text-lg mt-3">
+                            <p class="text-base md:text-lg mt-2 md:mt-3">
                                 Satisfied Customers
                             </p>
 
@@ -485,7 +644,7 @@
 
                     </div>
 
-                    <p class="mt-6 text-[#B4771E] text-[18px]">
+                    <p class="mt-6 text-[#B4771E] text-lg md:text-xl xl:text-[24px]">
                         Chetan Imitation • Jewelry Brand
                     </p>
 
@@ -498,10 +657,6 @@
                     <div class="relative">
 
                         <!-- Border Frame -->
-
-                        <div
-                            class="absolute top-5 left-5 right-5 bottom-5 border border-white z-10 pointer-events-none">
-                        </div>
 
                         <img src="assets/images/art.png" alt="" class="w-full">
 
@@ -521,7 +676,7 @@
     OUR MOST LOVED JEWELRY
     ========================= -->
 
-    <section class="py-[120px]">
+    <section class="section-space">
 
         <div class="container-1440">
 
@@ -530,11 +685,11 @@
             <div class="text-center mb-12">
 
                 <h2
-                    class=" text-[#131615] text-[42px] md:text-[54px] lg:text-[54px] leading-[1] font-normal font-moglan mx-auto">
+                    class=" hero-title">
                     Our Most Loved Jewelry
                 </h2>
 
-                <p class="mt-[15px] text-lg text-[#3D403F]">
+                <p class="hero-para">
                     Elegant Creations for Every Occasion
                 </p>
 
@@ -551,11 +706,21 @@
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -563,36 +728,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -601,17 +765,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -619,36 +792,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -657,17 +829,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -675,36 +856,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -713,17 +893,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -731,36 +920,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -769,17 +957,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -787,36 +984,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -825,17 +1021,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -843,36 +1048,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -881,16 +1085,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -898,36 +1112,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -936,17 +1149,26 @@
                     </div>
 
                 </div>
-
                 <div class="border border-[#D5D5D5]">
 
                     <div class="relative">
 
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -954,36 +1176,35 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
                             Add to Cart
 
@@ -1000,7 +1221,7 @@
             <div class="text-center mt-8 sm:mt-10">
 
                 <a href="#"
-                    class="inline-flex items-center justify-center bg-[#B4771E] text-white px-[35px] h-[66px] text-[22px] hover:bg-[#ad761c] transition">
+                    class="common-btn">
 
                     Explore More Jewelry
 
@@ -1018,7 +1239,7 @@
     LATEST JEWELRY COLLECTION
     ========================= -->
 
-    <section class=" py-20">
+    <section class="section-space-bottom">
 
         <div class="container-1440">
 
@@ -1026,14 +1247,13 @@
 
             <div class="text-center mb-10">
 
-                <h2
-                    class=" text-[#131615] text-[42px] md:text-[54px] lg:text-[54px] leading-[1] font-normal font-moglan mx-auto">
+                <h2 class="hero-title">
 
                     Discover Our Latest Jewelry Collection
 
                 </h2>
 
-                <p class="mt-[15px] text-lg text-[#3D403F]">
+                <p class="hero-para">
 
                     Discover elegant new jewelry designs for every special occasion today.
 
@@ -1045,27 +1265,31 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
-                <!-- Product 1 -->
-
-                <div class="border border-[#D5D5D5]">
-
+                 <div class="border border-[#D5D5D5]">
+    
                     <div class="relative overflow-hidden">
-
-                        <!-- Sale Ribbon -->
-
-                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
-
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -1073,64 +1297,68 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
-                            Shop Now
+                            Add to Cart
 
                         </button>
 
                     </div>
 
                 </div>
-
-                <div class="border border-[#D5D5D5]">
-
+                 <div class="border border-[#D5D5D5]">
+    
                     <div class="relative overflow-hidden">
-
-                        <!-- Sale Ribbon -->
-
-                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
-
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -1138,64 +1366,68 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
-                            Shop Now
+                            Add to Cart
 
                         </button>
 
                     </div>
 
                 </div>
-
-                <div class="border border-[#D5D5D5]">
-
+                 <div class="border border-[#D5D5D5]">
+    
                     <div class="relative overflow-hidden">
-
-                        <!-- Sale Ribbon -->
-
-                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
-
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -1203,64 +1435,68 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
-                            Shop Now
+                            Add to Cart
 
                         </button>
 
                     </div>
 
                 </div>
-
-                <div class="border border-[#D5D5D5]">
-
+                 <div class="border border-[#D5D5D5]">
+    
                     <div class="relative overflow-hidden">
-
-                        <!-- Sale Ribbon -->
-
-                        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+                     <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
                             <span
                                 class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                                 SALE
                             </span>
                         </div>
-
                         <img src="assets/images/Royal_Bridal.png" alt="" class="w-full  h-[340px]">
-
+ 
                         <button
                             class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center text-[#666] hover:text-[#B4771E] transition">
 
-                            <img src="assets/images/SVG.png" alt="">
+                           <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.6" 
+                            stroke="currentColor"
+                            class="w-5 h-5 text-[#131615]">
+                            
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
 
                         </button>
 
@@ -1268,38 +1504,37 @@
 
                     <div class="p-[25px]">
 
-                        <h3 class="text-lg text-[#131615] truncate">
+                        <h3 class="product-title">
                             Rajwadi Kundan Pearl Bridal Necklace
                         </h3>
 
                         <div class="flex items-center gap-1 mt-[9px]">
 
-                            <div class="text-[#B4771E] text-[base]">
+                            <div class="text-[#B4771E] text-base">
                                 ★★★★★
                             </div>
 
-                            <span class="text-base text-[#757575]">
+                            <span class="text-sm text-[#757575]">
                                 (156)
                             </span>
 
                         </div>
 
                         <div class="mt-1 flex items-center gap-1">
-
-                            <span class="text-xl font-medium text-[#131615]">
+                             <span class="text-lg xl:text-[24px] text-[#131615]">
                                 ₹4,999
                             </span>
 
-                            <span class="text-base text-[#757575] line-through">
+                              <span class="text-sm xl:text-lg text-[#757575] line-through">
                                 ₹7,999
                             </span>
 
                         </div>
 
                         <button
-                            class="w-full h-[45px] border border-[#131615] text-lg mt-3 hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
+                            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px] hover:border-[#B4771E] hover:bg-[#B4771E] hover:text-white transition">
 
-                            Shop Now
+                            Add to Cart
 
                         </button>
 
@@ -1319,7 +1554,7 @@
     FOLLOW OUR JEWELRY JOURNEY
     ========================= -->
 
-    <section class=" py-16 lg:py-20">
+    <section class="section-space-bottom">
 
         <div class="">
 
@@ -1328,7 +1563,7 @@
             <div class="text-center px-5">
 
                 <h2
-                    class=" text-[#131615] text-[42px] md:text-[54px] lg:text-[54px] leading-[1] font-normal font-moglan mx-auto">
+                    class=" hero-title">
                     Follow Our Jewelry Journey
                 </h2>
 
@@ -1381,7 +1616,7 @@
             <div class="text-center mt-8 lg:mt-10">
 
                 <a href="#"
-                    class="inline-flex items-center justify-center bg-[#B4771E] text-white px-[35px] h-[66px] text-[22px] hover:bg-[#ad761c] transition">
+                    class="common-btn">
 
                     Follow Us on Instagram
 
@@ -1416,7 +1651,7 @@
                         Stay Updated with New Jewelry Collections
                     </h2>
 
-                    <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px]">
+                    <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px] font-normal">
                         Subscribe to receive exclusive offers, styling tips, and first access to new arrivals
                     </p>
 
@@ -1424,10 +1659,12 @@
                     <div class="max-w-[520px] mx-auto mt-8 flex flex-col gap-3 sm:gap-0 sm:flex-row">
 
                         <input type="email" placeholder="Enter your email"
-                            class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white rounded-l-[4px] sm:rounded-l-0 rounded-r-[4px] sm:rounded-r-0 placeholder:text-lg">
+                            class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white  rounded-t-[4px] sm:rounded-l-[4px] sm:rounded-r-none
+                          rounded-b-none sm:rounded-b-[4px] placeholder:text-lg">
 
                         <button class="h-[58px] px-8 bg-[#B4771E] text-white text-lg hover:bg-[#b57a1f] transition 
-                        rounded-[4px] sm:rounded-r-[4px] ">
+                         rounded-b-[4px] sm:rounded-r-[4px] sm:rounded-l-none
+                        rounded-t-none sm:rounded-t-[4px]">
 
                             Subscribe
 
@@ -1435,7 +1672,7 @@
 
                     </div>
 
-                    <p class="mt-3 text-[#D5D5D5] text-lg">
+                    <p class="mt-3 text-[#D5D5D5] text-lg lg:text-xl">
                         We respect your privacy. Unsubscribe at any time.
                     </p>
 
@@ -1451,15 +1688,15 @@
 
         <div class="container-1440">
 
-            <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-10 py-14">
+            <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-9 py-14">
 
                 <!-- Logo -->
 
                 <div>
 
-                    <img src="assets/images/footer_logo.png" alt="Logo" class="h-16 mb-[25px]">
+                    <img src="assets/images/footer_logo.png" alt="Logo" class="mb-[25px]">
 
-                    <p class="text-[#cfcfcf] text-base leading-6">
+                    <p class="text-[#D5D5D5] text-base lg:text-lg leading-6 font-normal">
 
                         Premium imitation jewelry crafted for weddings,
                         festivals, and everyday elegance. Discover timeless
@@ -1473,11 +1710,11 @@
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                    <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Shop By Category
                     </h3>
 
-                    <ul class="space-y-3 text-[#d9d9d9] text-base">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[16px]">
 
                         <li><a href="#">Necklaces</a></li>
                         <li><a href="#">Bangal & Kadali</a></li>
@@ -1494,11 +1731,11 @@
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                   <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Company
                     </h3>
 
-                    <ul class="space-y-3 text-[#d9d9d9] text-base">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[16px]">
 
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
@@ -1511,11 +1748,11 @@
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Customer Service
                     </h3>
 
-                    <ul class="space-y-3 text-[#d9d9d9] text-base">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[28px]">
 
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Deliveries & Returns</a></li>
@@ -1530,11 +1767,11 @@
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Contact Us
                     </h3>
 
-                    <ul class="space-y-4 text-[#d9d9d9] text-[15px]">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[28px]">
 
                         <li class="flex gap-3">
                             <i class="fa-solid fa-phone text-[#B4771E] mt-1"></i>
@@ -1570,9 +1807,9 @@
 
             <div class="container-1440">
 
-                <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-5">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-[30px]">
 
-                    <p class="text-[#cfcfcf] text-[14px] text-center md:text-left">
+                    <p class="text-[#D5D5D5] text-base lg:text-lg lg:leading-[18px] text-center md:text-left">
 
                         © 2026 Chetan Imitation. All Rights Reserved |
                         Developed by Rising Star Infotech.
@@ -1581,26 +1818,39 @@
 
                     <!-- Social -->
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-[15px]">
 
-                        <a href="#"
-                            class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                      <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
 
                             <i class="fa-brands fa-facebook-f"></i>
 
                         </a>
 
-                        <a href="#"
-                            class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                         <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
+
 
                             <i class="fa-brands fa-instagram"></i>
 
                         </a>
 
-                        <a href="#"
-                            class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                          <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
 
-                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-whatsapp group:hover:text-white"></i>
 
                         </a>
 
@@ -1620,30 +1870,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
+<script>
+$(document).ready(function(){
 
-        $('.collection-slider').owlCarousel({
-            loop:true,
-            margin:30,
-            nav:false,
-            dots:true,
-            autoplay:true,
-            autoplayTimeout:3000,
+    $('.collection-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:3000,
 
-
-            responsive: {
-                0: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                1200: {
-                    items: 6
-                }
+        responsive:{
+            0:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1200:{
+                items:6
             }
-        });
-    </script>
+        }
+    });
+
+});
+</script>
 </body>
 
 </html>

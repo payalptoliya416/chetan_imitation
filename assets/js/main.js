@@ -249,7 +249,7 @@ grid.innerHTML = pageItems.map(p => `
                 ${stars(p.rating)}
             </div>
 
-            <span class="text-base text-[#757575]">
+            <span class="text-sm text-[#757575]">
                 (${p.reviews})
             </span>
 
@@ -263,7 +263,7 @@ grid.innerHTML = pageItems.map(p => `
             </span>
 
             ${p.mrp > p.price ? `
-            <span class="text-base text-[#757575] line-through">
+            <span class="text-sm text-[#757575] line-through">
                 ₹${fmt(p.mrp)}
             </span>
             ` : ''}
@@ -393,3 +393,25 @@ function goPage(n) {
  
 // ── Init ──────────────────────────────────────────────────────
 render();
+
+
+// -------------navbar js--
+function toggleMenu(menuId, iconId){
+
+    const menu = document.getElementById(menuId);
+
+    const icon = document.getElementById(iconId);
+
+    menu.classList.toggle("hidden");
+
+    if(menu.classList.contains("hidden")){
+
+        icon.innerHTML = '<i class="fa-solid fa-plus"></i>';
+
+    }else{
+
+        icon.innerHTML = '<i class="fa-solid fa-minus"></i>';
+
+    }
+
+}

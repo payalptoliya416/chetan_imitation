@@ -4,25 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/font.css">
-    <!-- Owl CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <title>Chetan Imitation</title>
+    <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="assets/css/font.css">
+
+        <!-- Custom CSS (હંમેશા છેલ્લે રાખો) -->
+        <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-      <header class="relative z-50">
+
+    <!-- Header -->
+    <header class="relative z-50">
 
         <!-- Top Bar -->
 
-        <div class="bg-[#c48622] h-[24px] flex items-center justify-center">
+        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
 
-            <p class="text-white text-[11px]">
+            <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
                 Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
             </p>
 
@@ -34,19 +46,19 @@
 
             <div class="container-1440">
 
-                <div class="h-[64px] flex items-center justify-between">
+                <div class="flex items-center justify-between">
 
                     <!-- Logo -->
 
                     <a href="#">
-                        <img src="assets/images/logo.png" class="h-[50px]">
+                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] xl::w-auto">
                     </a>
 
                     <!-- Desktop Menu -->
 
-                    <nav class="hidden lg:flex items-center gap-10">
+                    <nav class="hidden lg:flex items-center gap-7 xl:gap-10">
 
-                        <a href="#" class="text-[#c48622] text-[14px]">
+                        <a href="#" class="text-[#B4771E] text-lg xl:text-xl">
                             Home
                         </a>
 
@@ -54,11 +66,11 @@
 
                         <div class="group relative">
 
-                            <button class="flex items-center gap-2 text-white text-[14px]">
+                            <button class="flex items-center gap-2 text-white  text-lg xl:text-xl">
 
                                 Shop By Category
 
-                                <i class="fa-solid fa-angle-down text-[11px]"></i>
+                                <i class="fa-solid fa-angle-down text-xl"></i>
 
                             </button>
 
@@ -71,7 +83,7 @@
 
                                     <!-- Left -->
 
-                                    <div class="border border-[#ddd]">
+                                    <div class="border border-[#D5D5D5]">
 
                                         <div class="flex justify-between px-4 py-3 border-b">
                                             <span>Necklace</span>
@@ -127,7 +139,7 @@
 
                                     <!-- Right -->
 
-                                    <div class="border border-[#ddd]">
+                                    <div class="border border-[#D5D5D5]">
 
                                         <div class="px-4 py-3 border-b">
                                             Short Necklace
@@ -149,11 +161,11 @@
 
                         </div>
 
-                        <a href="#" class="text-white text-[14px]">
+                        <a href="#" class="text-white  text-lg xl:text-xl">
                             About Us
                         </a>
 
-                        <a href="#" class="text-white text-[14px]">
+                        <a href="#" class="text-white  text-lg xl:text-xl">
                             Contact Us
                         </a>
 
@@ -161,28 +173,37 @@
 
                     <!-- Right Side -->
 
-                    <div class="hidden lg:flex items-center gap-4">
+                    <div class="hidden lg:flex items-center gap-5">
 
-                        <div class="relative">
+                        <div class="relative ">
 
                             <input type="text" placeholder="Search"
-                                class="w-[250px] h-[38px] border border-[#222] bg-transparent px-4 text-white text-[13px]">
+                                class="w-[200px] xl:w-[370px] rounded-sm h-[40px] border border-[#D5D5D533] px-4 text-white text-base placeholder:text-base bg-[#FFFFFF08]">
 
-                            <i
-                                class="fa-solid fa-magnifying-glass absolute right-3 top-1/2 -translate-y-1/2 text-white text-[12px]"></i>
+                         <img src="assets/images/search.png" alt="" class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
 
                         </div>
 
-                        <a href="#" class="text-white">
-                            <i class="fa-regular fa-heart"></i>
+                         <a href="#" class="relative">
+                            <img src="assets/images/heart.png" alt="heart">
+
+                            <span
+                                class="absolute -top-1 -right-1 w-[14px] h-[14px] rounded-full bg-[#B78326] text-white text-[9px] font-medium flex items-center justify-center">
+                                3
+                            </span>
+                        </a>
+
+                            <a href="#" class="relative">
+                            <img src="assets/images/cart.png" alt="cart" >
+
+                            <span
+                                class="absolute -top-1 -right-1 w-[14px] h-[14px] rounded-full bg-[#B78326] text-white text-[9px] font-medium flex items-center justify-center">
+                                3
+                            </span>
                         </a>
 
                         <a href="#" class="text-white">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                        </a>
-
-                        <a href="#" class="text-white">
-                            <i class="fa-regular fa-user"></i>
+                            <img src="assets/images/user.png" alt="">
                         </a>
 
                     </div>
@@ -208,13 +229,19 @@
 
         <div class="bg-[#050b0d]">
 
-            <div class="bg-[#c48622] text-center text-white text-[10px] py-2">
+        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
+
+           <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
                 Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
-            </div>
+            </p>
 
-            <div class="h-[60px] px-5 flex items-center justify-between">
+        </div>
 
-                <img src="assets/images/logo.png" class="h-[40px]">
+            <div class="px-5 flex items-center justify-between">
+
+                <a href="#">
+                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] xl::w-auto">
+                </a>
 
                 <button id="closeMenu" class="text-white text-2xl">
                     <i class="fa-solid fa-xmark"></i>
@@ -224,93 +251,215 @@
 
         </div>
 
-        <div class="p-5">
+            <div class="px-[15px] py-[30px]">
 
-            <a class="block py-4 border-b">Home</a>
+            <a class="block pb-5 border-b text-[#131615] text-lg leading-[18px]">Home</a>
 
-            <div class="py-4 border-b">
+            <!-- Shop By Category -->
+            <div class="border-b">
 
-                <div class="flex justify-between">
+                <button onclick="toggleMenu('shopMenu','shopArrow')"
+                    class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
                     <span>Shop By Category</span>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
 
-                <div class="mt-4 pl-4">
+                    <i id="shopArrow" class="fa-solid fa-angle-down transition duration-300"></i>
 
-                    <div class="flex justify-between py-3">
-                        <span>Necklace</span>
-                        <span>−</span>
+                </button>
+
+                <div id="shopMenu">
+
+                    <!-- Necklace -->
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('necklaceMenu','necklaceIcon')"
+                            class="w-full pt-[5px] pb-5 flex justify-between items-center text-[#131615] text-lg leading-[18px] pl-4">
+
+                            <span class="text-[#3D403F]">Necklace</span>
+
+                            <span id="necklaceIcon">    <i class="fa-solid fa-minus"></i></span>
+
+                        </button>
+
+                        <ul id="necklaceMenu"
+                            class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+
+                            <li>Short Necklace</li>
+                            <li>Long Necklace</li>
+                            <li>Leriyat Necklace</li>
+
+                        </ul>
+
                     </div>
 
-                    <ul class="pl-4 text-[#777] text-sm space-y-3">
-                        <li>Short Necklace</li>
-                        <li>Long Necklace</li>
-                        <li>Leriyat Necklace</li>
-                    </ul>
+                    <!-- Bangal -->
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('bangalMenu','bangalIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Bangal & Kadali</span>
+
+                            <span id="bangalIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="bangalMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Braslate -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('braslateMenu','braslateIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Braslate</span>
+
+                            <span id="braslateIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="braslateMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Watch -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('watchMenu','watchIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Watch</span>
+
+                            <span id="watchIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="watchMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Hathful -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('hathfulMenu','hathfulIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Hathful</span>
+
+                            <span id="hathfulIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="hathfulMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Ring -->
+
+                    <div class="border-b">
+
+                        <button onclick="toggleMenu('ringMenu','ringIcon')"
+                            class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
+
+                            <span>Ring</span>
+
+                            <span id="ringIcon"> <i class="fa-solid fa-plus"></i></span>
+
+                        </button>
+
+                        <ul id="ringMenu"
+                            class="hidden pl-6 pb-4 text-[#777] text-sm space-y-3 list-disc">
+
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+
+                        </ul>
+
+                    </div>
 
                 </div>
 
             </div>
 
-            <a class="block py-4 border-b">Bangal & Kadali</a>
-            <a class="block py-4 border-b">Braslate</a>
-            <a class="block py-4 border-b">Watch</a>
-            <a class="block py-4 border-b">Hathful</a>
-            <a class="block py-4 border-b">Ring</a>
-            <a class="block py-4 border-b">Chain & Mala</a>
-            <a class="block py-4 border-b">Pendal & Buti</a>
-            <a class="block py-4 border-b">Juda & Kandora</a>
-            <a class="block py-4 border-b">Other</a>
-
             <a class="block py-4 border-b">About Us</a>
-            <a class="block py-4 border-b">Contact Us</a>
+
+            <a class="block py-4">Contact Us</a>
 
         </div>
 
     </div>
-
+    <!-- Header -->
     
-<div class="container-1440 py-10 lg:py-[120px]">
+<div class="container-1440 section-space">
  
   <!-- Page Title (dynamic) -->
-  <div class="text-center mb-8">
-    <h1 id="pageTitle" class="font-moglan text-4xl font-normal text-gray-900 mb-2">My Orders</h1>
-    <p id="pageSubtitle" class="text--[18px] text-[#3D403F]-600">Track your orders, view purchase history, and manage your jewelry collections with ease.</p>
+  <div class="text-center mb-10">
+     <h2 class="font-moglan text-[#131615] text-[30px] md:text-[40px] lg:text-[64px] leading-[46px] md:leading-[60px] lg:leading-[64px] mb-[15px]">My Orders</h2>
+    <p id="pageSubtitle" class="text--[18px] text-[#3D403F]">Track your orders, view purchase history, and manage your jewelry collections with ease.</p>
   </div>
  
   <div class="flex flex-col lg:flex-row gap-6 items-start">
  
     <!-- ══ SIDEBAR ══ -->
-    <aside class="w-full lg:w-[250px] shrink-0 border border-gray-200 rounded-sm">
-      <div class="px-5 py-2 mx-3 border-b border-[#D5D5D5]-100 ">
-        <p class="text-[15px] font-semibold text-gray-800">My Account</p>
+    <aside class="w-full lg:w-[360px] shrink-0 border border-gray-200 rounded-lg">
+      <div class="m-5 pb-5 border-b border-[#D5D5D5]">
+        <p class="text-base md:text-lg lg:text-[22px] font-semibold text-[#131615]">My Account</p>
       </div>
-      <nav class="py-3">
+      <nav class="space-y-[10px] mb-[10px]">
         <button onclick="switchTab('orders',this)"
-          class="tab-btn active w-full flex items-center gap-3 px-5 py-3 text-sm text-[#c48622] font-medium text-left">
-          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          class="tab-btn active w-full flex items-center gap-[10px] px-5 py-[15px] text-base md:text-lg lg:text-xl text-[#B4771E] font-medium text-left">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
           </svg>
           My Order
         </button>
         <button onclick="switchTab('addresses',this)"
-          class="tab-btn w-full flex items-center gap-3 px-5 py-3 text-sm text-gray-600 font-normal text-left">
-          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          class="tab-btn w-full flex items-center gap-3 px-5 py-3 text-base md:text-lg lg:text-xl text-[#3D403F] font-normal text-left">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
           </svg>
           Addresses
         </button>
         <button onclick="switchTab('account',this)"
-          class="tab-btn w-full flex items-center gap-3 px-5 py-3 text-sm text-gray-600 font-normal text-left">
-          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          class="tab-btn w-full flex items-center gap-3 px-5 py-3 text-base md:text-lg lg:text-xl text-[#3D403F] font-normal text-left">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
           </svg>
           Account Details
         </button>
         <button onclick="switchTab('logout',this)"
-          class="tab-btn w-full flex items-center gap-3 px-5 py-3 text-sm text-gray-600 font-normal text-left">
-          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          class="tab-btn w-full flex items-center gap-3 px-5 py-3 text-base md:text-lg lg:text-xl  text-[#3D403F] font-normal text-left">
+          <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6a2 2 0 012 2v1"/>
           </svg>
           Logout
@@ -330,23 +479,23 @@ MY ORDERS TAB
 
     <!-- Search & Filter -->
 
-    <div class="flex flex-col lg:flex-row gap-3 mb-6">
+    <div class="flex flex-col lg:flex-row gap-[19px] mb-[30px]">
 
         <div
-            class="flex flex-1 border border-[#dddddd] bg-white overflow-hidden rounded-[7px]">
+            class="flex flex-1 border border-[#D5D5D5] bg-white overflow-hidden rounded-[7px]">
 
             <input
                 id="searchInput"
                 type="text"
                 placeholder="Search your orders here"
                 oninput="filterOrders()"
-                class="flex-1 h-[48px] px-4 text-[14px] text-[#333] outline-none placeholder:text-[#999] ">
+                class="flex-1 px-5 py-5 text-lg placeholder:text-lg text-[#131615] outline-none placeholder:text#757575] ">
 
             <button
                 onclick="filterOrders()"
-                class="bg-[#B4771E] hover:bg-[#ad741b] transition-all px-6 text-white text-[14px] font-medium flex items-center gap-2">
+                class="bg-[#B4771E] hover:bg-[#ad741b] transition-all px-[30px] py-5 text-white text-lg font-medium flex items-center gap-[10px]">
 
-                <i class="fa-solid fa-magnifying-glass text-[12px]"></i>
+                <i class="fa-solid fa-magnifying-glass text-lg"></i>
 
                 Search Orders
 
@@ -358,7 +507,7 @@ MY ORDERS TAB
     <select
         id="statusFilter"
         onchange="filterOrders()"
-        class="rounded-[7px] appearance-none w-full h-[48px] border border-[#dddddd] bg-white px-4 pr-10 text-[14px] text-[#131615] outline-none">
+        class="rounded-[7px] appearance-none w-full p-5 border border-[#D5D5D5] bg-white text-xl text-[#131615] outline-none">
 
         <option value="all">All Orders</option>
         <option value="Delivered">Delivered</option>
@@ -384,7 +533,7 @@ MY ORDERS TAB
 
         <!-- Order Card 1 -->
 
-       <div class="border border-[#dddddd] bg-white p-5">
+       <div class="border border-[#D5D5D5] p-[25px]">
 
     <div class="flex flex-col lg:flex-row items-start gap-5">
 
@@ -395,7 +544,7 @@ MY ORDERS TAB
             <img
                 src="assets/images/detailpage.png"
                 alt=""
-                class="w-[165px] h-[165px] object-cover">
+                class="w-[230px] h-[230px]">
 
         </div>
 
@@ -403,58 +552,57 @@ MY ORDERS TAB
 
         <div class="flex-1">
 
-    <h3 class="text-[18px] font-medium text-[#222] leading-[1.4]">
+    <h3 class="text-base md:text-[22px] lg:text-[24px] font-medium text-[#131615] leading-[1.4]">
         Royal Rajwadi Kundan Bridal Necklace Set with Pearl Detailing
     </h3>
 
     <!-- Price + Status -->
-    <div class="flex justify-between items-center mt-4">
+    <div class="flex justify-between items-center mt-[23px]">
 
         <div class="flex items-center gap-2">
-            <span class="text-[#c48622] text-[18px] font-semibold">
+            <span class="text-[#B4771E] text-base md:text-[22px] lg:text-[24px] lg:leading-[24px] font-semibold">
                 ₹4,999
             </span>
 
-            <span class="text-[#999] text-[13px] line-through">
+            <span class="text-[#757575] text-[16px] line-through">
                 ₹7,999
             </span>
         </div>
 
-        <div class="flex items-center gap-2 text-[#16a34a] text-[14px]">
-            <span class="w-[6px] h-[6px] rounded-full bg-[#16a34a]"></span>
-            Delivered
+        <div class="flex items-center gap-2 text-[#16A135] text-base md:text-[22px] lg:text-[24px] lg:leading-[24px]">
+            <span class="w-[8px] h-[8px] rounded-full bg-[#16A135]"></span>            Delivered
         </div>
 
     </div>
 
     <!-- Details + Button -->
-    <div class="flex justify-between items-end mt-6">
+    <div class="flex justify-between items-end mt-[30px]">
 
-        <div class="space-y-3">
+        <div class="space-y-5">
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+                <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Order ID:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     #CI202506001
                 </span>
             </div>
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+               <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Order Date:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                 <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     25 May 2026
                 </span>
             </div>
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+                 <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Delivery Date:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                  <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     29 May 2026
                 </span>
             </div>
@@ -462,7 +610,7 @@ MY ORDERS TAB
         </div>
 
         <button
-            class="w-[165px] h-[50px] bg-[#c48622] hover:bg-[#b3771e] text-white text-[16px] font-medium transition">
+            class="px-[35px] rounded-sm py-[15px] bg-[#B4771E] hover:bg-[#b3771e] text-white text-[22px] leading-[22px] font-semibold transition">
             View Order
         </button>
 
@@ -470,11 +618,10 @@ MY ORDERS TAB
 
         </div>
     </div>
-  </div>
-
+       </div>
         <!-- Order Card 2 -->
 
-      <div class="border border-[#dddddd] bg-white p-5">
+       <div class="border border-[#D5D5D5] p-[25px]">
 
     <div class="flex flex-col lg:flex-row items-start gap-5">
 
@@ -485,7 +632,7 @@ MY ORDERS TAB
             <img
                 src="assets/images/detailpage.png"
                 alt=""
-                class="w-[165px] h-[165px] object-cover">
+                class="w-[230px] h-[230px]">
 
         </div>
 
@@ -493,58 +640,57 @@ MY ORDERS TAB
 
         <div class="flex-1">
 
-    <h3 class="text-[18px] font-medium text-[#222] leading-[1.4]">
-        Traditional Meenakari Jhumka Earrings for Women
+    <h3 class="text-base md:text-[22px] lg:text-[24px] font-medium text-[#131615] leading-[1.4]">
+       Traditional Meenakari Jhumka Earrings for Women
     </h3>
 
     <!-- Price + Status -->
-    <div class="flex justify-between items-center mt-4">
+    <div class="flex justify-between items-center mt-[23px]">
 
         <div class="flex items-center gap-2">
-            <span class="text-[#c48622] text-[18px] font-semibold">
-                ₹4,999
+            <span class="text-[#B4771E] text-base md:text-[22px] lg:text-[24px] lg:leading-[24px] font-semibold">
+              ₹1,499
             </span>
 
-            <span class="text-[#999] text-[13px] line-through">
-                ₹7,999
+            <span class="text-[#757575] text-[16px] line-through">
+                ₹2,999
             </span>
         </div>
 
-        <div class="flex items-center gap-2 text-[#16a34a] text-[14px]">
-            <span class="w-[6px] h-[6px] rounded-full bg-[#16a34a]"></span>
-            Delivered
+        <div class="flex items-center gap-2 text-[#E01B1B] text-base md:text-[22px] lg:text-[24px] lg:leading-[24px]">
+            <span class="w-[8px] h-[8px] rounded-full bg-[#E01B1B]"></span>           Cancelled
         </div>
 
     </div>
 
     <!-- Details + Button -->
-    <div class="flex justify-between items-end mt-6">
+    <div class="flex justify-between items-end mt-[30px]">
 
-        <div class="space-y-3">
+        <div class="space-y-5">
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+                <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Order ID:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     #CI202506001
                 </span>
             </div>
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+               <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Order Date:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                 <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     25 May 2026
                 </span>
             </div>
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+                 <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Delivery Date:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                  <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     29 May 2026
                 </span>
             </div>
@@ -552,18 +698,18 @@ MY ORDERS TAB
         </div>
 
         <button
-            class="w-[165px] h-[50px] bg-[#c48622] hover:bg-[#b3771e] text-white text-[16px] font-medium transition">
+            class="px-[35px] rounded-sm py-[15px] bg-[#B4771E] hover:bg-[#b3771e] text-white text-[22px] leading-[22px] font-semibold transition">
             View Order
         </button>
 
     </div>
 
-</div>
-
+        </div>
     </div>
+       </div>
+        <!-- Order Card 3 -->
 
-</div>
-<div class="border border-[#dddddd] bg-white p-5">
+       <div class="border border-[#D5D5D5] p-[25px]">
 
     <div class="flex flex-col lg:flex-row items-start gap-5">
 
@@ -574,7 +720,7 @@ MY ORDERS TAB
             <img
                 src="assets/images/detailpage.png"
                 alt=""
-                class="w-[165px] h-[165px] object-cover">
+                class="w-[230px] h-[230px]">
 
         </div>
 
@@ -582,58 +728,57 @@ MY ORDERS TAB
 
         <div class="flex-1">
 
-    <h3 class="text-[18px] font-medium text-[#222] leading-[1.4]">
+    <h3 class="text-base md:text-[22px] lg:text-[24px] font-medium text-[#131615] leading-[1.4]">
         Royal Rajwadi Kundan Bridal Necklace Set with Pearl Detailing
     </h3>
 
     <!-- Price + Status -->
-    <div class="flex justify-between items-center mt-4">
+    <div class="flex justify-between items-center mt-[23px]">
 
         <div class="flex items-center gap-2">
-            <span class="text-[#c48622] text-[18px] font-semibold">
+            <span class="text-[#B4771E] text-base md:text-[22px] lg:text-[24px] lg:leading-[24px] font-semibold">
                 ₹4,999
             </span>
 
-            <span class="text-[#999] text-[13px] line-through">
+            <span class="text-[#757575] text-[16px] line-through">
                 ₹7,999
             </span>
         </div>
 
-        <div class="flex items-center gap-2 text-[#16a34a] text-[14px]">
-            <span class="w-[6px] h-[6px] rounded-full bg-[#16a34a]"></span>
-            Delivered
+        <div class="flex items-center gap-2 text-[#16A135] text-base md:text-[22px] lg:text-[24px] lg:leading-[24px]">
+            <span class="w-[8px] h-[8px] rounded-full bg-[#16A135]"></span>            Delivered
         </div>
 
     </div>
 
     <!-- Details + Button -->
-    <div class="flex justify-between items-end mt-6">
+    <div class="flex justify-between items-end mt-[30px]">
 
-        <div class="space-y-3">
+        <div class="space-y-5">
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+                <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Order ID:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     #CI202506001
                 </span>
             </div>
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+               <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Order Date:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                 <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     25 May 2026
                 </span>
             </div>
 
             <div class="flex">
-                <span class="w-[120px] text-[14px] font-medium">
+                 <span class="w-[130px] text-sm sm:text-base md:text-lg md:leading-[18px] font-medium text-[#131615]" >
                     Delivery Date:
                 </span>
-                <span class="text-[#8c8c8c] text-[14px]">
+                  <span class="text-[#757575] text-sm sm:text-base md:text-lg md:leading-[18px] ">
                     29 May 2026
                 </span>
             </div>
@@ -641,17 +786,15 @@ MY ORDERS TAB
         </div>
 
         <button
-            class="w-[165px] h-[50px] bg-[#c48622] hover:bg-[#b3771e] text-white text-[16px] font-medium transition">
+            class="px-[35px] rounded-sm py-[15px] bg-[#B4771E] hover:bg-[#b3771e] text-white text-[22px] leading-[22px] font-semibold transition">
             View Order
         </button>
 
     </div>
 
-</div>
+        </div>
     </div>
-
-</div>
-
+       </div>
 
     </div>
 
@@ -659,13 +802,13 @@ MY ORDERS TAB
 
     <div
         id="noOrders"
-        class="hidden text-center py-20">
+        class="hidden text-center section-space">
 
         <i
             class="fa-regular fa-clipboard text-[55px] text-[#cccccc]"></i>
 
         <h3
-            class="mt-4 text-[20px] font-medium text-[#555]">
+            class="mt-4 text-[20px] font-medium text-[#3D403F]">
 
             No Orders Found
 
@@ -702,11 +845,11 @@ MY ORDERS TAB
 
     <!-- Address Wrapper -->
 
-    <div class="border border-[#dddddd] bg-white overflow-hidden">
+    <div class="border border-[#D5D5D5] bg-white overflow-hidden">
 
         <!-- Address 1 -->
 
-        <div class="bg-[#f5f2ee] border-b border-[#dddddd] px-6 py-5">
+        <div class="bg-[#f5f2ee] border-b border-[#D5D5D5] px-6 py-5">
 
             <div class="flex justify-between items-start">
 
@@ -714,7 +857,7 @@ MY ORDERS TAB
 
                     <div class="flex items-center gap-2">
 
-                        <i class="fa-solid fa-house text-[14px] text-[#333]"></i>
+                        <i class="fa-solid fa-house text-[14px] text-[#131615]"></i>
 
                         <span class="text-[15px] text-[#222]">
                             Deliver To:
@@ -733,7 +876,7 @@ MY ORDERS TAB
 
                     </div>
 
-                    <p class="mt-3 text-[14px] text-[#555] leading-[22px]">
+                    <p class="mt-3 text-[14px] text-[#3D403F] leading-[22px]">
 
                         123 Shree Residency, Near City Mall, MG Road Satellite,
                         Ahmedabad, Gujarat 380015, India
@@ -754,7 +897,7 @@ MY ORDERS TAB
 
         <!-- Address 2 -->
 
-        <div class="border-b border-[#dddddd] px-6 py-5">
+        <div class="border-b border-[#D5D5D5] px-6 py-5">
 
             <div class="flex justify-between items-start">
 
@@ -762,7 +905,7 @@ MY ORDERS TAB
 
                     <div class="flex items-center gap-2">
 
-                        <i class="fa-solid fa-building text-[14px] text-[#333]"></i>
+                        <i class="fa-solid fa-building text-[14px] text-[#131615]"></i>
 
                         <span class="text-[15px] text-[#222]">
                             Deliver To:
@@ -772,7 +915,7 @@ MY ORDERS TAB
                             Priya Sharma, 394101
                         </span>
                     </div>
-                    <p class="mt-3 text-[14px] text-[#555] leading-[22px]">
+                    <p class="mt-3 text-[14px] text-[#3D403F] leading-[22px]">
                         123 Shree Residency, Near City Mall, MG Road Satellite,
                         Ahmedabad, Gujarat 380015, India
                     </p>
@@ -790,7 +933,7 @@ MY ORDERS TAB
 
         <!-- Address 3 -->
 
-        <div class="border-b border-[#dddddd] px-6 py-5">
+        <div class="border-b border-[#D5D5D5] px-6 py-5">
 
             <div class="flex justify-between items-start">
 
@@ -798,7 +941,7 @@ MY ORDERS TAB
 
                     <div class="flex items-center gap-2">
 
-                        <i class="fa-solid fa-house text-[14px] text-[#333]"></i>
+                        <i class="fa-solid fa-house text-[14px] text-[#131615]"></i>
 
                         <span class="text-[15px] text-[#222]">
                             Deliver To:
@@ -810,7 +953,7 @@ MY ORDERS TAB
 
                     </div>
 
-                    <p class="mt-3 text-[14px] text-[#555] leading-[22px]">
+                    <p class="mt-3 text-[14px] text-[#3D403F] leading-[22px]">
 
                         123 Shree Residency, Near City Mall, MG Road Satellite,
                         Ahmedabad, Gujarat 380015, India
@@ -839,7 +982,7 @@ MY ORDERS TAB
 
                     <div class="flex items-center gap-2">
 
-                        <i class="fa-solid fa-building text-[14px] text-[#333]"></i>
+                        <i class="fa-solid fa-building text-[14px] text-[#131615]"></i>
 
                         <span class="text-[15px] text-[#222]">
                             Deliver To:
@@ -851,7 +994,7 @@ MY ORDERS TAB
 
                     </div>
 
-                    <p class="mt-3 text-[14px] text-[#555] leading-[22px]">
+                    <p class="mt-3 text-[14px] text-[#3D403F] leading-[22px]">
 
                         123 Shree Residency, Near City Mall, MG Road Satellite,
                         Ahmedabad, Gujarat 380015, India
@@ -1069,7 +1212,7 @@ MY ORDERS TAB
                         Stay Updated with New Jewelry Collections
                     </h2>
 
-                    <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px]">
+                    <p class="mt-[15px] text-white/90 text-[14px] md:text-[22px] font-normal">
                         Subscribe to receive exclusive offers, styling tips, and first access to new arrivals
                     </p>
 
@@ -1077,10 +1220,12 @@ MY ORDERS TAB
                     <div class="max-w-[520px] mx-auto mt-8 flex flex-col gap-3 sm:gap-0 sm:flex-row">
 
                         <input type="email" placeholder="Enter your email"
-                            class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white rounded-l-[4px] sm:rounded-l-0 rounded-r-[4px] sm:rounded-r-0 placeholder:text-lg">
+                            class="flex-1 h-[58px] py-5 px-4 text-lg outline-none bg-white  rounded-t-[4px] sm:rounded-l-[4px] sm:rounded-r-none
+                          rounded-b-none sm:rounded-b-[4px] placeholder:text-lg">
 
                         <button class="h-[58px] px-8 bg-[#B4771E] text-white text-lg hover:bg-[#b57a1f] transition 
-                        rounded-[4px] sm:rounded-r-[4px] ">
+                         rounded-b-[4px] sm:rounded-r-[4px] sm:rounded-l-none
+                        rounded-t-none sm:rounded-t-[4px]">
 
                             Subscribe
 
@@ -1088,7 +1233,7 @@ MY ORDERS TAB
 
                     </div>
 
-                    <p class="mt-3 text-[#D5D5D5] text-lg">
+                    <p class="mt-3 text-[#D5D5D5] text-lg lg:text-xl">
                         We respect your privacy. Unsubscribe at any time.
                     </p>
 
@@ -1104,15 +1249,15 @@ MY ORDERS TAB
 
         <div class="container-1440">
 
-            <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-10 py-14">
+            <div class="grid lg:grid-cols-[1.3fr_1fr_0.7fr_1fr_1.8fr] md:grid-cols-2 gap-9 py-14">
 
                 <!-- Logo -->
 
                 <div>
 
-                    <img src="assets/images/footer_logo.png" alt="Logo" class="h-16 mb-[25px]">
+                    <img src="assets/images/footer_logo.png" alt="Logo" class="mb-[25px]">
 
-                    <p class="text-[#cfcfcf] text-base leading-6">
+                    <p class="text-[#D5D5D5] text-base lg:text-lg leading-6 font-normal">
 
                         Premium imitation jewelry crafted for weddings,
                         festivals, and everyday elegance. Discover timeless
@@ -1126,11 +1271,11 @@ MY ORDERS TAB
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                    <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Shop By Category
                     </h3>
 
-                    <ul class="space-y-3 text-[#d9d9d9] text-base">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[16px]">
 
                         <li><a href="#">Necklaces</a></li>
                         <li><a href="#">Bangal & Kadali</a></li>
@@ -1147,11 +1292,11 @@ MY ORDERS TAB
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                   <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Company
                     </h3>
 
-                    <ul class="space-y-3 text-[#d9d9d9] text-base">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[16px]">
 
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
@@ -1164,11 +1309,11 @@ MY ORDERS TAB
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Customer Service
                     </h3>
 
-                    <ul class="space-y-3 text-[#d9d9d9] text-base">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[28px]">
 
                         <li><a href="#">Terms & Conditions</a></li>
                         <li><a href="#">Deliveries & Returns</a></li>
@@ -1183,11 +1328,11 @@ MY ORDERS TAB
 
                 <div>
 
-                    <h3 class="text-[#B4771E] text-[18px] font-medium mb-5">
+                     <h3 class="text-[#B4771E] text-[18px] lg:text-lg font-semibold mb-5">
                         Contact Us
                     </h3>
 
-                    <ul class="space-y-4 text-[#d9d9d9] text-[15px]">
+                    <ul class="space-y-3 md:space-y-5 text-[#D5D5D5] text-base lg:text-lg lg:leading-[28px]">
 
                         <li class="flex gap-3">
                             <i class="fa-solid fa-phone text-[#B4771E] mt-1"></i>
@@ -1223,9 +1368,9 @@ MY ORDERS TAB
 
             <div class="container-1440">
 
-                <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-5">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-5 py-[30px]">
 
-                    <p class="text-[#cfcfcf] text-[14px] text-center md:text-left">
+                    <p class="text-[#D5D5D5] text-base lg:text-lg lg:leading-[18px] text-center md:text-left">
 
                         © 2026 Chetan Imitation. All Rights Reserved |
                         Developed by Rising Star Infotech.
@@ -1234,26 +1379,39 @@ MY ORDERS TAB
 
                     <!-- Social -->
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-[15px]">
 
-                        <a href="#"
-                            class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                      <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
 
                             <i class="fa-brands fa-facebook-f"></i>
 
                         </a>
 
-                        <a href="#"
-                            class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                         <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
+
 
                             <i class="fa-brands fa-instagram"></i>
 
                         </a>
 
-                        <a href="#"
-                            class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-[#B4771E] hover:border-[#B4771E] transition">
+                          <a href="#"
+   class="w-[38px] h-[38px] rounded-full border border-[#FFFFFF1A]
+   flex items-center justify-center
+   text-white bg-[#FFFFFF0D]
+   hover:bg-[#B4771E] hover:border-[#B4771E]
+   hover:text-white transition">
 
-                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-whatsapp group:hover:text-white"></i>
 
                         </a>
 
