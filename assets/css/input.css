@@ -318,7 +318,7 @@ summary {
 }
 
 .hero-heading{
-    @apply text-[#131615] text-[48px] md:text-[60px] md:leading-[80px] xl:text-[76px] xl:leading-[88px] mb-[15px];
+    @apply text-[#131615] text-[48px] md:text-[60px] md:leading-[64px] xl:text-[76px] xl:leading-[80px] mb-[15px];
 }
 
 .common-btn{

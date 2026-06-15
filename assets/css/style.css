@@ -582,8 +582,8 @@
   .h-\[60px\] {
     height: 60px;
   }
-  .h-\[130px\] {
-    height: 130px;
+  .h-\[100px\] {
+    height: 100px;
   }
   .h-\[180px\] {
     height: 180px;
@@ -699,6 +699,9 @@
   .w-\[69px\] {
     width: 69px;
   }
+  .w-\[100px\] {
+    width: 100px;
+  }
   .w-\[110px\] {
     width: 110px;
   }
@@ -719,6 +722,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[50px\] {
+    max-width: 50px;
   }
   .max-w-\[240px\] {
     max-width: 240px;
@@ -3085,12 +3091,6 @@
       font-size: 78px;
     }
   }
-  .lg\:leading-\[1px\] {
-    @media (width >= 64rem) {
-      --tw-leading: 1px;
-      line-height: 1px;
-    }
-  }
   .lg\:leading-\[16px\] {
     @media (width >= 64rem) {
       --tw-leading: 16px;
@@ -3156,6 +3156,11 @@
   .xl\:w-\[370px\] {
     @media (width >= 80rem) {
       width: 370px;
+    }
+  }
+  .xl\:w-full {
+    @media (width >= 80rem) {
+      width: 100%;
     }
   }
   .xl\:grid-cols-2 {
@@ -3662,15 +3667,15 @@ summary {
     font-size: 60px;
   }
   @media (width >= 48rem) {
-    --tw-leading: 80px;
-    line-height: 80px;
+    --tw-leading: 64px;
+    line-height: 64px;
   }
   @media (width >= 80rem) {
     font-size: 76px;
   }
   @media (width >= 80rem) {
-    --tw-leading: 88px;
-    line-height: 88px;
+    --tw-leading: 80px;
+    line-height: 80px;
   }
 }
 .common-btn {
