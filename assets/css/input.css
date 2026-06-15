@@ -304,7 +304,7 @@ summary {
     font-family: "MoglanDemo";
 }
 .hero-para{
-    @apply mt-[15px] text-base lg:text-[20px] lg:leading-[20px] text-[#3D403F];
+    @apply mt-[15px] text-base lg:text-[20px] lg:leading-[30px] text-[#3D403F];
 }
 .section-space{
     @apply py-[60px] md:py-[80px] lg:py-[120px];
@@ -318,7 +318,7 @@ summary {
 }
 
 .hero-heading{
-    @apply text-[#131615] text-[48px] md:text-[60px] md:leading-[80px] xl:text-[76px] xl:leading-[84px] mb-[15px];
+    @apply text-[#131615] text-[48px] md:text-[60px] md:leading-[80px] xl:text-[76px] xl:leading-[88px] mb-[15px];
 }
 
 .common-btn{

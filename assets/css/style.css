@@ -3085,6 +3085,12 @@
       font-size: 78px;
     }
   }
+  .lg\:leading-\[1px\] {
+    @media (width >= 64rem) {
+      --tw-leading: 1px;
+      line-height: 1px;
+    }
+  }
   .lg\:leading-\[16px\] {
     @media (width >= 64rem) {
       --tw-leading: 16px;
@@ -3113,12 +3119,6 @@
     @media (width >= 64rem) {
       --tw-leading: 28px;
       line-height: 28px;
-    }
-  }
-  .lg\:leading-\[30px\] {
-    @media (width >= 64rem) {
-      --tw-leading: 30px;
-      line-height: 30px;
     }
   }
   .lg\:leading-\[36px\] {
@@ -3620,8 +3620,8 @@ summary {
     font-size: 20px;
   }
   @media (width >= 64rem) {
-    --tw-leading: 20px;
-    line-height: 20px;
+    --tw-leading: 30px;
+    line-height: 30px;
   }
 }
 .section-space {
@@ -3669,8 +3669,8 @@ summary {
     font-size: 76px;
   }
   @media (width >= 80rem) {
-    --tw-leading: 84px;
-    line-height: 84px;
+    --tw-leading: 88px;
+    line-height: 88px;
   }
 }
 .common-btn {
