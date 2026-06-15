@@ -1570,6 +1570,9 @@
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
   }
+  .pr-\[10px\] {
+    padding-right: 10px;
+  }
   .pr-\[22px\] {
     padding-right: 22px;
   }
@@ -1617,6 +1620,9 @@
   }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
+  }
+  .pl-\[10px\] {
+    padding-left: 10px;
   }
   .pl-\[22px\] {
     padding-left: 22px;
@@ -2448,9 +2454,29 @@
       padding-inline: 15px;
     }
   }
+  .sm\:px-\[22px\] {
+    @media (width >= 40rem) {
+      padding-inline: 22px;
+    }
+  }
   .sm\:py-\[10px\] {
     @media (width >= 40rem) {
       padding-block: 10px;
+    }
+  }
+  .sm\:pr-\[22px\] {
+    @media (width >= 40rem) {
+      padding-right: 22px;
+    }
+  }
+  .sm\:pb-0 {
+    @media (width >= 40rem) {
+      padding-bottom: 0;
+    }
+  }
+  .sm\:pl-\[22px\] {
+    @media (width >= 40rem) {
+      padding-left: 22px;
     }
   }
   .sm\:text-base {
@@ -2735,6 +2761,11 @@
   .md\:py-\[90px\] {
     @media (width >= 48rem) {
       padding-block: 90px;
+    }
+  }
+  .md\:pb-0 {
+    @media (width >= 48rem) {
+      padding-bottom: 0;
     }
   }
   .md\:text-left {
