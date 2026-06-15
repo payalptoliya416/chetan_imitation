@@ -194,55 +194,68 @@ function render() {
   else {
     noRes.classList.add('hidden');
 grid.innerHTML = pageItems.map(p => `
-<div class="border border-[#D5D5D5] bg-white group relative"
-     data-id="${p.id}"
-     data-price="${p.price}"
-     data-instock="${p.inStock}">
+<div class="border border-[#D5D5D5]">
 
-    <!-- Image Section -->
     <div class="relative overflow-hidden">
 
         ${p.sale ? `
-        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-35deg]">
+        <div class="absolute top-[10px] left-[-35px] z-10 rotate-[-20deg]">
             <span class="bg-[#ef1b1b] text-white text-[12px] font-semibold px-10 py-1 block tracking-wide">
                 SALE
             </span>
         </div>
         ` : ''}
 
-        <!-- Wishlist -->
-        <button onclick="toggleWish(${p.id})"
-            class="absolute top-2 right-2 z-10 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center shadow">
-
-            <span class="text-[20px] transition
-            ${state.wishlist.has(p.id)
-                ? 'text-[#B4771E]'
-                : 'text-[#666] hover:text-[#B4771E]'}">
-
-                ${state.wishlist.has(p.id) ? '♥' : '♡'}
-
-            </span>
-
-        </button>
-
-        <!-- Product Image -->
-        <img
-            src="${p.img}"
+        <img src="${p.img}"
             alt="${p.name}"
             loading="lazy"
             onerror="this.src='assets/images/Royal_Bridal.png'"
-            class="w-full h-[340px] object-cover transition duration-300 group-hover:scale-105">
+            class="w-full h-[340px] object-cover">
+
+        <button onclick="toggleWish(${p.id})"
+            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center transition">
+
+            ${
+                state.wishlist.has(p.id)
+                ? `
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="#B4771E"
+                    viewBox="0 0 24 24"
+                    stroke="#B4771E"
+                    stroke-width="1.6"
+                    class="w-5 h-5">
+
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+                `
+                :
+                `
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.6"
+                    stroke="currentColor"
+                    class="w-5 h-5 text-[#131615] hover:text-[#B4771E]">
+
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+                `
+            }
+
+        </button>
 
     </div>
 
-    <!-- Content -->
-    <div class="p-[25px]">
+    <div class="p-4 md:p-[25px]">
 
-        <h3 class="text-lg text-[#131615] line-clamp-2 min-h-[56px]">
+        <h3 class="product-title">
             ${p.name}
         </h3>
 
-        <!-- Rating -->
         <div class="flex items-center gap-1 mt-[9px]">
 
             <div class="text-[#B4771E] text-base">
@@ -255,15 +268,14 @@ grid.innerHTML = pageItems.map(p => `
 
         </div>
 
-        <!-- Price -->
-        <div class="mt-2 flex items-center gap-2 flex-wrap">
+        <div class="mt-1 flex items-center gap-1">
 
-            <span class="text-xl font-medium text-[#131615]">
+            <span class="text-lg xl:text-[24px] text-[#131615]">
                 ₹${fmt(p.price)}
             </span>
 
             ${p.mrp > p.price ? `
-            <span class="text-sm text-[#757575] line-through">
+            <span class="text-sm xl:text-lg text-[#757575] line-through">
                 ₹${fmt(p.mrp)}
             </span>
             ` : ''}
@@ -276,18 +288,17 @@ grid.innerHTML = pageItems.map(p => `
         </p>
         ` : ''}
 
-        <!-- Button -->
         <button
             onclick="addToCart(${p.id},this)"
             ${!p.inStock ? 'disabled' : ''}
-            class="w-full h-[45px] border border-[#131615] text-lg mt-4
+            class="w-full h-[45px] border border-[#131615] text-lg mt-[30px]
             hover:border-[#B4771E]
             hover:bg-[#B4771E]
             hover:text-white
             transition
             ${!p.inStock ? 'opacity-50 cursor-not-allowed' : ''}">
 
-            Shop Now
+            Add to Cart
 
         </button>
 
@@ -440,5 +451,30 @@ function showSubmenu(id,btn){
     icon.classList.remove('fa-plus');
 
     icon.classList.add('fa-minus');
+
+}
+
+// ----sidebar - shop by category 
+const sidebar=document.getElementById("mobileSidebar");
+const overlay=document.getElementById("sidebarOverlay");
+
+document.getElementById("openSidebar").onclick=()=>{
+
+sidebar.style.transform="translateX(0)";
+overlay.classList.remove("hidden");
+
+}
+
+document.getElementById("closeSidebar").onclick=()=>{
+
+sidebar.style.transform="translateX(-100%)";
+overlay.classList.add("hidden");
+
+}
+
+overlay.onclick=()=>{
+
+sidebar.style.transform="translateX(-100%)";
+overlay.classList.add("hidden");
 
 }

@@ -143,7 +143,7 @@ body {
  
     /* Sidebar section */
     .sidebar-section { border-bottom: 1px solid #e8e0cc; }
- 
+ .sidebar-section:last-child{border:0}
     /* Add to cart button */
     .atc-btn {
       background:#fff; border: 1.5px solid #b8860b; color:#b8860b;

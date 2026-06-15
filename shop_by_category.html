@@ -1744,7 +1744,7 @@
                             <!-- Min Price -->
                             <div class="relative flex-1">
 
-                                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-[20px] text-[#131615]">
+                                <span class="absolute left-4 top-[44px] -translate-y-1/2 text-[20px] text-[#131615]">
                                     ₹
                                 </span>
 
@@ -1752,7 +1752,7 @@
                                         text-[20px] font-normal text-[#3D403F] pl-8 pr-5 py-[14px]
                                         outline-none appearance-none" oninput="syncFromInput('min')">
 
-                                <div class="absolute right-4 top-1/2 -translate-y-1/2 flex flex-col gap-3">
+                                <div class="absolute right-4 top-[44px] -translate-y-1/2 flex flex-col gap-3">
 
                                     <button type="button" onclick="increaseMin()" class="leading-none">
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
@@ -2029,7 +2029,8 @@
                     class="mt-3 w-full py-2 text-xs text-amber-700 border border-amber-300 rounded hover:bg-amber-50 transition-colors font-medium">
                     ✕ Clear All Filters
                 </button> -->
-            </aside><!-- /sidebar -->
+            </aside>
+            <!-- /sidebar -->
 
             <!-- ══════════════════ PRODUCT GRID ══════════════════ -->
             <div class="col-span-12 lg:col-span-8 xl:col-span-9 min-w-0">
@@ -2038,7 +2039,7 @@
     id="sortSelect"
     onchange="sortProducts()"
     class="w-full max-w-[340px]
-    p-5 leading-[20px]
+    px-5 py-4 leading-[20px]
     border border-[#D5D5D5]
     rounded-[8px]
     text-[20px]
@@ -2085,43 +2086,89 @@
                     <p class="text-sm mt-1">Try adjusting your filters</p>
                 </div>
 
-                <!-- ── PAGINATION ── --><div class="flex items-center justify-center gap-4 mt-10">
+               <div class="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mt-8 md:mt-10 flex-wrap">
 
     <!-- Previous -->
-    <button class="px-[16px] py-[13px] h-[47px] border border-[#D5D5D5] text-[#757575] text-xl leading-[20px] font-medium flex items-center justify-center gap-2 hover:bg-gray-50">
-        <span class="text-[32px] leading-none">‹</span>
-        Previous
+    <button class="px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    border border-[#D5D5D5]
+    text-[#757575]
+    text-sm sm:text-base lg:text-xl
+    font-medium
+    flex items-center justify-center gap-1 sm:gap-2
+    hover:bg-gray-50">
+
+        <span class="text-xl sm:text-[32px] leading-none">‹</span>
+
+        <span class="hidden sm:block">Previous</span>
+
     </button>
 
-    <!-- Page 1 -->
-    <button class="px-[16px] py-[13px] h-[47px] border border-[#D5D5D5] text-[#757575] text-xl leading-[20px] font-medium hover:bg-gray-50">
+    <!-- Pages -->
+    <button class="w-[40px] sm:w-auto px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    border border-[#D5D5D5]
+    text-[#757575]
+    text-sm sm:text-base lg:text-xl
+    font-medium hover:bg-gray-50">
+
         1
+
     </button>
 
-    <!-- Page 2 -->
-    <button class="px-[16px] py-[13px] h-[47px] border border-[#D5D5D5] text-[#757575] text-xl leading-[20px] font-medium hover:bg-gray-50">
+    <button class="w-[40px] sm:w-auto px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    border border-[#D5D5D5]
+    text-[#757575]
+    text-sm sm:text-base lg:text-xl
+    font-medium hover:bg-gray-50">
+
         2
+
     </button>
 
-    <!-- Active Page -->
-    <button class="px-[16px] py-[13px] h-[47px] bg-[#B67A1E] text-white border border-[#757575A1E] texl leading-[20px]text-[18px] font-medium">
+    <!-- Active -->
+    <button class="w-[40px] sm:w-auto px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    bg-[#B67A1E]
+    text-white
+    border border-[#7575751E]
+    text-sm sm:text-base lg:text-[18px]
+    font-medium">
+
         3
+
     </button>
 
-    <!-- Page 4 -->
-    <button class="px-[16px] py-[13px] h-[47px] border border-[#D5D5D5] text-[#757575] text-xl leading-[20px] font-medium hover:bg-gray-50">
+    <button class="w-[40px] sm:w-auto px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    border border-[#D5D5D5]
+    text-[#757575]
+    text-sm sm:text-base lg:text-xl
+    font-medium hover:bg-gray-50">
+
         4
+
     </button>
 
-    <!-- Page 5 -->
-    <button class="px-[16px] py-[13px] h-[47px] border border-[#D5D5D5] text-[#757575] text-xl leading-[20px] font-medium hover:bg-gray-50">
+    <button class="w-[40px] sm:w-auto px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    border border-[#D5D5D5]
+    text-[#757575]
+    text-sm sm:text-base lg:text-xl
+    font-medium hover:bg-gray-50">
+
         5
+
     </button>
 
     <!-- Next -->
-    <button class="px-[16px] py-[13px] h-[47px] border border-[#D5D5D5] text-[#757575] text-xl leading-[20px] font-medium flex items-center justify-center gap-2 hover:bg-gray-50">
-        Next
-        <span class="text-[32px] leading-none">›</span>
+    <button class="px-3 sm:px-4 py-2 sm:py-[13px] h-[40px] sm:h-[47px]
+    border border-[#D5D5D5]
+    text-[#757575]
+    text-sm sm:text-base lg:text-xl
+    font-medium
+    flex items-center justify-center gap-1 sm:gap-2
+    hover:bg-gray-50">
+
+        <span class="hidden sm:block">Next</span>
+
+        <span class="text-xl sm:text-[32px] leading-none">›</span>
+
     </button>
 
 </div>
@@ -2131,15 +2178,6 @@
             </div><!-- /product grid -->
         </div>
     </div><!-- /main -->
-
-    <!-- ─── MOBILE FILTER TOGGLE ─────────────────────────────────────── -->
-    <button onclick="document.getElementById('mobileSidebar').classList.toggle('translate-x-[-100%')"
-        class="lg:hidden fixed bottom-5 left-4 z-50 bg-amber-600 text-white px-5 py-2.5 rounded-full shadow-lg text-sm font-semibold flex items-center gap-2">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M7 8h10M11 12h4" />
-        </svg>
-        Filters
-    </button>
 
     <!-- ------footer start -->
     <section class="relative">
