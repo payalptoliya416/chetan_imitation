@@ -304,7 +304,7 @@ summary {
     font-family: "MoglanDemo";
 }
 .hero-para{
-    @apply mt-[15px] text-base lg:text-[22px] lg:leading-[22px] text-[#3D403F];
+    @apply mt-[15px] text-base lg:text-[20px] lg:leading-[20px] text-[#3D403F];
 }
 .section-space{
     @apply py-[60px] md:py-[80px] lg:py-[120px];

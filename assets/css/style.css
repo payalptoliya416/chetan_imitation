@@ -61,7 +61,6 @@
     --leading-relaxed: 1.625;
     --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -3613,11 +3612,11 @@ summary {
   line-height: var(--tw-leading, var(--text-base--line-height));
   color: #3D403F;
   @media (width >= 64rem) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (width >= 64rem) {
-    --tw-leading: 22px;
-    line-height: 22px;
+    --tw-leading: 20px;
+    line-height: 20px;
   }
 }
 .section-space {
