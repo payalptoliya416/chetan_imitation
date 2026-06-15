@@ -2624,11 +2624,6 @@
       padding-bottom: 0;
     }
   }
-  .md\:text-center {
-    @media (width >= 48rem) {
-      text-align: center;
-    }
-  }
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
@@ -3667,6 +3662,8 @@ summary {
 .hero-heading {
   margin-bottom: 15px;
   font-size: 48px;
+  --tw-leading: 56px;
+  line-height: 56px;
   color: #131615;
   @media (width >= 48rem) {
     font-size: 60px;
