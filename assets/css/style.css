@@ -651,6 +651,9 @@
   .h-\[340px\] {
     height: 340px;
   }
+  .h-\[calc\(80vh-158px\)\] {
+    height: calc(80vh - 158px);
+  }
   .h-auto {
     height: auto;
   }
@@ -671,9 +674,6 @@
   }
   .min-h-\[calc\(80vh-158px\)\] {
     min-height: calc(80vh - 158px);
-  }
-  .min-h-\[calc\(85vh-158px\)\] {
-    min-height: calc(85vh - 158px);
   }
   .min-h-full {
     min-height: 100%;
@@ -2280,13 +2280,6 @@
       }
     }
   }
-  .hover\:fill-red-500 {
-    &:hover {
-      @media (hover: hover) {
-        fill: var(--color-red-500);
-      }
-    }
-  }
   .hover\:text-\[\#131615\] {
     &:hover {
       @media (hover: hover) {
@@ -3568,6 +3561,11 @@
       grid-column: span 5 / span 5;
     }
   }
+  .\32 xl\:h-\[calc\(110vh-158px\)\] {
+    @media (width >= 96rem) {
+      height: calc(110vh - 158px);
+    }
+  }
   .\32 xl\:\!min-h-\[calc\(110vh-158px\)\] {
     @media (width >= 96rem) {
       min-height: calc(110vh - 158px) !important;
@@ -4004,11 +4002,11 @@ summary {
     line-height: 64px;
   }
   @media (width >= 80rem) {
-    font-size: 76px;
-  }
-  @media (width >= 80rem) {
     --tw-leading: 80px;
     line-height: 80px;
+  }
+  @media (width >= 96rem) {
+    font-size: 76px;
   }
 }
 .common-btn {
@@ -4040,13 +4038,13 @@ summary {
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   @media (width >= 64rem) {
+    font-size: 22px;
+  }
+  @media (width >= 96rem) {
     height: 66px;
   }
-  @media (width >= 64rem) {
+  @media (width >= 96rem) {
     padding-inline: 30px;
-  }
-  @media (width >= 64rem) {
-    font-size: 22px;
   }
 }
 @keyframes marquee {
