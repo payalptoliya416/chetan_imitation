@@ -14,6 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.add("translate-x-full");
     });
 
+    // Screen large થાય ત્યારે menu close કરી દો
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth >= 1024) { // lg breakpoint
+            mobileMenu.classList.add("translate-x-full");
+        }
+
+    });
+
 });
 // ----------------counter
 
