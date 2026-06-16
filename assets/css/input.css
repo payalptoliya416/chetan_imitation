@@ -375,6 +375,6 @@ summary {
 
 @media (max-width: 1280px) and (max-height: 1024px) {
   .hero-section {
-    min-height: calc(85vh - 158px) !important;
+    min-height: calc(80vh - 158px) !important;
   }
 }
