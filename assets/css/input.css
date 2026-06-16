@@ -373,7 +373,7 @@ summary {
     border:1px solid #B4771E;
 }
 
-@media (width: 1280px) and (height: 780px) {
+@media (width: 1280px) and (height: 1024px) {
   .hero-section {
     height: calc(85vh - 158px);
   }
