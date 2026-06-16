@@ -1193,6 +1193,9 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
+  .border-transparent {
+    border-color: transparent;
+  }
   .border-white\/10 {
     border-color: color-mix(in srgb, #fff 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -2139,10 +2142,27 @@
       border-color: #B4771E;
     }
   }
+  .hover\:scale-105 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:border-\[\#B4771E\] {
     &:hover {
       @media (hover: hover) {
         border-color: #B4771E;
+      }
+    }
+  }
+  .hover\:border-red-500 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-red-500);
       }
     }
   }
@@ -2234,6 +2254,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-red-50);
+      }
+    }
+  }
+  .hover\:fill-red-500 {
+    &:hover {
+      @media (hover: hover) {
+        fill: var(--color-red-500);
       }
     }
   }
@@ -3521,6 +3548,11 @@
   .\32 xl\:col-span-5 {
     @media (width >= 96rem) {
       grid-column: span 5 / span 5;
+    }
+  }
+  .\32 xl\:min-h-\[calc\(100vh-158px\)\] {
+    @media (width >= 96rem) {
+      min-height: calc(100vh - 158px);
     }
   }
   .\32 xl\:w-\[370px\] {
