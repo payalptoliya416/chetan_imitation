@@ -2277,6 +2277,13 @@
       }
     }
   }
+  .hover\:fill-red-500 {
+    &:hover {
+      @media (hover: hover) {
+        fill: var(--color-red-500);
+      }
+    }
+  }
   .hover\:text-\[\#131615\] {
     &:hover {
       @media (hover: hover) {
