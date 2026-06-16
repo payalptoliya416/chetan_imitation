@@ -565,3 +565,30 @@ if (overlay && sidebar) {
     }
 
 }
+
+// -----------OTP input
+
+const inputs = document.querySelectorAll('.otp-input');
+
+inputs.forEach((input, index) => {
+
+    input.addEventListener('input', (e) => {
+
+        // માત્ર 1 digit રાખવી
+        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+
+        // Next input પર જવું
+        if (e.target.value && index < inputs.length - 1) {
+            inputs[index + 1].focus();
+        }
+    });
+
+    input.addEventListener('keydown', (e) => {
+
+        // Backspace માટે
+        if (e.key === 'Backspace' && !input.value && index > 0) {
+            inputs[index - 1].focus();
+        }
+    });
+
+});
