@@ -425,8 +425,14 @@
   .mt-\[30px\] {
     margin-top: 30px;
   }
+  .\!mr-\[50px\] {
+    margin-right: 50px !important;
+  }
   .mr-1 {
     margin-right: var(--spacing);
+  }
+  .mr-\[50px\] {
+    margin-right: 50px;
   }
   .mb-0\.5 {
     margin-bottom: calc(var(--spacing) * 0.5);
@@ -2371,6 +2377,16 @@
   .sm\:bg-\[length\:100\%_100\%\] {
     @media (width >= 40rem) {
       background-size: 100% 100%;
+    }
+  }
+  .sm\:bg-contain {
+    @media (width >= 40rem) {
+      background-size: contain;
+    }
+  }
+  .sm\:bg-cover {
+    @media (width >= 40rem) {
+      background-size: cover;
     }
   }
   .sm\:bg-center {
