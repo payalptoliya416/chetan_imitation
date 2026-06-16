@@ -10,14 +10,13 @@ body {
 
 .container-1440{
     width: 100%;
-    max-width: 1440px;   /* Default */
+    max-width: 1440px;      
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
     padding-right: 12px;
 }
 
-/* <= 1440px */
 @media (max-width: 1600px){
     .container-1440{
         max-width: 1320px;
@@ -31,7 +30,6 @@ body {
     }
 }
 
-/* <= 992px */
 @media (max-width: 1025px){
     .container-1440{
         max-width: 960px;
@@ -40,7 +38,6 @@ body {
     }
 }
 
-/* <= 768px */
 @media (max-width: 992px){
     .container-1440{
         max-width: 720px;
@@ -49,7 +46,6 @@ body {
     }
 }
 
-/* <= 576px */
 @media (max-width: 768px){
     .container-1440{
         max-width: 100%;
