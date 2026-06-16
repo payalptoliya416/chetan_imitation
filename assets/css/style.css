@@ -2610,6 +2610,11 @@
       right: calc(var(--spacing) * 6);
     }
   }
+  .md\:mx-0 {
+    @media (width >= 48rem) {
+      margin-inline: 0;
+    }
+  }
   .md\:mt-3 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 3);
@@ -2653,6 +2658,11 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
   .md\:h-\[56px\] {
@@ -2760,6 +2770,11 @@
       max-width: 500px;
     }
   }
+  .md\:max-w-\[549px\] {
+    @media (width >= 48rem) {
+      max-width: 549px;
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2783,6 +2798,11 @@
   .md\:items-end {
     @media (width >= 48rem) {
       align-items: flex-end;
+    }
+  }
+  .md\:justify-start {
+    @media (width >= 48rem) {
+      justify-content: flex-start;
     }
   }
   .md\:gap-4 {
@@ -2812,6 +2832,11 @@
         margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
       }
+    }
+  }
+  .md\:bg-\[url\(\'assets\/images\/hero_Banner\.png\'\)\] {
+    @media (width >= 48rem) {
+      background-image: url('assets/images/hero_Banner.png');
     }
   }
   .md\:p-5 {
