@@ -29,7 +29,7 @@
 </head>
 <body>
 
-   <!-- Header -->
+  <!-- Header -->
     <header class="relative z-50">
 
         <!-- Top Bar -->
@@ -66,7 +66,7 @@
 
                         <!-- Mega Menu -->
 
-                        <div class="group relative">
+                        <div class="group relative" onmouseleave="closeAllSubmenu()">
 
                             <button class="flex items-center gap-2 text-white text-lg pb-1">
 
@@ -77,239 +77,377 @@
                             </button>
 
                             <!-- Dropdown -->
-                        <div class="absolute top-full left-0 bg-white w-[760px] p-6 shadow-xl
-                        opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                            <div
+                                class="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
 
-                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-start gap-4">
 
-                                <!-- Left -->
-                                <div class="border border-[#D5D5D5] p-5">
+                                    <!-- Left -->
+                                    <div class="w-[270px] border border-[#D5D5D5] p-4 bg-white">
 
-                                    <button onclick="showSubmenu('necklace',this)"
-                                        class="menu-btn w-full flex justify-between items-center pb-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                        <div class="relative">
 
-                                        <span>Necklace</span>
+                                            <button 
+                                            onmouseenter="showSubmenu('necklace',this)"
+                                                class="menu-btn w-full flex justify-between items-center pb-[15px] border-b text-base text-[#131615]">
 
-                                        <i class="fa-solid fa-minus"></i>
+                                                <span>Necklace</span>
 
-                                    </button>
+                                                <i class="fa-solid fa-plus"></i>
 
-                                    <button onclick="showSubmenu('bangal',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                            </button>
 
-                                        <span>Bangal & Kadali</span>
+                                            <div id="necklace"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
 
-                                        <i class="fa-solid fa-plus"></i>
+                                                <a href="#" class="block pb-3 border-b hover:text-[#B4771E]">
+                                                    Short Necklace
+                                                </a>
 
-                                    </button>
+                                                <a href="#" class="block py-3 border-b hover:text-[#B4771E]">
+                                                    Long Necklace
+                                                </a>
 
-                                    <button onclick="showSubmenu('bracelet',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                                <a href="#" class="block pt-3 hover:text-[#B4771E]">
+                                                    Leriyat Necklace
+                                                </a>
 
-                                        <span>Braslate</span>
+                                            </div>
 
-                                        <i class="fa-solid fa-plus"></i>
+                                        </div>
 
-                                    </button>
+                                        <div class="relative">
 
-                                    <button onclick="showSubmenu('watch',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
+                                            <button 
+                                            
+                                                class="menu-btn w-full flex justify-between items-center py-[15px] border-b">
 
-                                        <span>Watch</span>
+                                                <span>Bangal & Kadali</span>
 
-                                        <i class="fa-solid fa-plus"></i>
+                                                
 
-                                    </button>
-
-                                    <button onclick="showSubmenu('hathful',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Hathful</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('ring',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Ring</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('chain',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Chain & Mala</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('pendal',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Pendal & Buti</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('juda',this)"
-                                        class="menu-btn w-full flex justify-between items-center py-[15px] border-b text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Juda & Kandora</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                    <button onclick="showSubmenu('other',this)"
-                                        class="menu-btn w-full flex justify-between items-center pt-[15px] text-base lg:text-xl lg:leading-[20px] text-[#131615]">
-
-                                        <span>Other</span>
-
-                                        <i class="fa-solid fa-plus"></i>
-
-                                    </button>
-
-                                </div>
+                                            </button>
 
 
-                                <!-- Right -->
-                                <div class="border border-[#D5D5D5]">
+                                        </div>
 
-                                    <!-- Necklace -->
-                                    <div id="necklace" class="submenu p-5">
+                                        <div class="relative">
 
-                                         <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Short Necklace
-    </a>
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 border-b hover:text-[#B4771E]">
-        Long Necklace
-    </a>
+                                                <span>Bracelet</span>
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Leriyat Necklace
-    </a>
+                                                
+
+                                            </button>
+
+                                            <div id="bracelet"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block pb-4 border-b hover:text-[#B4771E]">
+                                                    Chain Bracelet
+                                                </a>
+
+                                                <a href="#" class="block pt-4 hover:text-[#B4771E]">
+                                                    Stone Bracelet
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Watch</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="watch"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block pb-4 border-b hover:text-[#B4771E]">
+                                                    Classic Watch
+                                                </a>
+
+                                                <a href="#" class="block pt-4 hover:text-[#B4771E]">
+                                                    Ladies Watch
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Hathful</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="hathful"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Hathful Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Ring</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="ring"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Ring Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Chain & Mala</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="chain"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Chain & Mala Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Pendal & Buti</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="pendal"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Pendal & Buti Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="relative">
+
+                                            <button 
+                                                class="menu-btn w-full flex justify-between items-center py-[10px] border-b text-base text-[#131615]">
+
+                                                <span>Juda & Kandora</span>
+
+                                                
+
+                                            </button>
+
+                                            <div id="juda"
+                                                class="submenu hidden absolute top-0 left-full ml-4 bg-white border border-[#D5D5D5] min-w-[250px] p-5 z-50">
+
+                                                <a href="#" class="block hover:text-[#B4771E]">
+                                                    Juda & Kandora Collection
+                                                </a>
+
+                                            </div>
+
+                                        </div>
+                                        <button
+                                            class="menu-btn w-full flex justify-between items-center pt-[15px] text-base text-[#131615]">
+
+                                            <span>Other</span>
+
+                                        </button>
 
                                     </div>
 
 
-                                    <!-- Bangal -->
-                                    <div id="bangal" class="submenu hidden p-5">
+                                    <!-- Right -->
+                                    <div id="submenuBox" class="hidden bg-white border border-[#D5D5D5] min-w-[250px]">
 
-                                       <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Gold Bangal
-    </a>
+                                        <!-- Necklace -->
+                                        <div id="necklace" class="submenu p-5">
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 border-b hover:text-[#B4771E]">
-        Silver Bangal
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Short Necklace
+                                            </a>
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Kadali
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 border-b hover:text-[#B4771E]">
+                                                Long Necklace
+                                            </a>
 
-                                    </div>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Leriyat Necklace
+                                            </a>
 
-
-                                    <!-- Bracelet -->
-                                    <div id="bracelet" class="submenu hidden p-5">
-
-                                       <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Chain Bracelet
-    </a>
-
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Stone Bracelet
-    </a>
-
-                                    </div>
+                                        </div>
 
 
-                                    <!-- Watch -->
-                                    <div id="watch" class="submenu hidden p-5">
+                                        <!-- Bangal -->
+                                        <div id="bangal" class="submenu hidden p-5">
 
-                                       a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] pb-4 border-b hover:text-[#B4771E]">
-        Classic Watch
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Gold Bangal
+                                            </a>
 
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] py-4 hover:text-[#B4771E]">
-        Ladies Watch
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 border-b hover:text-[#B4771E]">
+                                                Silver Bangal
+                                            </a>
 
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Kadali
+                                            </a>
 
-                                    </div>
-
-
-                                    <!-- Hathful -->
-                                    <div id="hathful" class="submenu hidden p-5">
-
-                                        <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Hathful Collection
-    </a>
+                                        </div>
 
 
-                                    </div>
+                                        <!-- Bracelet -->
+                                        <div id="bracelet" class="submenu hidden p-5">
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Chain Bracelet
+                                            </a>
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Stone Bracelet
+                                            </a>
+
+                                        </div>
 
 
-                                    <!-- Ring -->
-                                    <div id="ring" class="submenu hidden p-5">
+                                        <!-- Watch -->
+                                        <div id="watch" class="submenu hidden p-5">
 
-                                          <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Ring Collection
-    </a>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  pb-4 border-b hover:text-[#B4771E]">
+                                                Classic Watch
+                                            </a>
 
-                                    </div>
-
-
-                                    <!-- Chain -->
-                                    <div id="chain" class="submenu hidden p-5">
-
-                                        <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Pendal & Buti Collection
-    </a>
-
-                                    </div>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base  py-4 hover:text-[#B4771E]">
+                                                Ladies Watch
+                                            </a>
 
 
-                                    <!-- Pendal -->
-                                    <div id="pendal" class="submenu hidden p-5">
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Chain & Mala Collection
-    </a>
-
-                                    </div>
+                                        </div>
 
 
-                                    <!-- Juda -->
-                                    <div id="juda" class="submenu hidden p-5">
-<a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Juda & Kandora Collection
-    </a>
+                                        <!-- Hathful -->
+                                        <div id="hathful" class="submenu hidden p-5">
 
-                                    </div>
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Hathful Collection
+                                            </a>
 
 
-                                    <!-- Other -->
-                                    <div id="other" class="submenu hidden p-5">
+                                        </div>
 
-                                      
-    <a href="#" class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
-        Other Collection
-    </a>
+
+                                        <!-- Ring -->
+                                        <div id="ring" class="submenu hidden p-5">
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Ring Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Chain -->
+                                        <div id="chain" class="submenu hidden p-5">
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Pendal & Buti Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Pendal -->
+                                        <div id="pendal" class="submenu hidden p-5">
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Chain & Mala Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Juda -->
+                                        <div id="juda" class="submenu hidden p-5">
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Juda & Kandora Collection
+                                            </a>
+
+                                        </div>
+
+
+                                        <!-- Other -->
+                                        <div id="other" class="submenu hidden p-5">
+
+
+                                            <a href="#"
+                                                class="block text-[#131615] text-base lg:text-xl lg:leading-[20px] hover:text-[#B4771E]">
+                                                Other Collection
+                                            </a>
+
+                                        </div>
 
                                     </div>
 
                                 </div>
 
                             </div>
-
-                        </div>
                         </div>
 
                         <a href="about.html" class="text-white  text-lg  pb-1">
@@ -331,11 +469,12 @@
                             <input type="text" placeholder="Search"
                                 class="w-[200px] xl:w-[370px] rounded-sm h-[40px] border border-[#D5D5D533] px-4 text-white text-base placeholder:text-base bg-[#FFFFFF08]">
 
-                         <img src="assets/images/search.png" alt="" class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
+                            <img src="assets/images/search.png" alt=""
+                                class="absolute right-3 top-[29px] -translate-y-1/2 text-white text-[12px]">
 
                         </div>
 
-                         <a href="#" class="relative">
+                        <a href="#" class="relative">
                             <img src="assets/images/heart.png" alt="heart">
 
                             <span
@@ -344,8 +483,8 @@
                             </span>
                         </a>
 
-                            <a href="#" class="relative">
-                            <img src="assets/images/cart.png" alt="cart" >
+                        <a href="#" class="relative">
+                            <img src="assets/images/cart.png" alt="cart">
 
                             <span
                                 class="absolute -top-1 -right-1 w-[14px] h-[14px] rounded-full bg-[#B78326] text-white text-[9px] font-medium flex items-center justify-center pt-1">
@@ -380,18 +519,18 @@
 
         <div class="bg-[#050b0d]">
 
-        <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
+            <div class="bg-[#B4771E] py-[12px] flex items-center justify-center overflow-hidden">
 
-           <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
-                Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
-            </p>
+                <p class="text-white text-base whitespace-nowrap animate-[marquee_15s_linear_infinite]">
+                    Festive Season Sale: Up to 40% Off | Free Shipping on Orders Above ₹1999
+                </p>
 
-        </div>
+            </div>
 
             <div class="px-5 flex items-center justify-between">
 
                 <a href="#">
-                        <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] 2xl:w-auto">
+                    <img src="assets/images/logo.png" class="w-[110px] xl:w-[150px] 2xl:w-auto">
                 </a>
 
                 <button id="closeMenu" class="text-white text-2xl">
@@ -402,7 +541,7 @@
 
         </div>
 
-            <div class="px-[15px] py-[30px]">
+        <div class="px-[15px] py-[30px]">
 
             <a href="index.html" class="block pb-5 border-b text-[#131615] text-lg leading-[18px]">Home</a>
 
@@ -428,16 +567,15 @@
 
                             <span class="text-[#3D403F]">Necklace</span>
 
-                            <span id="necklaceIcon">    <i class="fa-solid fa-minus"></i></span>
+                            <span id="necklaceIcon"> <i class="fa-solid fa-minus"></i></span>
 
                         </button>
 
-                        <ul id="necklaceMenu"
-                            class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+                        <ul id="necklaceMenu" class="pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
 
-                              <li><a href="#">Short Necklace</a></li>
-    <li><a href="#">Long Necklace</a></li>
-    <li><a href="#">Leriyat Necklace</a></li>
+                            <li><a href="#">Short Necklace</a></li>
+                            <li><a href="#">Long Necklace</a></li>
+                            <li><a href="#">Leriyat Necklace</a></li>
 
 
                         </ul>
@@ -447,24 +585,14 @@
                     <!-- Bangal -->
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('bangalMenu','bangalIcon')"
+                        <button 
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Bangal & Kadali</span>
 
-                            <span id="bangalIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
 
-                        <ul id="bangalMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-
-                              <li><a href="#">Gold Bangal</a></li>
-    <li><a href="#">Silver Bangal</a></li>
-    <li><a href="#">Kadali</a></li>
-
-
-                        </ul>
 
                     </div>
 
@@ -472,23 +600,14 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('braslateMenu','braslateIcon')"
+                        <button 
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Braslate</span>
 
-                            <span id="braslateIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
 
-                        <ul id="braslateMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-
-                           <li><a href="#">Chain Bracelet</a></li>
-    <li><a href="#">Stone Bracelet</a></li>
-
-
-                        </ul>
 
                     </div>
 
@@ -496,19 +615,17 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('watchMenu','watchIcon')"
+                        <button 
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Watch</span>
 
-                            <span id="watchIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
 
-                        <ul id="watchMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-    <li><a href="#">Classic Watch</a></li>
-    <li><a href="#">Ladies Watch</a></li>
+                        <ul id="watchMenu" class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+                            <li><a href="#">Classic Watch</a></li>
+                            <li><a href="#">Ladies Watch</a></li>
 
                         </ul>
 
@@ -518,19 +635,16 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('hathfulMenu','hathfulIcon')"
+                        <button
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Hathful</span>
 
-                            <span id="hathfulIcon"> <i class="fa-solid fa-plus"></i></span>
-
                         </button>
 
-                        <ul id="hathfulMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
+                        <ul id="hathfulMenu" class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
 
-                             <li><a href="#">Hathful Collection</a></li>
+                            <li><a href="#">Hathful Collection</a></li>
 
                         </ul>
 
@@ -540,21 +654,13 @@
 
                     <div class="border-b">
 
-                        <button onclick="toggleMenu('ringMenu','ringIcon')"
+                        <button
                             class="w-full py-5 flex justify-between items-center text-[#131615] text-lg leading-[18px]">
 
                             <span>Ring</span>
 
-                            <span id="ringIcon"> <i class="fa-solid fa-plus"></i></span>
 
                         </button>
-
-                        <ul id="ringMenu"
-                            class="hidden pl-10 pb-4 text-[#757575] text-base space-y-4 list-disc">
-
-                             <li><a href="#">Ring Collection</a></li>
-
-                        </ul>
 
                     </div>
 
@@ -570,6 +676,7 @@
 
     </div>
     <!-- Header -->
+
 
     <section class="section-space">
 

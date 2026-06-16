@@ -15,7 +15,65 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+// ----------------counter
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    const section = document.querySelector(".counter-section");
+
+    if (!section) return;
+
+    const counters = document.querySelectorAll(".counter");
+
+    let started = false;
+
+    const observer = new IntersectionObserver((entries) => {
+
+        if (entries[0].isIntersecting && !started) {
+
+            started = true;
+
+            counters.forEach(counter => {
+
+                const target = parseInt(counter.dataset.target);
+
+                let count = 0;
+
+                const increment = target / 80;
+
+                const updateCount = () => {
+
+                    count += increment;
+
+                    if (count < target) {
+
+                        counter.innerText =
+                            Math.floor(count).toLocaleString();
+
+                        requestAnimationFrame(updateCount);
+
+                    } else {
+
+                        counter.innerText =
+                            target.toLocaleString();
+
+                    }
+
+                }
+
+                updateCount();
+
+            });
+
+        }
+
+    }, {
+        threshold: 0.4
+    });
+
+    observer.observe(section);
+
+});
 
 // ── Product data ──────────────────────────────────────────────
 const allProducts = [
@@ -429,56 +487,72 @@ function toggleMenu(menuId, iconId){
 function showSubmenu(id, btn) {
 
     document.querySelectorAll('.submenu').forEach(menu => {
-
         menu.classList.add('hidden');
-
     });
 
     document.getElementById(id).classList.remove('hidden');
 
-
     document.querySelectorAll('.menu-btn i').forEach(icon => {
-
         icon.classList.remove('fa-minus');
-
         icon.classList.add('fa-plus');
-
     });
-
 
     const icon = btn.querySelector('i');
 
     if(icon){
-
         icon.classList.remove('fa-plus');
-
         icon.classList.add('fa-minus');
+    }
+
+}
+function closeAllSubmenu() {
+
+    document.querySelectorAll('.submenu').forEach(menu => {
+        menu.classList.add('hidden');
+    });
+
+    document.querySelectorAll('.menu-btn i').forEach(icon => {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+    });
+
+}
+
+const sidebar = document.getElementById("mobileSidebar");
+const overlay = document.getElementById("sidebarOverlay");
+
+const openSidebar = document.getElementById("openSidebar");
+const closeSidebar = document.getElementById("closeSidebar");
+
+if (openSidebar && sidebar && overlay) {
+
+    openSidebar.onclick = () => {
+
+        sidebar.style.transform = "translateX(0)";
+        overlay.classList.remove("hidden");
 
     }
 
 }
-// ----sidebar - shop by category 
-const sidebar=document.getElementById("mobileSidebar");
-const overlay=document.getElementById("sidebarOverlay");
 
-document.getElementById("openSidebar").onclick=()=>{
+if (closeSidebar && sidebar && overlay) {
 
-sidebar.style.transform="translateX(0)";
-overlay.classList.remove("hidden");
+    closeSidebar.onclick = () => {
 
-}
+        sidebar.style.transform = "translateX(-100%)";
+        overlay.classList.add("hidden");
 
-document.getElementById("closeSidebar").onclick=()=>{
-
-sidebar.style.transform="translateX(-100%)";
-overlay.classList.add("hidden");
+    }
 
 }
 
-overlay.onclick=()=>{
+if (overlay && sidebar) {
 
-sidebar.style.transform="translateX(-100%)";
-overlay.classList.add("hidden");
+    overlay.onclick = () => {
+
+        sidebar.style.transform = "translateX(-100%)";
+        overlay.classList.add("hidden");
+
+    }
 
 }
-
