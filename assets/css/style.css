@@ -2616,6 +2616,11 @@
       margin-top: calc(var(--spacing) * 6);
     }
   }
+  .md\:mt-8 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 8);
+    }
+  }
   .md\:mt-10 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 10);
@@ -3535,6 +3540,11 @@
   .\32 xl\:h-\[100px\] {
     @media (width >= 96rem) {
       height: 100px;
+    }
+  }
+  .\32 xl\:\!min-h-\[calc\(100vh-158px\)\] {
+    @media (width >= 96rem) {
+      min-height: calc(100vh - 158px) !important;
     }
   }
   .\32 xl\:\!min-h-\[calc\(110vh-158px\)\] {
