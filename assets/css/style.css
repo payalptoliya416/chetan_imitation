@@ -2951,6 +2951,16 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .md\:py-\[1px\] {
+    @media (width >= 48rem) {
+      padding-block: 1px;
+    }
+  }
+  .md\:py-\[12px\] {
+    @media (width >= 48rem) {
+      padding-block: 12px;
+    }
+  }
   .md\:py-\[14px\] {
     @media (width >= 48rem) {
       padding-block: 14px;
@@ -3582,6 +3592,11 @@
   .xl\:text-\[26px\] {
     @media (width >= 80rem) {
       font-size: 26px;
+    }
+  }
+  .xl\:text-\[36px\] {
+    @media (width >= 80rem) {
+      font-size: 36px;
     }
   }
   .xl\:text-\[40px\] {
