@@ -121,7 +121,10 @@ let state = {
  
 // ── Helpers ───────────────────────────────────────────────────
 function stars(n) {
-  return Array.from({length:5},(_,i)=>`<span style="color:${i<n?'#e2a000':'#D5D5D5'}">★</span>`).join('');
+  return Array.from({length:5},(_,i)=>`<span style="color:${i<n?'#e2a000':'#D5D5D5'}"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 512 512" fill="currentColor">
+    <path d="m512 197.816-186.039-12.231L255.898 9.569l-70.063 176.016L0 197.816l142.534 121.026-46.772 183.589L255.898 401.21l160.137 101.221-46.772-183.589z"/>
+</svg>
+</span>`).join('');
 }
 function fmt(n){ return n.toLocaleString('en-IN'); }
  
@@ -366,9 +369,9 @@ grid.innerHTML = pageItems.map(p => `
             ${p.name}
         </h3>
 
-        <div class="flex items-center gap-1 mt-[9px]">
+        <div class="flex items-center gap-1 mt-2 mb-3">
 
-            <div class="text-[#B4771E] text-base">
+            <div class="text-[#B4771E] text-base flex">
                 ${stars(p.rating)}
             </div>
 

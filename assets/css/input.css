@@ -171,7 +171,7 @@ input[type="range"]::-moz-range-thumb{
     /* Collapse toggle arrow */
     .collapse-arrow { transition: transform .2s; }
     .collapse-arrow.open { transform: rotate(180deg); }
- 
+
     /* Sidebar section */
     .sidebar-section { border-bottom: 1px solid #e8e0cc; }
  .sidebar-section:last-child{border:0}
