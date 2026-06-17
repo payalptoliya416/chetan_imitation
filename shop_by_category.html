@@ -709,7 +709,7 @@
 
                     </button>
 
-                    <div id="cat-section" class="px-5 py-[25px]">
+                    <div id="cat-section" class="px-5 py-[20px]">
 
                         <!-- Necklace -->
 
@@ -818,7 +818,7 @@
 
                         <!-- Other Categories -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('bangal-sub','bangal-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -895,7 +895,7 @@
 
                         </div>
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('watch-sub','watch-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -989,7 +989,7 @@
                         </div>
 
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('hathful-sub','hathful-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1083,7 +1083,7 @@
                         </div>
                         <!-- Ring -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('ring-sub','ring-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1178,7 +1178,7 @@
 
                         <!-- Mangalsutra -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('mangalsutra-sub','mangalsutra-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1258,7 +1258,7 @@
 
                         <!-- Pendal & Buti -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('pendal-sub','pendal-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1353,7 +1353,7 @@
 
 
                         <!-- Juda & Kandora -->
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('juda-sub','juda-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1448,7 +1448,7 @@
 
                         <!-- Leriyat Necklace -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('leriyat-sub','leriyat-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1544,7 +1544,7 @@
 
                         <!-- Long Necklace -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('long-sub','long-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -1639,7 +1639,7 @@
 
                         <!-- Short Necklace -->
 
-                        <div class="border-b border-[#D5D5D5] py-5">
+                        <div class="border-b border-[#D5D5D5] py-4">
 
                             <button onclick="toggleCategory('short-sub','short-arrow')"
                                 class="w-full flex items-center justify-between">
@@ -2143,40 +2143,65 @@
 
             <!-- ══════════════════ PRODUCT GRID ══════════════════ -->
             <div class="col-span-12 lg:col-span-8 xl:col-span-9 min-w-0">
-                <div class="sort-wrap flex justify-end mb-5">
-         <select
-    id="sortSelect"
-    onchange="sortProducts()"
-    class="w-full max-w-[340px]
-    px-5 py-4 leading-[20px]
-    border border-[#D5D5D5]
-    rounded-[8px]
-    text-[20px]
-    font-semibold
-    text-[#3D403F]
-    outline-none">
+             
+               <div class="flex justify-end mb-5">
+    
+                <div class="relative w-full max-w-[340px]">
 
-    <option value="default">
-        Default Sorting
-    </option>
+                    <select
+                        id="sortSelect"
+                        onchange="sortProducts()"
+                        class="appearance-none w-full
+                        px-5 pr-14 py-4
+                        leading-[20px]
+                        border border-[#D5D5D5]
+                        rounded-[8px]
+                        text-[20px]
+                        font-semibold
+                        text-[#3D403F]
+                        outline-none">
 
-    <option value="price-low">
-        Price: Low to High
-    </option>
+                        <option value="default">
+                            Default Sorting
+                        </option>
 
-    <option value="price-high">
-        Price: High to Low
-    </option>
+                        <option value="price-low">
+                            Price: Low to High
+                        </option>
 
-    <option value="newest">
-        Newest First
-    </option>
+                        <option value="price-high">
+                            Price: High to Low
+                        </option>
 
-    <option value="popular">
-        Most Popular
-    </option>
+                        <option value="newest">
+                            Newest First
+                        </option>
 
-</select>
+                        <option value="popular">
+                            Most Popular
+                        </option>
+
+                    </select>
+
+                    <!-- Custom Arrow -->
+                    <svg
+            class="absolute right-5 top-1/2 transform -translate-y-[25%] pointer-events-none"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none">
+
+    <path
+        d="M6 9L12 15L18 9"
+        stroke="#3D403F"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+
+</svg>
+
+                </div>
+
                 </div>
                 <!-- Result count -->
 

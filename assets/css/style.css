@@ -851,6 +851,30 @@
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-translate-y-\[25\%\] {
+    --tw-translate-y: calc(25% * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[27\%\] {
+    --tw-translate-y: calc(27% * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[30\%\] {
+    --tw-translate-y: calc(30% * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[40\%\] {
+    --tw-translate-y: calc(40% * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[45\%\] {
+    --tw-translate-y: calc(45% * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[60\%\] {
+    --tw-translate-y: calc(60% * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .rotate-180 {
     rotate: 180deg;
   }
@@ -1478,6 +1502,9 @@
   .py-\[19px\] {
     padding-block: 19px;
   }
+  .py-\[20px\] {
+    padding-block: 20px;
+  }
   .py-\[25px\] {
     padding-block: 25px;
   }
@@ -1531,6 +1558,9 @@
   }
   .pr-10 {
     padding-right: calc(var(--spacing) * 10);
+  }
+  .pr-14 {
+    padding-right: calc(var(--spacing) * 14);
   }
   .pr-\[10px\] {
     padding-right: 10px;
@@ -3776,19 +3806,6 @@ select {
   -webkit-appearance: none;
   cursor: pointer;
 }
-.sort-wrap {
-  position: relative;
-}
-.sort-wrap::after {
-  content: '▾';
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #888;
-  pointer-events: none;
-  font-size: 12px;
-}
 input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: #b8860b !important;
@@ -3814,20 +3831,6 @@ select {
 }
 .tab-btn:not(.active):hover {
   background: #fafaf7;
-}
-.sort-wrap {
-  position: relative;
-}
-.sort-wrap::after {
-  content: '';
-  position: absolute;
-  right: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid #666;
-  pointer-events: none;
 }
 .view-btn {
   transition: background .15s;
