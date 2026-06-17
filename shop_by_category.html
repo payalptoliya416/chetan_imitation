@@ -1912,39 +1912,35 @@
 
                         </div>
                         <!-- Dual range slider (simulated with two overlapping ranges) -->
-                <div class="relative h-6 flex items-center">
+                            <div class="relative h-6 flex items-center">
 
     <!-- Gray Track -->
-    <div class="absolute w-full h-[4px] bg-[#D5D5D5] rounded-full"></div>
+    <div class="absolute inset-x-0 h-[4px] bg-[#D5D5D5] rounded-full z-[1]"></div>
 
     <!-- Active Track -->
     <div
         id="rangeTrack"
-        class="absolute h-[4px] bg-[#131615] rounded-full"
-        style="left:0%; right:80%;">
+        class="absolute h-[4px] bg-[#131615] rounded-full z-[2]"
+        style="left:0%;right:80%;">
     </div>
 
-    <!-- Min -->
     <input
         id="minRange"
         type="range"
         min="0"
         max="10000"
         value="0"
-        class="absolute w-full"
-        style="z-index:3"
+        class="absolute w-full z-[3]"
         oninput="rangeSlide('min')"
     />
 
-    <!-- Max -->
     <input
         id="maxRange"
         type="range"
         min="0"
         max="10000"
         value="2000"
-        class="absolute w-full"
-        style="z-index:4"
+        class="absolute w-full z-[4]"
         oninput="rangeSlide('max')"
     />
 

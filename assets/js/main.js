@@ -136,46 +136,89 @@ function toggleSection(id, arrowId) {
 // ── Range slider sync ─────────────────────────────────────────
 const minRange = document.getElementById("minRange");
 const maxRange = document.getElementById("maxRange");
+
+const minPriceInput = document.getElementById("minPriceInput");
+const maxPriceInput = document.getElementById("maxPriceInput");
+
 const rangeTrack = document.getElementById("rangeTrack");
 
-function rangeSlide(type) {
+const MIN_GAP = 0;
+const MAX = 10000;
+
+function updateRangeTrack(min, max) {
+
+    const left = (min / MAX) * 100;
+    const right = 100 - (max / MAX) * 100;
+
+    rangeTrack.style.left = left + "%";
+    rangeTrack.style.right = right + "%";
+}
+
+function rangeSlide(which) {
 
     let min = parseInt(minRange.value);
     let max = parseInt(maxRange.value);
 
-    // Don't cross
-    if (max - min < 100) {
-        if (type === "min") {
-            minRange.value = max - 100;
-            min = max - 100;
-        } else {
-            maxRange.value = min + 100;
-            max = min + 100;
-        }
+    if (which === "min" && min > max - MIN_GAP) {
+        min = max - MIN_GAP;
+        minRange.value = min;
     }
 
-    const minPercent = (min / minRange.max) * 100;
-    const maxPercent = (max / maxRange.max) * 100;
+    if (which === "max" && max < min + MIN_GAP) {
+        max = min + MIN_GAP;
+        maxRange.value = max;
+    }
 
-    rangeTrack.style.left = minPercent + "%";
-    rangeTrack.style.right = (100 - maxPercent) + "%";
+    minPriceInput.value = min;
+    maxPriceInput.value = max;
+
+    updateRangeTrack(min, max);
+
+    state.priceMin = min;
+    state.priceMax = max;
+
+    state.page = 1;
+
+    render();
 }
 
-// Initial fill
-rangeSlide();
 function syncFromInput(which) {
-  let min = +document.getElementById('minPriceInput').value;
-  let max = +document.getElementById('maxPriceInput').value;
-  if (which==='min') { min = Math.min(min, max); document.getElementById('minRange').value = min; }
-  if (which==='max') { max = Math.max(max, min); document.getElementById('maxRange').value = max; }
-  document.getElementById('rangeMin').textContent = fmt(min);
-  document.getElementById('rangeMax').textContent = fmt(max);
-  const pct1 = (min/10000)*100, pct2 = (max/10000)*100;
-  document.getElementById('rangeTrack').style.left = pct1+'%';
-  document.getElementById('rangeTrack').style.right = (100-pct2)+'%';
-  state.priceMin = min; state.priceMax = max; state.page = 1; render();
+
+    let min = parseInt(minPriceInput.value) || 0;
+    let max = parseInt(maxPriceInput.value) || MAX;
+
+    min = Math.max(0, Math.min(min, MAX));
+    max = Math.max(0, Math.min(max, MAX));
+
+    if (which === "min" && min > max) {
+        min = max;
+    }
+
+    if (which === "max" && max < min) {
+        max = min;
+    }
+
+    minRange.value = min;
+    maxRange.value = max;
+
+    minPriceInput.value = min;
+    maxPriceInput.value = max;
+
+    updateRangeTrack(min, max);
+
+    state.priceMin = min;
+    state.priceMax = max;
+
+    state.page = 1;
+
+    render();
 }
- 
+
+/* Initial */
+updateRangeTrack(
+    parseInt(minRange.value),
+    parseInt(maxRange.value)
+);
 // ── Category filter ───────────────────────────────────────────
 function filterByCategory(cb, cat) {
   if (cb.checked) { if (!state.selectedCats.includes(cat)) state.selectedCats.push(cat); }
