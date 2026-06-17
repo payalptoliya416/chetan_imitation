@@ -1364,6 +1364,9 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .fill-transparent {
+    fill: transparent;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -2016,6 +2019,20 @@
       }
     }
   }
+  .group-hover\:fill-\[\#B4771E\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        fill: #B4771E;
+      }
+    }
+  }
+  .group-hover\:fill-\[\#E01B1B\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        fill: #E01B1B;
+      }
+    }
+  }
   .group-hover\:tracking-wide {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2028,6 +2045,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         color: #B4771E;
+      }
+    }
+  }
+  .group-hover\:text-\[\#E01B1B\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: #E01B1B;
       }
     }
   }

@@ -337,41 +337,26 @@ grid.innerHTML = pageItems.map(p => `
             onerror="this.src='assets/images/Royal_Bridal.png'"
             class="w-full h-[340px] object-cover">
 
-        <button onclick="toggleWish(${p.id})"
-            class="absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center transition">
+    <button onclick="toggleWish(${p.id})"
+    class="group absolute top-2 right-2 w-[36px] h-[36px] bg-white rounded-lg flex items-center justify-center transition">
 
-            ${
-                state.wishlist.has(p.id)
-                ? `
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    fill="#B4771E"
-                    viewBox="0 0 24 24"
-                    stroke="#B4771E"
-                    stroke-width="1.6"
-                    class="w-5 h-5">
+    <svg xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.6"
+        stroke="currentColor"
+        class="w-5 h-5 text-[#131615]
+               fill-transparent
+               group-hover:fill-[#E01B1B]
+               group-hover:text-[#E01B1B]
+               transition-all duration-300">
 
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                </svg>
-                `
-                :
-                `
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.6"
-                    stroke="currentColor"
-                    class="w-5 h-5 text-[#131615] hover:text-[#B4771E]">
+        <path stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+    </svg>
 
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                </svg>
-                `
-            }
-
-        </button>
+</button>
 
     </div>
 
