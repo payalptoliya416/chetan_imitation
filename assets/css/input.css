@@ -342,7 +342,7 @@ summary {
 
 .common-btn{
     @apply inline-flex items-center justify-center bg-[#B4771E] text-white px-[20px] md:px-[24px] 2xl:px-[26px]
-    h-[50px] md:h-[58px] 2xl:h-[64px] text-base md:text-lg lg:text-xl hover:bg-[#ad761c] transition;
+    h-[50px] md:h-[58px] 2xl:h-[62px] text-base md:text-lg lg:text-xl hover:bg-[#ad761c] transition;
 }
 
 @keyframes marquee {
