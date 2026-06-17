@@ -2295,6 +2295,13 @@
       }
     }
   }
+  .hover\:fill-\[\#E01B1B\] {
+    &:hover {
+      @media (hover: hover) {
+        fill: #E01B1B;
+      }
+    }
+  }
   .hover\:fill-red-500 {
     &:hover {
       @media (hover: hover) {
@@ -2313,6 +2320,13 @@
     &:hover {
       @media (hover: hover) {
         color: #B4771E;
+      }
+    }
+  }
+  .hover\:text-\[\#E01B1B\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #E01B1B;
       }
     }
   }
