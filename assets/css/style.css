@@ -270,6 +270,9 @@
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
+  .top-\[4px\] {
+    top: 4px;
+  }
   .top-\[10px\] {
     top: 10px;
   }
@@ -278,6 +281,12 @@
   }
   .top-\[30px\] {
     top: 30px;
+  }
+  .top-\[38px\] {
+    top: 38px;
+  }
+  .top-\[42px\] {
+    top: 42px;
   }
   .top-\[44px\] {
     top: 44px;

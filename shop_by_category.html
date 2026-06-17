@@ -1861,7 +1861,7 @@
                                         text-[20px] font-normal text-[#3D403F] pl-8 pr-5 py-[14px]
                                         outline-none appearance-none" oninput="syncFromInput('min')">
 
-                                <div class="absolute right-4 top-[44px] -translate-y-1/2 flex flex-col gap-3">
+                                <div class="absolute right-4 top-[38px] -translate-y-1/2 flex flex-col gap-2">
 
                                     <button type="button" onclick="increaseMin()" class="leading-none">
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
@@ -1883,14 +1883,14 @@
 
                             <!-- Max Price -->
                             <div class="relative flex-1">
-                                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-[20px] text-[#131615]">
+                                
+                                <span class="absolute left-4 top-[44px] -translate-y-1/2 text-[20px] text-[#131615]">
                                     ₹
                                 </span>
                                 <input id="maxPriceInput" type="number" value="2000" min="0" max="10000" class="w-full h-[56px] border border-[#D5D5D5] rounded-[2px]
                                         text-[20px] font-normal text-[#3D403F] pl-8 pr-5 py-[14px]
                                         outline-none appearance-none" oninput="syncFromInput('max')">
-
-                                <div class="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col gap-3">
+    <div class="absolute right-4 top-[38px] -translate-y-1/2 flex flex-col gap-2">
 
                                     <button type="button" onclick="increaseMax()" class="leading-none">
                                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
@@ -1913,8 +1913,8 @@
                         </div>
                         <!-- Dual range slider (simulated with two overlapping ranges) -->
                         <div class="relative h-5 flex items-center">
-                            <div class="absolute w-full h-1 bg-amber-200 rounded"></div>
-                            <div id="rangeTrack" class="absolute h-1 bg-amber-600 rounded" style="left:0%;right:80%">
+                            <div class="absolute w-full h-1 bg-[#131615] rounded"></div>
+                            <div id="rangeTrack" class="absolute h-1 bg-[#131615] rounded" style="left:0%;right:80%">
                             </div>
                             <input id="minRange" type="range" min="0" max="10000" value="0" class="absolute w-full"
                                 style="z-index:3;background:transparent;" oninput="rangeSlide('min')" />
