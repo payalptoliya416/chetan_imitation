@@ -788,6 +788,9 @@
   .w-max {
     width: max-content;
   }
+  .max-w-\[25px\] {
+    max-width: 25px;
+  }
   .max-w-\[30px\] {
     max-width: 30px;
   }
@@ -3276,6 +3279,11 @@
       border-bottom-width: 0px;
     }
   }
+  .lg\:p-5 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
   .lg\:p-8 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 8);
@@ -3284,6 +3292,11 @@
   .lg\:p-10 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:p-\[20px\] {
+    @media (width >= 64rem) {
+      padding: 20px;
     }
   }
   .lg\:p-\[25px\] {
